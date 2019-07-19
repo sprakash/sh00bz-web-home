@@ -29,7 +29,7 @@
     		color: yellow;
 	}
 body {
-		background-color: whitesmoke;
+		background-color: #f7fcfe;
 		font-family: Roboto, Helvetica, Arial, sans-serif;
 		margin: 0;
 		padding: 0;
@@ -320,10 +320,83 @@ h1[data-v-5f24d5] {
 	color: gold;
 	font-size: 40px;
 }
-body[data-v-2a1f67] {
-	background: seagreen;
-}
 h1[data-v-2a1f67] {
-	color: gold;
+	color: #972b7e;
 	font-size: 40px;
+	text-shadow: 2px 4px #c3e3fdc9;
+	text-align: center;
+}
+section[data-v-2a1f67] {
+	width:100%;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	font-family: Palatino;
+}
+figure[data-v-2a1f67] {
+	margin: 0;
+}
+figcaption[data-v-2a1f67] {
+	font-size: .7em;
+	font-weight: lighter;
+	font-style: italic;
+	margin: 1em 0;
+	color: #380ed5;
+	text-align:center;
+	line-height: 1.4em;
+}
+article[data-v-2a1f67] {
+	font-size: .7em;
+	font-weight: bold;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+li[data-v-2a1f67] {
+	line-height: 2em;
+}
+.divide[data-v-2a1f67] {
+	width: 30%;
+	margin-bottom: 2em;
+}
+.contact-img[data-v-2a1f67] {
+	background-image: url(/piano.aa1e6821.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 262px;
+    display:inline-block;
+}
+.connect-lower[data-v-2a1f67] {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient:  vertical;
+	-webkit-box-direction:  normal;
+	    -ms-flex-direction:  column;
+	        flex-direction:  column
+}
+.email-link[data-v-2a1f67] {
+	color: #d058c0;
+}
+.horiz-list[data-v-2a1f67]{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+.horiz-list li[data-v-2a1f67] {
+	padding: 0 .5em;
+}
+.space-fill[data-v-2a1f67] {
+	height: 10vh;
+	width:100%;
 }

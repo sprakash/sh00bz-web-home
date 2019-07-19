@@ -12676,6 +12676,16 @@ exports.default = void 0;
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default = {
   name: 'Connect',
   created: function created() {
@@ -12700,53 +12710,79 @@ exports.default = _default;
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("h1", [_vm._v("Connect")]),
-    _vm._v(" "),
-    _c(
-      "section",
-      [
-        _vm._m(0),
-        _vm._v(" "),
-        _c("footnote", [
-          _vm._v(
-            "The site has been created by yours truly using Vue framework including the blog which has been created using Vue as well. Code can be looked at "
-          )
-        ])
-      ],
-      1
-    )
-  ])
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("ul", [
-      _c("li", [_vm._v("Email me ")]),
+    return _c("div", [
+      _c("h1", [_vm._v("Connect")]),
       _vm._v(" "),
-      _c("li", [
-        _vm._v("Social Media : \n\t\t\t\t"),
+      _c("hr", { staticClass: "divide" }),
+      _vm._v(" "),
+      _c("section", [
+        _c("figure", [
+          _c("div", { staticClass: "contact-img" }),
+          _vm._v(" "),
+          _c("figcaption", [
+            _vm._v("Photo from Broadway style Singing Recital "),
+            _c("br"),
+            _vm._v(
+              "at Musical Theatre Summer Conservatory at Notre DaNamur University, California."
+            )
+          ])
+        ]),
+        _vm._v(" "),
         _c("ul", [
-          _c("li", [_vm._v("Facebook")]),
+          _c("li", [
+            _vm._v("Email me at "),
+            _c(
+              "a",
+              {
+                staticClass: "email-link",
+                attrs: { href: "mailto:prakashnitza@gmail.com" }
+              },
+              [_vm._v("prakashnitza@gmail.com")]
+            )
+          ]),
           _vm._v(" "),
-          _c("li", [_vm._v("Twitter")]),
+          _c("li", [
+            _vm._v("Social Media : \n\t\t\t\t"),
+            _c("ul", { staticClass: "horiz-list" }, [
+              _c("li", [_vm._v("Facebook")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Twitter")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Instagram")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("LinkedIn")])
+            ])
+          ]),
           _vm._v(" "),
-          _c("li", [_vm._v("Instagram")]),
-          _vm._v(" "),
-          _c("li", [_vm._v("LinkedIn")])
+          _c("li", [
+            _vm._v("Download\n\t\t\t\t"),
+            _c("ul", [
+              _c("li", [_vm._v("Performer (Stage and Film) Resume")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Producer Resume")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Front End Dev Resume")])
+            ])
+          ])
         ])
       ]),
       _vm._v(" "),
-      _c("li", [
-        _vm._v("Download\n\t\t\t\t"),
-        _c("ul", [
-          _c("li", [_vm._v("Performer (Stage and Film) Resume")]),
-          _vm._v(" "),
-          _c("li", [_vm._v("Producer Resume")]),
-          _vm._v(" "),
-          _c("li", [_vm._v("Front End Dev Resume")])
+      _c("hr"),
+      _vm._v(" "),
+      _c("section", { staticClass: "connect-lower" }, [
+        _c("div", { staticClass: "space-fill" }),
+        _vm._v(" "),
+        _c("article", [
+          _vm._v(
+            "The site has been created by yours truly using Vue framework including the blog which has been created using Vue as well. Code can be looked at "
+          )
         ])
       ])
     ])
@@ -12784,7 +12820,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"app.js":[function(require,module,exports) {
+},{"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/piano.jpg":[["piano.aa1e6821.jpg","assets/piano.jpg"],"assets/piano.jpg"],"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"app.js":[function(require,module,exports) {
 "use strict";
 
 var _vue = _interopRequireDefault(require("vue"));
@@ -12906,7 +12942,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63033" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59058" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

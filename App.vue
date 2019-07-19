@@ -27,7 +27,7 @@
 <style>
 
 	body {
-		background-color: whitesmoke;
+		background-color: #f7fcfe;
 		font-family: Roboto, Helvetica, Arial, sans-serif;
 		margin: 0;
 		padding: 0;
