@@ -19,6 +19,14 @@
 	}
 </script>
 <style>
+	#announcements {
+		display: block;
+	    text-align: center;
+	    position: relative;
+		background-color: rgb(140, 201, 216, .9);	    
+		width: 85%;
+	    margin: 0 auto;
+	}
 
 	#announce-content {
 		color: #6e0080;
@@ -30,6 +38,11 @@
 
 	#announce-content h1 {
 		text-shadow: 1px 1px yellow;
+	}
+
+	.md #announcements {
+		top: -25px;
+		z-index: 9;
 	}
 </style>
 

@@ -8542,7 +8542,252 @@ if (inBrowser) {
 
 var _default = Vue;
 exports.default = _default;
-},{}],"node_modules/vue-router/dist/vue-router.esm.js":[function(require,module,exports) {
+},{}],"node_modules/string-convert/camel2hyphen.js":[function(require,module,exports) {
+var camel2hyphen = function (str) {
+  return str
+          .replace(/[A-Z]/g, function (match) {
+            return '-' + match.toLowerCase();
+          })
+          .toLowerCase();
+};
+
+module.exports = camel2hyphen;
+},{}],"node_modules/json2mq/index.js":[function(require,module,exports) {
+var camel2hyphen = require('string-convert/camel2hyphen');
+
+var isDimension = function (feature) {
+  var re = /[height|width]$/;
+  return re.test(feature);
+};
+
+var obj2mq = function (obj) {
+  var mq = '';
+  var features = Object.keys(obj);
+  features.forEach(function (feature, index) {
+    var value = obj[feature];
+    feature = camel2hyphen(feature);
+    // Add px to dimension features
+    if (isDimension(feature) && typeof value === 'number') {
+      value = value + 'px';
+    }
+    if (value === true) {
+      mq += feature;
+    } else if (value === false) {
+      mq += 'not ' + feature;
+    } else {
+      mq += '(' + feature + ': ' + value + ')';
+    }
+    if (index < features.length-1) {
+      mq += ' and '
+    }
+  });
+  return mq;
+};
+
+var json2mq = function (query) {
+  var mq = '';
+  if (typeof query === 'string') {
+    return query;
+  }
+  // Handling array of media queries
+  if (query instanceof Array) {
+    query.forEach(function (q, index) {
+      mq += obj2mq(q);
+      if (index < query.length-1) {
+        mq += ', '
+      }
+    });
+    return mq;
+  }
+  // Handling single media query
+  return obj2mq(query);
+};
+
+module.exports = json2mq;
+},{"string-convert/camel2hyphen":"node_modules/string-convert/camel2hyphen.js"}],"node_modules/vue-mq/dist/vue-mq.es.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _json2mq = _interopRequireDefault(require("json2mq"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _toConsumableArray(arr) {
+  if (Array.isArray(arr)) {
+    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) arr2[i] = arr[i];
+
+    return arr2;
+  } else {
+    return Array.from(arr);
+  }
+}
+
+function convertBreakpointsToMediaQueries(breakpoints) {
+  var keys = Object.keys(breakpoints);
+  var values = keys.map(function (key) {
+    return breakpoints[key];
+  });
+  var breakpointValues = [0].concat(_toConsumableArray(values.slice(0, -1)));
+  var mediaQueries = breakpointValues.reduce(function (sum, value, index) {
+    var options = Object.assign({
+      minWidth: value
+    }, index < keys.length - 1 ? {
+      maxWidth: breakpointValues[index + 1] - 1
+    } : {});
+    var mediaQuery = (0, _json2mq.default)(options);
+    return Object.assign(sum, _defineProperty({}, keys[index], mediaQuery));
+  }, {});
+  return mediaQueries;
+}
+
+function transformValuesFromBreakpoints(breakpoints, values, currentBreakpoint) {
+  var findClosestValue = function findClosestValue(currentBreakpoint) {
+    if (values[currentBreakpoint] !== undefined) return values[currentBreakpoint];
+    var index = breakpoints.findIndex(function (b) {
+      return b === currentBreakpoint;
+    });
+    var newBreakpoint = index !== -1 || index !== 0 ? breakpoints[index - 1] : null;
+    if (!newBreakpoint) return values[index];
+    return values[newBreakpoint] !== undefined ? values[newBreakpoint] : findClosestValue(newBreakpoint);
+  };
+
+  return findClosestValue(currentBreakpoint);
+}
+
+function selectBreakpoints(breakpoints, currentBreakpoint) {
+  var index = breakpoints.findIndex(function (b) {
+    return b === currentBreakpoint;
+  });
+  return breakpoints.slice(index);
+}
+
+function subscribeToMediaQuery(mediaQuery, enter) {
+  var mql = window.matchMedia(mediaQuery);
+
+  var cb = function cb(_ref) {
+    var matches = _ref.matches;
+    if (matches) enter();
+  };
+
+  mql.addListener(cb); //subscribing
+
+  cb(mql); //initial trigger
+}
+
+function isArray(arg) {
+  return Object.prototype.toString.call(arg) === '[object Array]';
+} // USAGE
+// mq-layout(mq="lg")
+//   p I’m lg
+
+
+var component = {
+  props: {
+    mq: {
+      required: true,
+      type: [String, Array]
+    }
+  },
+  computed: {
+    plusModifier: function plusModifier() {
+      return !isArray(this.mq) && this.mq.slice(-1) === '+';
+    },
+    activeBreakpoints: function activeBreakpoints() {
+      var breakpoints = Object.keys(this.$mqAvailableBreakpoints);
+      var mq = this.plusModifier ? this.mq.slice(0, -1) : isArray(this.mq) ? this.mq : [this.mq];
+      return this.plusModifier ? selectBreakpoints(breakpoints, mq) : mq;
+    }
+  },
+  render: function render(h, props) {
+    var shouldRenderChildren = this.activeBreakpoints.includes(this.$mq);
+    return shouldRenderChildren ? h('div', this.$slots.default) : h();
+  }
+};
+var DEFAULT_BREAKPOINT = {
+  sm: 450,
+  md: 1250,
+  lg: Infinity
+};
+
+var install = function install(Vue) {
+  var _ref = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
+      _ref$breakpoints = _ref.breakpoints,
+      breakpoints = _ref$breakpoints === void 0 ? DEFAULT_BREAKPOINT : _ref$breakpoints,
+      _ref$defaultBreakpoin = _ref.defaultBreakpoint,
+      defaultBreakpoint = _ref$defaultBreakpoin === void 0 ? 'sm' : _ref$defaultBreakpoin;
+
+  var hasSetupListeners = false; // Init reactive component
+
+  var reactorComponent = new Vue({
+    data: function data() {
+      return {
+        currentBreakpoint: defaultBreakpoint
+      };
+    }
+  });
+  Vue.filter('mq', function (currentBreakpoint, values) {
+    return transformValuesFromBreakpoints(Object.keys(breakpoints), values, currentBreakpoint);
+  });
+  Vue.mixin({
+    computed: {
+      $mq: function $mq() {
+        return reactorComponent.currentBreakpoint;
+      }
+    },
+    created: function created() {
+      if (this.$isServer) reactorComponent.currentBreakpoint = defaultBreakpoint;
+    },
+    mounted: function mounted() {
+      if (!hasSetupListeners) {
+        var mediaQueries = convertBreakpointsToMediaQueries(breakpoints); // setup listeners
+
+        var _loop = function _loop(key) {
+          var mediaQuery = mediaQueries[key];
+
+          var enter = function enter() {
+            reactorComponent.currentBreakpoint = key;
+          };
+
+          subscribeToMediaQuery(mediaQuery, enter);
+        };
+
+        for (var key in mediaQueries) {
+          _loop(key);
+        }
+
+        hasSetupListeners = true;
+      }
+    }
+  });
+  Vue.prototype.$mqAvailableBreakpoints = breakpoints;
+  Vue.component('MqLayout', component);
+};
+
+var index = {
+  install: install
+};
+var _default = index;
+exports.default = _default;
+},{"json2mq":"node_modules/json2mq/index.js"}],"node_modules/vue-router/dist/vue-router.esm.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11700,6 +11945,371 @@ render._withStripped = true
       
       }
     })();
+},{"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Panels.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  name: 'Panels',
+  props: {
+    panels: {
+      type: Array,
+      required: true
+    }
+  },
+  components: {},
+  data: function data() {
+    return {
+      msg: 'Panels',
+      visibility: 'visible'
+    };
+  },
+  methods: {
+    previousPanel: function previousPanel() {},
+    nextPanel: function nextPanel() {},
+    hideAllPanels: function hideAllPanels() {
+      alert('hidingall');
+      $('.single-panel div').css({
+        'visibility': 'hidden'
+      });
+    }
+  }
+};
+exports.default = _default;
+        var $82a0ff = exports.default || module.exports;
+      
+      if (typeof $82a0ff === 'function') {
+        $82a0ff = $82a0ff.options;
+      }
+    
+        /* template */
+        Object.assign($82a0ff, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { attrs: { id: "panels" } }, [
+    _c("section", { staticClass: "panel-container" }, [
+      _c(
+        "ul",
+        { staticClass: "panel-area" },
+        _vm._l(_vm.panels, function(singlePanel) {
+          return _c("li", { staticClass: "single-panel" }, [
+            _c("div", { attrs: { id: singlePanel.id } }, [
+              _c(
+                "div",
+                { staticClass: "panel-content" },
+                [
+                  _c("h1", { staticClass: "panel-header" }, [
+                    _vm._v(_vm._s(singlePanel.title))
+                  ]),
+                  _vm._v(
+                    "\n\t\t\t\t\t\t" +
+                      _vm._s(singlePanel.content) +
+                      "\n\t\t\n\t\t\t\t\t\t"
+                  ),
+                  _c(
+                    "router-link",
+                    { attrs: { to: { name: singlePanel.title } } },
+                    [_vm._v(" More »")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "button-areas" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "prev",
+                    attrs: { id: singlePanel.prev },
+                    on: {
+                      click: function($event) {
+                        return _vm.previousPanel()
+                      }
+                    }
+                  },
+                  [_vm._v("❮")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "next",
+                    attrs: { id: singlePanel.next },
+                    on: {
+                      click: function($event) {
+                        return _vm.nextPanel()
+                      }
+                    }
+                  },
+                  [_vm._v("❯")]
+                )
+              ])
+            ])
+          ])
+        }),
+        0
+      )
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: null,
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$82a0ff', $82a0ff);
+          } else {
+            api.reload('$82a0ff', $82a0ff);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/mandolin.jpg":[["mandolin.f6399c01.jpg","assets/mandolin.jpg"],"assets/mandolin.jpg"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/randomfoxlogo.png":[["randomfoxlogo.491aee1d.png","assets/randomfoxlogo.png"],"assets/randomfoxlogo.png"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/digital.jpg":[["digital.316bf734.jpg","assets/digital.jpg"],"assets/digital.jpg"],"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Landing.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _Panels = _interopRequireDefault(require("./Panels"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  name: 'Landing',
+  components: {
+    Panels: _Panels.default
+  },
+  data: function data() {
+    return {
+      panels: [{
+        title: "Theatre",
+        id: "theatre-area",
+        prev: "digital-prev",
+        next: "film-next",
+        content: "I am the most alive on stage. Here you can find out about my performance history, the plays I've written, produced and am working on at the moment."
+      }, {
+        title: "Film",
+        id: "film-area",
+        prev: "theatre-prev",
+        next: "digital-next",
+        content: "Have a look at the short films I have been a part of as a creator, producer and performer."
+      }, {
+        title: "Digital",
+        id: "digital-area",
+        prev: "film-prev",
+        next: "theatre-next",
+        content: "an A/R comic book or an interactive film, check out my work that lies at the intersection of performance and tech."
+      }]
+    };
+  }
+};
+exports.default = _default;
+        var $6f87a4 = exports.default || module.exports;
+      
+      if (typeof $6f87a4 === 'function') {
+        $6f87a4 = $6f87a4.options;
+      }
+    
+        /* template */
+        Object.assign($6f87a4, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { attrs: { id: "landing" } }, [
+    _c("main", [_c("Panels", { attrs: { panels: _vm.panels } })], 1)
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: null,
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$6f87a4', $6f87a4);
+          } else {
+            api.reload('$6f87a4', $6f87a4);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"./Panels":"components/Panels.vue","_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Bio.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  name: 'Bio',
+  components: {},
+  data: function data() {
+    return {
+      msg: 'Bio around yo'
+    };
+  }
+};
+exports.default = _default;
+        var $dba37c = exports.default || module.exports;
+      
+      if (typeof $dba37c === 'function') {
+        $dba37c = $dba37c.options;
+      }
+    
+        /* template */
+        Object.assign($dba37c, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("div", { staticClass: "longbio" }, [
+        _vm._v(
+          "\n\tWelcome. My work involves projects in area of stage, film and web technologies where I explore my creative self as a performer, writer and producer.   Please feel free to reach out to me (click "
+        ),
+        _c("a", { attrs: { href: "/#/connect" } }, [_vm._v("here")]),
+        _vm._v(
+          "). \n\n\tI believe human beings must dream big and challenge themselves to break limitations imposed by themselves or others. I aspire next to create my most ambitious work yet : Fontwala inspired by the story of my uncle’s life as an artist, entreprenuer and visionary of Indian letterforms. Read all about Fontwala here.  \n\t"
+        ),
+        _c("span", { staticClass: "quote" }, [
+          _vm._v(
+            "“How we spend our days is how we spend our lives.”  - Annie Dillard "
+          )
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: null,
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$dba37c', $dba37c);
+          } else {
+            api.reload('$dba37c', $dba37c);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
 },{"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Announcements.vue":[function(require,module,exports) {
 "use strict";
 
@@ -11783,260 +12393,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Panels.vue":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _Announcements = _interopRequireDefault(require("./Announcements"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default = {
-  name: 'Panels',
-  props: {
-    panels: {
-      type: Array,
-      required: true
-    }
-  },
-  components: {
-    Announcements: _Announcements.default
-  },
-  data: function data() {
-    return {
-      msg: 'Panels'
-    };
-  }
-};
-exports.default = _default;
-        var $82a0ff = exports.default || module.exports;
-      
-      if (typeof $82a0ff === 'function') {
-        $82a0ff = $82a0ff.options;
-      }
-    
-        /* template */
-        Object.assign($82a0ff, (function () {
-          var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { attrs: { id: "panels" } }, [
-    _c("section", { staticClass: "panel-container" }, [
-      _c(
-        "ul",
-        { staticClass: "panel-area" },
-        _vm._l(_vm.panels, function(singlePanel) {
-          return _c("li", { staticClass: "single-panel" }, [
-            _c("div", { attrs: { id: singlePanel.id } }, [
-              _c(
-                "div",
-                { staticClass: "panel-content" },
-                [
-                  _c("h1", { staticClass: "panel-header" }, [
-                    _vm._v(_vm._s(singlePanel.title))
-                  ]),
-                  _vm._v(
-                    "\n\t\t\t\t\t\t" +
-                      _vm._s(singlePanel.content) +
-                      "\n\t\t\n\t\t\t\t\t\t"
-                  ),
-                  _c(
-                    "router-link",
-                    { attrs: { to: { name: singlePanel.title } } },
-                    [_vm._v(" More »")]
-                  )
-                ],
-                1
-              )
-            ])
-          ])
-        }),
-        0
-      )
-    ]),
-    _vm._v(" "),
-    _c("section", { staticClass: "bio" }, [
-      _c("div", { attrs: { id: "announcements" } }, [_c("Announcements")], 1),
-      _vm._v(" "),
-      _c("div", { staticClass: "longbio" }, [
-        _vm._v(
-          "\n\tWelcome. Here is a look at my work which involves stage, film and the web. I continue to explore my creative self as a performer, writer and producer. I aspire to work on projects that combine the crafts of stage and film with web technologies.  Please feel free to reach out to me (click here). \n\n\tI think it’s important for us as human beings to continue to aspire and to dream. I aspire next to create my most ambitious work yet : Fontwala inspired by the story of my uncle’s life as an artist, entreprenuer and visionary of Indian letterforms. Read all about Fontwala here.  \n\n\t"
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "quote" }, [
-        _vm._v(
-          "“How we spend our days is how we spend our lives.”  - Annie Dillard "
-        )
-      ])
-    ])
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-
-          return {
-            render: render,
-            staticRenderFns: staticRenderFns,
-            _compiled: true,
-            _scopeId: null,
-            functional: undefined
-          };
-        })());
-      
-    /* hot reload */
-    (function () {
-      if (module.hot) {
-        var api = require('vue-hot-reload-api');
-        api.install(require('vue'));
-        if (api.compatible) {
-          module.hot.accept();
-          if (!module.hot.data) {
-            api.createRecord('$82a0ff', $82a0ff);
-          } else {
-            api.reload('$82a0ff', $82a0ff);
-          }
-        }
-
-        
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-      }
-    })();
-},{"./Announcements":"components/Announcements.vue","/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/mandolin.jpg":[["mandolin.f6399c01.jpg","assets/mandolin.jpg"],"assets/mandolin.jpg"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/randomfoxlogo.png":[["randomfoxlogo.491aee1d.png","assets/randomfoxlogo.png"],"assets/randomfoxlogo.png"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/digital.jpg":[["digital.316bf734.jpg","assets/digital.jpg"],"assets/digital.jpg"],"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Landing.vue":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _Panels = _interopRequireDefault(require("./Panels"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-//
-//
-//
-//
-//
-//
-//
-var _default = {
-  name: 'Landing',
-  components: {
-    Panels: _Panels.default
-  },
-  data: function data() {
-    return {
-      panels: [{
-        title: "Theatre",
-        id: "theatre-area",
-        content: "I am the most alive on stage. Here you can find out about my performance history, the plays I've written, produced and am working on at the moment."
-      }, {
-        title: "Film",
-        id: "film-area",
-        content: "Have a look at the short films I have been a part of as a creator, producer and performer."
-      }, {
-        title: "Digital",
-        id: "digital-area",
-        content: "an A/R comic book or an interactive film, check out my work that lies at the intersection of performance and tech."
-      }]
-    };
-  }
-};
-exports.default = _default;
-        var $6f87a4 = exports.default || module.exports;
-      
-      if (typeof $6f87a4 === 'function') {
-        $6f87a4 = $6f87a4.options;
-      }
-    
-        /* template */
-        Object.assign($6f87a4, (function () {
-          var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { attrs: { id: "landing" } }, [
-    _c("main", [_c("Panels", { attrs: { panels: _vm.panels } })], 1)
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-
-          return {
-            render: render,
-            staticRenderFns: staticRenderFns,
-            _compiled: true,
-            _scopeId: null,
-            functional: undefined
-          };
-        })());
-      
-    /* hot reload */
-    (function () {
-      if (module.hot) {
-        var api = require('vue-hot-reload-api');
-        api.install(require('vue'));
-        if (api.compatible) {
-          module.hot.accept();
-          if (!module.hot.data) {
-            api.createRecord('$6f87a4', $6f87a4);
-          } else {
-            api.reload('$6f87a4', $6f87a4);
-          }
-        }
-
-        
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-      }
-    })();
-},{"./Panels":"components/Panels.vue","_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"App.vue":[function(require,module,exports) {
+},{"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"App.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12048,8 +12405,24 @@ var _Navigation = _interopRequireDefault(require("./components/Navigation"));
 
 var _Landing = _interopRequireDefault(require("./components/Landing"));
 
+var _Bio = _interopRequireDefault(require("./components/Bio"));
+
+var _Announcements = _interopRequireDefault(require("./components/Announcements"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -12065,6 +12438,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _default = {
   name: 'App',
   components: {
+    Announcements: _Announcements.default,
+    Bio: _Bio.default,
     Navigation: _Navigation.default,
     Landing: _Landing.default
   },
@@ -12085,19 +12460,34 @@ exports.default = _default;
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { attrs: { id: "content" } }, [
-    _c(
-      "section",
-      { attrs: { id: "content-fill" } },
-      [_c("router-view", [_c("Landing")], 1)],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "header",
-      [_c("h1", [_vm._v("Shubhra Prakash")]), _vm._v(" "), _c("Navigation")],
-      1
-    )
+  return _c("div", { class: _vm.$mq, attrs: { id: "topest" } }, [
+    _c("div", { attrs: { id: "content" } }, [
+      _c("section", { attrs: { id: "grouped" } }, [
+        _c(
+          "section",
+          { attrs: { id: "content-fill" } },
+          [_c("router-view", [_c("Landing")], 1)],
+          1
+        ),
+        _vm._v(" "),
+        _c("section", [
+          _c(
+            "div",
+            { attrs: { id: "announcements" } },
+            [_c("Announcements")],
+            1
+          )
+        ]),
+        _vm._v(" "),
+        _c("section", { attrs: { id: "bio" } }, [_c("Bio")], 1)
+      ]),
+      _vm._v(" "),
+      _c(
+        "header",
+        [_c("h1", [_vm._v("Shubhra Prakash")]), _vm._v(" "), _c("Navigation")],
+        1
+      )
+    ])
   ])
 }
 var staticRenderFns = []
@@ -12133,7 +12523,7 @@ render._withStripped = true
       
       }
     })();
-},{"./components/Navigation":"components/Navigation.vue","./components/Landing":"components/Landing.vue","_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Digital.vue":[function(require,module,exports) {
+},{"./components/Navigation":"components/Navigation.vue","./components/Landing":"components/Landing.vue","./components/Bio":"components/Bio.vue","./components/Announcements":"components/Announcements.vue","_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Digital.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12825,6 +13215,8 @@ render._withStripped = true
 
 var _vue = _interopRequireDefault(require("vue"));
 
+var _vueMq = _interopRequireDefault(require("vue-mq"));
+
 var _vueRouter = _interopRequireDefault(require("vue-router"));
 
 var _App = _interopRequireDefault(require("./App.vue"));
@@ -12858,8 +13250,13 @@ const vue = new Vue ({
 	template : h => h(App)
 
 });*/
-_vue.default.use(_vueRouter.default);
-
+_vue.default.use(_vueMq.default, {
+  breakpoints: {
+    sm: 767,
+    md: 1095,
+    lg: Infinity
+  }
+}), _vue.default.use(_vueRouter.default);
 var routes = [{
   path: '/digital',
   name: 'Digital',
@@ -12913,8 +13310,8 @@ new _vue.default({
   render: function render(h) {
     return h(_App.default);
   }
-}); // new Vue(App).$mount('#app')
-},{"vue":"node_modules/vue/dist/vue.runtime.esm.js","vue-router":"node_modules/vue-router/dist/vue-router.esm.js","./App.vue":"App.vue","./components/Digital":"components/Digital.vue","./components/Theatre":"components/Theatre.vue","./components/Film":"components/Film.vue","./components/Code":"components/Code.vue","./components/Slideshow":"components/Slideshow.vue","./components/Blog":"components/Blog.vue","./components/Connect":"components/Connect.vue","./components/Landing":"components/Landing.vue"}],"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+});
+},{"vue":"node_modules/vue/dist/vue.runtime.esm.js","vue-mq":"node_modules/vue-mq/dist/vue-mq.es.js","vue-router":"node_modules/vue-router/dist/vue-router.esm.js","./App.vue":"App.vue","./components/Digital":"components/Digital.vue","./components/Theatre":"components/Theatre.vue","./components/Film":"components/Film.vue","./components/Code":"components/Code.vue","./components/Slideshow":"components/Slideshow.vue","./components/Blog":"components/Blog.vue","./components/Connect":"components/Connect.vue","./components/Landing":"components/Landing.vue"}],"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -12942,7 +13339,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59058" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55316" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

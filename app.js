@@ -12,6 +12,7 @@ const vue = new Vue ({
 
 
 import Vue from 'vue';
+import VueMq from 'vue-mq';
 import Router from 'vue-router';
 import App from './App.vue';
 import Digital from './components/Digital'
@@ -23,7 +24,13 @@ import Blog from './components/Blog'
 import Connect from './components/Connect'
 import Landing from './components/Landing'
 
-
+Vue.use(VueMq, {
+  breakpoints: {
+    sm: 767,
+    md: 1095,
+    lg: Infinity,
+  }
+}),
 
 Vue.use(Router)
 
@@ -89,5 +96,3 @@ new Vue({
         components: { App },
         render: h => h(App),  
     })
-
-// new Vue(App).$mount('#app')

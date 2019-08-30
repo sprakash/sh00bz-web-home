@@ -10,30 +10,20 @@
 			
 							<router-link :to="{name:singlePanel.title}"> More &raquo;</router-link>
 						</div>
+
+						<div class="button-areas">
+							<div class="prev" v-bind:id="singlePanel.prev" v-on:click="previousPanel()">&#10094;</div>
+				  			<div class="next" v-bind:id="singlePanel.next" v-on:click="nextPanel()">&#10095;</div>
+		  				</div>
 					</div>
+					
 				</li>
 			</ul>
 
 		</section>
-		<section class="bio">
-		<div id="announcements">
-			<Announcements/>
-		</div>
-		<div class="longbio">
-		Welcome. Here is a look at my work which involves stage, film and the web. I continue to explore my creative self as a performer, writer and producer. I aspire to work on projects that combine the crafts of stage and film with web technologies.  Please feel free to reach out to me (click here). 
-
-		I think it’s important for us as human beings to continue to aspire and to dream. I aspire next to create my most ambitious work yet : Fontwala inspired by the story of my uncle’s life as an artist, entreprenuer and visionary of Indian letterforms. Read all about Fontwala here.  
-	
-		</div>
-
-		 <div class="quote">“How we spend our days is how we spend our lives.”  - Annie Dillard </div>
-
-		</section>
 	</div>
-	
 </template>
 <script>
-	import Announcements from './Announcements'
 	export default {
 		name: 'Panels',
 		props: {
@@ -43,13 +33,27 @@
 			}
 		},
 		components: {
-			Announcements
+			
 		},
 		data() {
 			return {
-				msg: 'Panels'
+				msg: 'Panels',
+				visibility: 'visible'
 			};
+		},
+		methods: {
+			previousPanel() {
+
+			},
+			nextPanel() {
+
+			},
+			hideAllPanels() {
+				alert('hidingall');
+				$('.single-panel div').css({'visibility':'hidden'});
+			}
 		}
+		
 	}
 	
 </script>
@@ -109,7 +113,6 @@
 	#digital-area
 	.panel-content {
 		background-color: rgba(57, 109, 0,  0.9);
-
 	}
 
 	.panel-content {
@@ -135,6 +138,34 @@
 	    color: #fff;
 	    font-style: italic;
 	}
+	
+	.button-areas {
+		display: none;
+	}
+	/* Next & previous buttons */
+	.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  width: auto;
+	  padding: 16px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+	  background-color: rgba(0,0,0,0.8);
+	}
 
 	.categories {
  		display: flex;
@@ -144,38 +175,11 @@
 	    margin-top: auto;
 	}
 
-	.bio {
-		position: absolute;
-	}
-
-	.bio .longbio {
-	  text-align: justify;
-	  line-height: 2em;
-	  padding:.5em 2em;
-	}
-
-	.longbio,
-	.fontwala {
-		font-family: Helvetica;
-	    font-size: .85em;
-	    padding: 1.5em 3em 0;
-	    word-spacing: .2em;
-	}
 
 	.fontwala {
 		text-align: center;
 	}
 
-	.quote {
-		font-family: Palatino;
-	    font-style: italic;
-	    text-align: right;
-	    display: block;
-	    font-size: 1em;
-	    font-weight: bold;
-	    margin-bottom: 1em;
-	    padding: .5em 2em;
-	}
 
 	#theatre-area{
 		background-image: url('/assets/mandolin.jpg');
@@ -184,7 +188,7 @@
 	    display: inline-block;
 	    width: 100%;
 	    background-size: cover;
-    	background-position: -140px 0;
+    	background-position: 50% 50%;
 	}
 
 	#film-area{
@@ -194,7 +198,7 @@
 	    display: inline-block;
 	    width: 100%;
 	    background-size: cover;
-    	background-position: -5px 0;
+    	background-position: 50% 50%;
 	}
 
 	#digital-area {
@@ -204,17 +208,7 @@
 	    display: inline-block;
 	    width: 100%;
 	    background-size: cover;
-    	background-position: 0 -134px;
-	}
-
-	#announcements {
-		display: block;
-	    text-align: center;
-	    position: relative;
-		background-color: rgb(140, 201, 216, .9);	    
-		width: 85%;
-	    margin: 0 auto;
-		top: -15px;
+    	background-position: 50% 50%;
 	}
 
 
@@ -225,7 +219,16 @@
 	@keyframes zoomin {
 	 	 100%{  transform: scale(1.04);} 
 
-	} /*End of Zoom in Keyframes */
+	} 
+	@-webkit-keyframes zoominMid {
+	 100%{  transform: scale(1);} 
+	}
+	@keyframes zoominMid {
+	 	 100%{  transform: scale(1);} 
+
+	} 
+
+	/*End of Zoom in Keyframes */
 
 	/* Zoom out Keyframes */
 	@-webkit-keyframes zoomout {
@@ -266,4 +269,24 @@
 	    100%  { opacity: 1; }
 	}
 		
+	.md .panel-content {
+		margin-left: 4em;
+		z-index: 13;
+	}
+
+	.md .panel-area li {
+		position: absolute;
+		width: 78.4%;
+	}
+	
+	.md .button-areas {
+		display: flex;
+		position: relative;
+	    top: -5.5em;
+	    height: 48px;
+	    margin-left: 1em;
+	    width: 95.5%;
+	}
+
+
 </style> 

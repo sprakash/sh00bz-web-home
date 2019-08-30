@@ -47,12 +47,23 @@
 
 	li a {
 		text-decoration : none;
-		color: #24020a;
+		color: #39053f;
 		font-size: .95em;
     	font-weight: bold;
 	}
 	
 	li a:hover {
     		color: yellow;
+	}
+
+	.md #navigation {
+		width: 100%;
+		display: flex;
+		flex-grow: 1;
+	}
+	
+	.md nav {
+		display: flex;
+		width: 100%;
 	}
 </style> 
