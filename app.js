@@ -26,8 +26,8 @@ import Landing from './components/Landing'
 
 Vue.use(VueMq, {
   breakpoints: {
-    sm: 767,
-    md: 1095,
+    sm: 904,
+    md: 1065,
     lg: Infinity,
   }
 }),

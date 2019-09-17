@@ -2,6 +2,10 @@
 	<div>
 	<h1>{{msg}}</h1>
 	<span>Lovin it</span>
+	<header>
+						<h1>Shubhra Prakash</h1>
+						<Navigation/>
+					</header>
 	</div>
 </template>
 <script>

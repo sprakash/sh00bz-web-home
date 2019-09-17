@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="longbio">
-		Welcome. My work involves projects in area of stage, film and web technologies where I explore my creative self as a performer, writer and producer.   Please feel free to reach out to me (click <a href="/#/connect">here</a>). 
+		Welcome. My work involves stage, film and web technologies where I explore my creative self as a performer, writer and producer.   Please feel free to reach out to me. 
 
 		I believe human beings must dream big and challenge themselves to break limitations imposed by themselves or others. I aspire next to create my most ambitious work yet : Fontwala inspired by the story of my uncle’s life as an artist, entreprenuer and visionary of Indian letterforms. Read all about Fontwala here.  
 		<span class="quote">“How we spend our days is how we spend our lives.”  - Annie Dillard </span>
@@ -25,16 +25,27 @@
 
 	.bio .longbio {
 	  text-align: justify;
-	  padding:0 1.5em;
+	  padding:1.5em 0 0;
+	}
+	
+	.longbio {
+		 display: flex;
+		 flex-direction: column;
+		 flex-flow: column;
 	}
 
 	.longbio,
 	.fontwala {
 		font-family: 'Palatino';
 	    font-size: .93em;
-	    padding: 0 3em 0;
 	    word-spacing: .2em;
 	    line-height: 2em;
+	    margin: 1em 2em;
+	}
+
+	.sm .longbio {
+		font-size: .85em;
+		line-height: 1.5em;
 	}
 
 	.quote {
@@ -44,8 +55,15 @@
 	    font-size: 1em;
 	    font-weight: bold;
 	    display: block;
-	    background-color: #fffb0080;
-	    padding:0 2em;
+	    background-color: #e67a8329;
+	    padding:.5em 2em;
+	    margin-top: .5em;
+	}
+
+	.sm .quote {
+		text-align: center;
+		font-size: .85em;
+    	margin-top: .85em;
 	}
 	
 </style> 

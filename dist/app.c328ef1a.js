@@ -11797,12 +11797,33 @@ exports.default = void 0;
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default = {
   name: 'Navigation',
   data: function data() {
     return {
       msg: 'Navigate around yo'
     };
+  },
+  methods: {
+    openMenu: function openMenu() {
+      document.getElementById('mobileNav').style.display = 'block';
+    },
+    closeMenu: function closeMenu() {
+      document.getElementById('mobileNav').style.display = 'none';
+    }
   }
 };
 exports.default = _default;
@@ -11821,6 +11842,126 @@ exports.default = _default;
   return _c("div", { attrs: { id: "navigation" } }, [
     _c("nav", [
       _c("ul", [
+        _c(
+          "li",
+          { attrs: { id: "home" } },
+          [
+            _c("router-link", { attrs: { to: { name: "Landing" } } }, [
+              _vm._v("Home")
+            ])
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          { attrs: { id: "theatre" } },
+          [
+            _c("router-link", { attrs: { to: { name: "Theatre" } } }, [
+              _vm._v("Theatre")
+            ])
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          { attrs: { id: "film" } },
+          [
+            _c("router-link", { attrs: { to: { name: "Film" } } }, [
+              _vm._v("Film")
+            ])
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          { attrs: { id: "digital" } },
+          [
+            _c("router-link", { attrs: { to: { name: "Digital" } } }, [
+              _vm._v("Digital")
+            ])
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          { attrs: { id: "intersect" } },
+          [
+            _c("router-link", { attrs: { to: { name: "Intersect" } } }, [
+              _vm._v("Intersect")
+            ])
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          { attrs: { id: "gallery" } },
+          [
+            _c("router-link", { attrs: { to: { name: "Gallery" } } }, [
+              _vm._v("Gallery")
+            ])
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          { attrs: { id: "blog" } },
+          [
+            _c("router-link", { attrs: { to: { name: "Blog" } } }, [
+              _vm._v("Blog")
+            ])
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          { attrs: { id: "connect" } },
+          [
+            _c("router-link", { attrs: { to: { name: "Connect" } } }, [
+              _vm._v("Connect")
+            ])
+          ],
+          1
+        )
+      ])
+    ]),
+    _vm._v(" "),
+    _c("nav", { staticClass: "mobile" }, [
+      _c(
+        "a",
+        {
+          attrs: { href: "#" },
+          on: {
+            click: function($event) {
+              return _vm.openMenu()
+            }
+          }
+        },
+        [_vm._v("☰")]
+      ),
+      _vm._v(" "),
+      _c("ul", { attrs: { id: "mobileNav" } }, [
+        _c("li", [
+          _c(
+            "a",
+            {
+              attrs: { href: "#" },
+              on: {
+                click: function($event) {
+                  return _vm.closeMenu()
+                }
+              }
+            },
+            [_vm._v("×")]
+          )
+        ]),
+        _vm._v(" "),
         _c(
           "li",
           { attrs: { id: "home" } },
@@ -11977,6 +12118,9 @@ exports.default = void 0;
 //
 //
 //
+//
+//
+//
 var _default = {
   name: 'Panels',
   props: {
@@ -11989,17 +12133,90 @@ var _default = {
   data: function data() {
     return {
       msg: 'Panels',
-      visibility: 'visible'
+      currentPanel: '',
+      baseTheatreZIndex: 9,
+      baseFilmZIndex: 8,
+      baseDigitalZIndex: 7,
+      currentPanels: [{
+        title: 'Theatre',
+        'zIndex': 9
+      }, {
+        title: 'Film',
+        'zIndex': 8
+      }, {
+        title: 'Digital',
+        'zIndex': 7
+      }]
     };
   },
+  computed: {
+    currentOrder: function currentOrder() {
+      this.currentPanels[0].title = 'Theatre';
+      this.currentPanels[0].zIndex = this.baseTheatreZIndex;
+      this.currentPanels[1].title = 'Film';
+      this.currentPanels[1].zIndex = this.baseFilmZIndex;
+      this.currentPanels[2].title = 'Digital';
+      this.currentPanels[2].zIndex = this.baseDigitalZIndex;
+      console.log(this.currentPanels);
+      return this.currentPanels;
+    }
+  },
   methods: {
-    previousPanel: function previousPanel() {},
-    nextPanel: function nextPanel() {},
-    hideAllPanels: function hideAllPanels() {
-      alert('hidingall');
-      $('.single-panel div').css({
-        'visibility': 'hidden'
-      });
+    previousPanel: function previousPanel(node) {
+      console.log(node);
+      this.currentPanel = node;
+      this.baseTheatreZIndex = 9;
+      this.baseFilmZIndex = 8;
+      this.baseDigitalZIndex = 7;
+
+      if (node === "Theatre") {
+        this.baseTheatreZIndex--;
+        this.baseFilmZIndex--;
+        this.baseDigitalZIndex++;
+        return;
+      }
+
+      if (node === "Film") {
+        this.baseTheatreZIndex++;
+        this.baseFilmZIndex--;
+        this.baseDigitalZIndex--;
+        return;
+      }
+
+      if (node === "Digital") {
+        this.baseTheatreZIndex--;
+        this.baseFilmZIndex++;
+        this.baseInteractiveZIndex--;
+        return;
+      }
+    },
+    nextPanel: function nextPanel(node) {
+      console.log(node);
+      this.currentPanel = node;
+      this.baseTheatreZIndex = 9;
+      this.baseFilmZIndex = 8;
+      this.baseDigitalZIndex = 7;
+
+      if (node === "Theatre") {
+        this.baseTheatreZIndex--;
+        this.baseFilmZIndex++;
+        this.baseDigitalZIndex--;
+        return;
+      }
+
+      if (node === "Film") {
+        this.baseFilmZIndex--;
+        this.baseDigitalZIndex++;
+        this.baseTheatreZIndex--;
+        return;
+      }
+
+      if (node === "Digital") {
+        this.baseTheatreZIndex++;
+        this.baseDigitalZIndex--;
+        this.baseFilmZIndex--;
+        return;
+      }
     }
   }
 };
@@ -12021,39 +12238,46 @@ exports.default = _default;
       _c(
         "ul",
         { staticClass: "panel-area" },
-        _vm._l(_vm.panels, function(singlePanel) {
-          return _c("li", { staticClass: "single-panel" }, [
-            _c("div", { attrs: { id: singlePanel.id } }, [
-              _c(
-                "div",
-                { staticClass: "panel-content" },
-                [
-                  _c("h1", { staticClass: "panel-header" }, [
-                    _vm._v(_vm._s(singlePanel.title))
-                  ]),
-                  _vm._v(
-                    "\n\t\t\t\t\t\t" +
-                      _vm._s(singlePanel.content) +
-                      "\n\t\t\n\t\t\t\t\t\t"
-                  ),
-                  _c(
-                    "router-link",
-                    { attrs: { to: { name: singlePanel.title } } },
-                    [_vm._v(" More »")]
-                  )
-                ],
-                1
-              ),
+        _vm._l(_vm.panels, function(singlePanel, index) {
+          return _c(
+            "li",
+            {
+              staticClass: "single-panel",
+              style: { zIndex: _vm.currentOrder[index].zIndex },
+              attrs: { id: singlePanel.id }
+            },
+            [
+              _c("div", [
+                _c(
+                  "div",
+                  { staticClass: "panel-content" },
+                  [
+                    _c("h1", { staticClass: "panel-header" }, [
+                      _vm._v(_vm._s(singlePanel.title))
+                    ]),
+                    _vm._v(
+                      "\n\t\t\t\t\t\t" +
+                        _vm._s(singlePanel.content) +
+                        "\n\t\t\n\t\t\t\t\t\t"
+                    ),
+                    _c(
+                      "router-link",
+                      { attrs: { to: { name: singlePanel.title } } },
+                      [_vm._v(" More »")]
+                    )
+                  ],
+                  1
+                )
+              ]),
               _vm._v(" "),
               _c("div", { staticClass: "button-areas" }, [
                 _c(
                   "div",
                   {
                     staticClass: "prev",
-                    attrs: { id: singlePanel.prev },
                     on: {
                       click: function($event) {
-                        return _vm.previousPanel()
+                        return _vm.previousPanel(singlePanel.title)
                       }
                     }
                   },
@@ -12064,18 +12288,17 @@ exports.default = _default;
                   "div",
                   {
                     staticClass: "next",
-                    attrs: { id: singlePanel.next },
                     on: {
                       click: function($event) {
-                        return _vm.nextPanel()
+                        return _vm.nextPanel(singlePanel.title)
                       }
                     }
                   },
                   [_vm._v("❯")]
                 )
               ])
-            ])
-          ])
+            ]
+          )
         }),
         0
       )
@@ -12115,105 +12338,7 @@ render._withStripped = true
       
       }
     })();
-},{"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/mandolin.jpg":[["mandolin.f6399c01.jpg","assets/mandolin.jpg"],"assets/mandolin.jpg"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/randomfoxlogo.png":[["randomfoxlogo.491aee1d.png","assets/randomfoxlogo.png"],"assets/randomfoxlogo.png"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/digital.jpg":[["digital.316bf734.jpg","assets/digital.jpg"],"assets/digital.jpg"],"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Landing.vue":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _Panels = _interopRequireDefault(require("./Panels"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-//
-//
-//
-//
-//
-//
-//
-var _default = {
-  name: 'Landing',
-  components: {
-    Panels: _Panels.default
-  },
-  data: function data() {
-    return {
-      panels: [{
-        title: "Theatre",
-        id: "theatre-area",
-        prev: "digital-prev",
-        next: "film-next",
-        content: "I am the most alive on stage. Here you can find out about my performance history, the plays I've written, produced and am working on at the moment."
-      }, {
-        title: "Film",
-        id: "film-area",
-        prev: "theatre-prev",
-        next: "digital-next",
-        content: "Have a look at the short films I have been a part of as a creator, producer and performer."
-      }, {
-        title: "Digital",
-        id: "digital-area",
-        prev: "film-prev",
-        next: "theatre-next",
-        content: "an A/R comic book or an interactive film, check out my work that lies at the intersection of performance and tech."
-      }]
-    };
-  }
-};
-exports.default = _default;
-        var $6f87a4 = exports.default || module.exports;
-      
-      if (typeof $6f87a4 === 'function') {
-        $6f87a4 = $6f87a4.options;
-      }
-    
-        /* template */
-        Object.assign($6f87a4, (function () {
-          var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { attrs: { id: "landing" } }, [
-    _c("main", [_c("Panels", { attrs: { panels: _vm.panels } })], 1)
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-
-          return {
-            render: render,
-            staticRenderFns: staticRenderFns,
-            _compiled: true,
-            _scopeId: null,
-            functional: undefined
-          };
-        })());
-      
-    /* hot reload */
-    (function () {
-      if (module.hot) {
-        var api = require('vue-hot-reload-api');
-        api.install(require('vue'));
-        if (api.compatible) {
-          module.hot.accept();
-          if (!module.hot.data) {
-            api.createRecord('$6f87a4', $6f87a4);
-          } else {
-            api.reload('$6f87a4', $6f87a4);
-          }
-        }
-
-        
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-      }
-    })();
-},{"./Panels":"components/Panels.vue","_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Bio.vue":[function(require,module,exports) {
+},{"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/fake/mandolin.jpg":[["mandolin.254498a3.jpg","assets/fake/mandolin.jpg"],"assets/fake/mandolin.jpg"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/fake/showbaaz.jpg":[["showbaaz.87f8cfb6.jpg","assets/fake/showbaaz.jpg"],"assets/fake/showbaaz.jpg"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/fake/singer.jpg":[["singer.4a21b1ee.jpg","assets/fake/singer.jpg"],"assets/fake/singer.jpg"],"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Bio.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12263,11 +12388,7 @@ var staticRenderFns = [
     return _c("div", [
       _c("div", { staticClass: "longbio" }, [
         _vm._v(
-          "\n\tWelcome. My work involves projects in area of stage, film and web technologies where I explore my creative self as a performer, writer and producer.   Please feel free to reach out to me (click "
-        ),
-        _c("a", { attrs: { href: "/#/connect" } }, [_vm._v("here")]),
-        _vm._v(
-          "). \n\n\tI believe human beings must dream big and challenge themselves to break limitations imposed by themselves or others. I aspire next to create my most ambitious work yet : Fontwala inspired by the story of my uncle’s life as an artist, entreprenuer and visionary of Indian letterforms. Read all about Fontwala here.  \n\t"
+          "\n\tWelcome. My work involves stage, film and web technologies where I explore my creative self as a performer, writer and producer.   Please feel free to reach out to me. \n\n\tI believe human beings must dream big and challenge themselves to break limitations imposed by themselves or others. I aspire next to create my most ambitious work yet : Fontwala inspired by the story of my uncle’s life as an artist, entreprenuer and visionary of Indian letterforms. Read all about Fontwala here.  \n\t"
         ),
         _c("span", { staticClass: "quote" }, [
           _vm._v(
@@ -12356,7 +12477,20 @@ var staticRenderFns = [
       _c("span", { attrs: { id: "announce-content" } }, [
         _c("h1", [_vm._v("LATEST NEWS : ")]),
         _vm._v(" "),
-        _c("span", [_vm._v("Amazon Prime")])
+        _c("span", [
+          _vm._v("Shakespeare Replayed: Tyranny released on Amazon Prime, "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href:
+                  "https://www.amazon.com/Shakespeare-Replayed-Tyranny-Shubhra-Prakash/dp/B01H1IEVMG",
+                target: "_blank"
+              }
+            },
+            [_vm._v("click here to watch my performance")]
+          )
+        ])
       ])
     ])
   }
@@ -12393,7 +12527,139 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"App.vue":[function(require,module,exports) {
+},{"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Landing.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _Panels = _interopRequireDefault(require("./Panels"));
+
+var _Navigation = _interopRequireDefault(require("./Navigation"));
+
+var _Bio = _interopRequireDefault(require("./Bio"));
+
+var _Announcements = _interopRequireDefault(require("./Announcements"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  name: 'Landing',
+  components: {
+    Panels: _Panels.default,
+    Announcements: _Announcements.default,
+    Bio: _Bio.default,
+    Navigation: _Navigation.default
+  },
+  data: function data() {
+    return {
+      panels: [{
+        title: "Theatre",
+        id: "theatre-area",
+        prev: "digital-prev",
+        next: "film-next",
+        content: "I am the most alive on stage, have a look at the shows I've acted in, the work I've created for stage and what lies ahead for me as a theatre maker. "
+      }, {
+        title: "Film",
+        id: "film-area",
+        prev: "theatre-prev",
+        next: "digital-next",
+        content: "Have a look at the short films I have been a part of as a creator, producer and performer."
+      }, {
+        title: "Digital",
+        id: "digital-area",
+        prev: "film-prev",
+        next: "theatre-next",
+        content: "an A/R comic book or an interactive film, here is work that lies at the intersection of performance and tech."
+      }]
+    };
+  }
+};
+exports.default = _default;
+        var $6f87a4 = exports.default || module.exports;
+      
+      if (typeof $6f87a4 === 'function') {
+        $6f87a4 = $6f87a4.options;
+      }
+    
+        /* template */
+        Object.assign($6f87a4, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { attrs: { id: "landing" } }, [
+    _c("main", [_c("Panels", { attrs: { panels: _vm.panels } })], 1),
+    _vm._v(" "),
+    _c(
+      "header",
+      [_c("h1", [_vm._v("Shubhra Prakash")]), _vm._v(" "), _c("Navigation")],
+      1
+    ),
+    _vm._v(" "),
+    _c("section", [
+      _c("div", { attrs: { id: "announcements" } }, [_c("Announcements")], 1)
+    ]),
+    _vm._v(" "),
+    _c("section", { attrs: { id: "bio" } }, [_c("Bio")], 1)
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: null,
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$6f87a4', $6f87a4);
+          } else {
+            api.reload('$6f87a4', $6f87a4);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"./Panels":"components/Panels.vue","./Navigation":"components/Navigation.vue","./Bio":"components/Bio.vue","./Announcements":"components/Announcements.vue","_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"App.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12411,15 +12677,6 @@ var _Announcements = _interopRequireDefault(require("./components/Announcements"
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -12462,31 +12719,16 @@ exports.default = _default;
   var _c = _vm._self._c || _h
   return _c("div", { class: _vm.$mq, attrs: { id: "topest" } }, [
     _c("div", { attrs: { id: "content" } }, [
-      _c("section", { attrs: { id: "grouped" } }, [
-        _c(
-          "section",
-          { attrs: { id: "content-fill" } },
-          [_c("router-view", [_c("Landing")], 1)],
-          1
-        ),
-        _vm._v(" "),
-        _c("section", [
+      _c("main", [
+        _c("section", { attrs: { id: "grouped" } }, [
           _c(
-            "div",
-            { attrs: { id: "announcements" } },
-            [_c("Announcements")],
+            "section",
+            { attrs: { id: "content-fill" } },
+            [_c("router-view", [_c("Landing")], 1)],
             1
           )
-        ]),
-        _vm._v(" "),
-        _c("section", { attrs: { id: "bio" } }, [_c("Bio")], 1)
-      ]),
-      _vm._v(" "),
-      _c(
-        "header",
-        [_c("h1", [_vm._v("Shubhra Prakash")]), _vm._v(" "), _c("Navigation")],
-        1
-      )
+        ])
+      ])
     ])
   ])
 }
@@ -12536,6 +12778,10 @@ exports.default = void 0;
 //
 //
 //
+//
+//
+//
+//
 var _default = {
   name: 'Digital',
   created: function created() {
@@ -12563,7 +12809,13 @@ exports.default = _default;
   return _c("div", [
     _c("h1", [_vm._v(_vm._s(_vm.msg))]),
     _vm._v(" "),
-    _c("span", [_vm._v("Lovin it")])
+    _c("span", [_vm._v("Lovin it")]),
+    _vm._v(" "),
+    _c(
+      "header",
+      [_c("h1", [_vm._v("Shubhra Prakash")]), _vm._v(" "), _c("Navigation")],
+      1
+    )
   ])
 }
 var staticRenderFns = []
@@ -12599,7 +12851,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Theatre.vue":[function(require,module,exports) {
+},{"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/ShowList.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12612,13 +12864,296 @@ exports.default = void 0;
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  name: 'ShowList',
+  props: {
+    shows: {
+      type: Array,
+      required: true
+    }
+  },
+  components: {},
+  data: function data() {
+    return {};
+  },
+  computed: {},
+  methods: {}
+};
+exports.default = _default;
+        var $0034b0 = exports.default || module.exports;
+      
+      if (typeof $0034b0 === 'function') {
+        $0034b0 = $0034b0.options;
+      }
+    
+        /* template */
+        Object.assign($0034b0, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "shows" } }, [
+      _c("section", { staticClass: "show-container" }, [
+        _c("ul", { staticClass: "show-area" }, [
+          _c("li", [
+            _c("div", [_vm._v("\n\t\t\t\t\tSHOW 1\n\t\t\t\t")]),
+            _vm._v(" "),
+            _c("div", [_vm._v("\n\t\t\t\t\tSHOW 2\n\t\t\t\t")])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: null,
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$0034b0', $0034b0);
+          } else {
+            api.reload('$0034b0', $0034b0);
+          }
+        }
+
+        
+      }
+    })();
+},{"vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/ShowGallery.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  name: 'ShowGallery',
+  props: {
+    shows: {
+      type: Array,
+      required: true
+    }
+  },
+  components: {},
+  data: function data() {
+    return {};
+  },
+  computed: {},
+  methods: {}
+};
+exports.default = _default;
+        var $fe1079 = exports.default || module.exports;
+      
+      if (typeof $fe1079 === 'function') {
+        $fe1079 = $fe1079.options;
+      }
+    
+        /* template */
+        Object.assign($fe1079, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "shows" } }, [
+      _c("section", { staticClass: "show-container" }, [
+        _c("ul", { staticClass: "show-area" }, [
+          _c("li", [
+            _c("div", [_vm._v("\n\t\t\t\t\tSHOW GALLERY 1\n\t\t\t\t")]),
+            _vm._v(" "),
+            _c("div", [_vm._v("\n\t\t\t\t\tSHOW GALLERY 2\n\t\t\t\t")])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: null,
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$fe1079', $fe1079);
+          } else {
+            api.reload('$fe1079', $fe1079);
+          }
+        }
+
+        
+      }
+    })();
+},{"vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Theatre.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _Navigation = _interopRequireDefault(require("./Navigation"));
+
+var _ShowList = _interopRequireDefault(require("./ShowList"));
+
+var _ShowGallery = _interopRequireDefault(require("./ShowGallery"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default = {
   name: 'Theatre',
+  components: {
+    Navigation: _Navigation.default,
+    ShowList: _ShowList.default,
+    ShowGallery: _ShowGallery.default
+  },
   created: function created() {
     this.msg = this.$route.params.isSlideshow;
   },
   data: function data() {
-    return {};
+    return {
+      shows: [{
+        title: "Theatre",
+        id: "theatre-area",
+        prev: "digital-prev",
+        next: "film-next",
+        content: "I am the most alive on stage, have a look at the shows I've acted in, the work I've created for stage and what lies ahead for me as a theatre maker. "
+      }, {
+        title: "Film",
+        id: "film-area",
+        prev: "theatre-prev",
+        next: "digital-next",
+        content: "Have a look at the short films I have been a part of as a creator, producer and performer."
+      }, {
+        title: "Digital",
+        id: "digital-area",
+        prev: "film-prev",
+        next: "theatre-next",
+        content: "an A/R comic book or an interactive film, here is work that lies at the intersection of performance and tech."
+      }]
+    };
   }
 };
 exports.default = _default;
@@ -12637,10 +13172,47 @@ exports.default = _default;
   return _c("div", [
     _c("h1", [_vm._v(_vm._s(_vm.msg))]),
     _vm._v(" "),
-    _c("span", [_vm._v("Lovin it too much")])
+    _c("span", { staticClass: "slicinItup" }, [
+      _vm._v(
+        " The world says, \"Oh theatre! it's a dying art form.\"... Hmmm, two thousand years or more, must be an incredibly slow death.  For the rest of us, who can't help it, I suppose we will continue loving it to pieces, keep performing, writing, putting up shows, doing whatever it takes, to revel in the magic, that is theatre. "
+      )
+    ]),
+    _vm._v(" "),
+    _vm._m(0),
+    _vm._v(" "),
+    _c("a", { attrs: { href: "#" } }, [_vm._v("Training & Skills")]),
+    _vm._v(" "),
+    _c("div", { attrs: { id: "content-theatre" } }, [
+      _c("section", [_c("ShowList", { attrs: { shows: _vm.shows } })], 1),
+      _vm._v(" "),
+      _c("section", [_c("ShowGallery", { attrs: { shows: _vm.shows } })], 1)
+    ]),
+    _vm._v(" "),
+    _c("div", { attrs: { id: "trainingSkills" } }, [
+      _vm._v(
+        "\n            TRAINING \nDocumentary Theatre and Teaching arts training with Ping Chong and Company, New York City.\nOn camera scene study with Courtney Burr, Margie Haber Studio, Los Angeles.\nFilm Acting Technique, Nancy Berwid, First take Acting Studio, San Francisco.\nMusical Theatre Summer Conservatory with Marc Jacobs at Notre Dame De Namur University, Bay Area. \nVoice for Musical Theatre Singing, private coaching with Michael Pesce, New York City. \nActing Shakespeare’s Verse, private coaching with Deloss Brown, New York City. \nClassical Commedia D’ell Arte with Stanley Allan Sherman at Roving Classical Commedia, New York City.\nHindustani Classical Music, private coaching with Sandip Bhattacharjee, New York City. \n\nSKILLS \nOpen water scuba certification \nDialects/Accents : South East London, African American, Russian, French.\nFluent (Speak, read, write and sing) in Hindi. Conversational Bengali and French.  \n\n\n        "
+      )
+    ]),
+    _vm._v(" "),
+    _c(
+      "header",
+      [_c("h1", [_vm._v("Shubhra Prakash")]), _vm._v(" "), _c("Navigation")],
+      1
+    )
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ul", [
+      _c("li", [_vm._v("Pick Resume View if you like nice ordered text.")]),
+      _vm._v(" "),
+      _c("li", [_vm._v("Pick Gallery View if you want images.")])
+    ])
+  }
+]
 render._withStripped = true
 
           return {
@@ -12673,13 +13245,17 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Film.vue":[function(require,module,exports) {
+},{"./Navigation":"components/Navigation.vue","./ShowList":"components/ShowList.vue","./ShowGallery":"components/ShowGallery.vue","_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Film.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
+//
+//
+//
+//
 //
 //
 //
@@ -12709,16 +13285,17 @@ exports.default = _default;
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c("h1", [_vm._v("Hello Film Page")]),
+    _vm._v(" "),
+    _c(
+      "header",
+      [_c("h1", [_vm._v("Shubhra Prakash")]), _vm._v(" "), _c("Navigation")],
+      1
+    )
+  ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [_c("h1", [_vm._v("Hello Film Page")])])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
           return {
@@ -13076,6 +13653,10 @@ exports.default = void 0;
 //
 //
 //
+//
+//
+//
+//
 var _default = {
   name: 'Connect',
   created: function created() {
@@ -13100,80 +13681,92 @@ exports.default = _default;
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c("h1", [_vm._v("Connect")]),
+    _vm._v(" "),
+    _c("hr", { staticClass: "divide" }),
+    _vm._v(" "),
+    _vm._m(0),
+    _vm._v(" "),
+    _c("hr"),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _c(
+      "header",
+      [_c("h1", [_vm._v("Shubhra Prakash")]), _vm._v(" "), _c("Navigation")],
+      1
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("h1", [_vm._v("Connect")]),
-      _vm._v(" "),
-      _c("hr", { staticClass: "divide" }),
-      _vm._v(" "),
-      _c("section", [
-        _c("figure", [
-          _c("div", { staticClass: "contact-img" }),
-          _vm._v(" "),
-          _c("figcaption", [
-            _vm._v("Photo from Broadway style Singing Recital "),
-            _c("br"),
-            _vm._v(
-              "at Musical Theatre Summer Conservatory at Notre DaNamur University, California."
-            )
-          ])
-        ]),
+    return _c("section", [
+      _c("figure", [
+        _c("div", { staticClass: "contact-img" }),
         _vm._v(" "),
-        _c("ul", [
-          _c("li", [
-            _vm._v("Email me at "),
-            _c(
-              "a",
-              {
-                staticClass: "email-link",
-                attrs: { href: "mailto:prakashnitza@gmail.com" }
-              },
-              [_vm._v("prakashnitza@gmail.com")]
-            )
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _vm._v("Social Media : \n\t\t\t\t"),
-            _c("ul", { staticClass: "horiz-list" }, [
-              _c("li", [_vm._v("Facebook")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("Twitter")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("Instagram")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("LinkedIn")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _vm._v("Download\n\t\t\t\t"),
-            _c("ul", [
-              _c("li", [_vm._v("Performer (Stage and Film) Resume")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("Producer Resume")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("Front End Dev Resume")])
-            ])
-          ])
+        _c("figcaption", [
+          _vm._v("Photo from Broadway style Singing Recital "),
+          _c("br"),
+          _vm._v(
+            "at Musical Theatre Summer Conservatory at Notre DaNamur University, California."
+          )
         ])
       ]),
       _vm._v(" "),
-      _c("hr"),
-      _vm._v(" "),
-      _c("section", { staticClass: "connect-lower" }, [
-        _c("div", { staticClass: "space-fill" }),
-        _vm._v(" "),
-        _c("article", [
-          _vm._v(
-            "The site has been created by yours truly using Vue framework including the blog which has been created using Vue as well. Code can be looked at "
+      _c("ul", [
+        _c("li", [
+          _vm._v("Email me at "),
+          _c(
+            "a",
+            {
+              staticClass: "email-link",
+              attrs: { href: "mailto:prakashnitza@gmail.com" }
+            },
+            [_vm._v("prakashnitza@gmail.com")]
           )
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _vm._v("Social Media : \n\t\t\t\t"),
+          _c("ul", { staticClass: "horiz-list" }, [
+            _c("li", [_vm._v("Facebook")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("Twitter")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("Instagram")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("LinkedIn")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _vm._v("Download\n\t\t\t\t"),
+          _c("ul", [
+            _c("li", [_vm._v("Performer (Stage and Film) Resume")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("Producer Resume")]),
+            _vm._v(" "),
+            _c("li", [_vm._v("Front End Dev Resume")])
+          ])
         ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", { staticClass: "connect-lower" }, [
+      _c("div", { staticClass: "space-fill" }),
+      _vm._v(" "),
+      _c("article", [
+        _vm._v(
+          "The site has been created by yours truly using Vue framework including the blog which has been created using Vue as well. Code can be looked at "
+        )
       ])
     ])
   }
@@ -13252,8 +13845,8 @@ const vue = new Vue ({
 });*/
 _vue.default.use(_vueMq.default, {
   breakpoints: {
-    sm: 767,
-    md: 1095,
+    sm: 904,
+    md: 1065,
     lg: Infinity
   }
 }), _vue.default.use(_vueRouter.default);
@@ -13339,7 +13932,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55316" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49534" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

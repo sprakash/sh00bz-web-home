@@ -1,6 +1,10 @@
 <template>
 	<div>
 	<h1>Hello Film Page</h1>
+	<header>
+						<h1>Shubhra Prakash</h1>
+						<Navigation/>
+					</header>
 	</div>
 </template>
 <script>

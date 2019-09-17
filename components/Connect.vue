@@ -34,6 +34,10 @@
 			<div class="space-fill"></div>
 			<article>The site has been created by yours truly using Vue framework including the blog which has been created using Vue as well. Code can be looked at </article>
 	</section>
+	<header>
+						<h1>Shubhra Prakash</h1>
+						<Navigation/>
+					</header>
 	</div>
 </template>
 <script>

@@ -1,24 +1,15 @@
 <template>
 	<div id="topest" :class="$mq">
 		<div id="content">
-			<section id="grouped">
-				<section id="content-fill">
-					<router-view/>
-					<Landing/>
+			<main>
+				<section id="grouped">
+					<section id="content-fill">
+						<router-view/>
+						<Landing/>
+					</section>
 				</section>
-				<section>
-					<div id="announcements">
-						<Announcements/>
-					</div>
-				</section>
-				<section id="bio">
-					<Bio/>
-				</section>
-			</section>
-			<header>
-				<h1>Shubhra Prakash</h1>
-				<Navigation/>
-			</header>
+			</main>
+			
 		</div>
   </div>
 </template>
@@ -42,18 +33,22 @@
 </script>
 <style>
 
-	body {
-		background-color: #f7fcfe;
-		font-family: Roboto, Helvetica, Arial, sans-serif;
+	html, body {
 		margin: 0;
 		padding: 0;
+		width: 100%;
+		height: 100%;
 	}
-
-	main {
-		flex: 1;
-		min-height: 83vh;
+	body {
+		background-color: whitesmoke;
+		font-family: Roboto, Helvetica, Arial, sans-serif;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: row;
+		/*background-image: url('/assets/ranjha.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;*/
 	}
-
 
 	h1 {
 		margin: 0.67em 1em;
@@ -69,11 +64,16 @@
 	#content {
 		display: flex;
 		flex-direction: column;
+		height: 100%;
+	}
+
+	.sm #content {
+		flex-direction: column-reverse;
 	}
 
 	#content-fill {
-		height: 59vh;
-		width: 100%;
+/*		height: 59vh;
+*/		width: 100%;
 	}
 
 	header {
@@ -84,29 +84,54 @@
 		background: linear-gradient(270deg, #f970b1, #e67a83, #7dd2ec);
 		background-size: 100% 100%;
 		color: #39053f;
+		align-items: center;
+	}
+
+	.md header ul {
+		flex-direction: row;
 	}
 
 	.md ul {
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		width: 100%;
 		text-align: center;
 		font-size: 1.25em;
 	}
-	.md header {
-		flex-direction: column-reverse;
-		justify-content: normal;
-		width: 20%;
+
+	.sm header {
+		z-index: 25;
 	}
+
 	.md .grouped {
 		width: 80%;
 	}
 	.md  #content{
 		flex-direction: row;
+		flex-wrap: nowrap;
 	}
-	.md #content-fill {
+	
+	#content,
+	#topest {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	#grouped {
+		flex-grow: 1;
+		flex-shrink: 0;
+	}
+
+	#content {
+		flex-shrink: 0;
+	}
+	/*.md #content-fill {
 		height: 64vh;
 	}
+	.sm #content-fill {
+		height: 48vh;
+	}*/
 
 </style>
 

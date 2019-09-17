@@ -2,8 +2,8 @@
 	<div id="panels">
 		<section class="panel-container">
 			<ul class="panel-area">
-				<li v-for="singlePanel in panels" class="single-panel">
-					<div v-bind:id="singlePanel.id">
+				<li v-bind:id="singlePanel.id" v-bind:style="{zIndex: currentOrder[index].zIndex}" v-for="(singlePanel, index) in panels" class="single-panel">
+					<div>
 						<div class="panel-content">
 							<h1 class="panel-header">{{singlePanel.title}}</h1>
 							{{singlePanel.content}}
@@ -11,14 +11,17 @@
 							<router-link :to="{name:singlePanel.title}"> More &raquo;</router-link>
 						</div>
 
-						<div class="button-areas">
-							<div class="prev" v-bind:id="singlePanel.prev" v-on:click="previousPanel()">&#10094;</div>
-				  			<div class="next" v-bind:id="singlePanel.next" v-on:click="nextPanel()">&#10095;</div>
-		  				</div>
 					</div>
-					
+
+					<div class="button-areas">
+					<div class="prev" v-on:click="previousPanel(singlePanel.title)">&#10094;</div>
+						<!-- <span class="panel-number" v-for="(index, singlePageNum) in panels">{{ singlePageNum+1 }}</span> -->
+						<div class="next" v-on:click="nextPanel(singlePanel.title)">&#10095;</div>
+				  	</div>
 				</li>
 			</ul>
+
+			
 
 		</section>
 	</div>
@@ -38,19 +41,88 @@
 		data() {
 			return {
 				msg: 'Panels',
-				visibility: 'visible'
-			};
+				currentPanel: '',
+				baseTheatreZIndex: 9,
+				baseFilmZIndex: 8,
+				baseDigitalZIndex: 7,
+				currentPanels: [{title:'Theatre', 'zIndex':9}, {title: 'Film', 'zIndex': 8}, {title:'Digital', 'zIndex':7}]
+			}
+		},		
+		computed: {
+			currentOrder() {
+
+				this.currentPanels[0].title = 'Theatre';
+				this.currentPanels[0].zIndex = this.baseTheatreZIndex;
+
+				this.currentPanels[1].title = 'Film';
+				this.currentPanels[1].zIndex = this.baseFilmZIndex;
+
+				this.currentPanels[2].title = 'Digital';
+				this.currentPanels[2].zIndex = this.baseDigitalZIndex;
+				
+				console.log(this.currentPanels);
+
+				return this.currentPanels;
+			}
 		},
 		methods: {
-			previousPanel() {
+			previousPanel(node) {
+				console.log(node);
+				this.currentPanel = node;
+				this.baseTheatreZIndex=9;
+				this.baseFilmZIndex=8;
+				this.baseDigitalZIndex=7;
 
-			},
-			nextPanel() {
+				if(node === "Theatre") {
+					this.baseTheatreZIndex--;
+					this.baseFilmZIndex--;
+					this.baseDigitalZIndex++;
+					return;
+				}
 
+				if(node === "Film") {
+					this.baseTheatreZIndex++;
+					this.baseFilmZIndex--;
+					this.baseDigitalZIndex--;
+					return;
+				}
+
+				if(node === "Digital") {
+					this.baseTheatreZIndex--;
+					this.baseFilmZIndex++;
+					this.baseInteractiveZIndex--;
+					return;
+				}
 			},
-			hideAllPanels() {
-				alert('hidingall');
-				$('.single-panel div').css({'visibility':'hidden'});
+			nextPanel(node) {
+				console.log(node);
+				this.currentPanel = node;
+				this.baseTheatreZIndex=9;
+				this.baseFilmZIndex=8;
+				this.baseDigitalZIndex=7;
+
+				if(node === "Theatre") {
+					this.baseTheatreZIndex--;
+					this.baseFilmZIndex++;
+					this.baseDigitalZIndex--;
+					return;
+				}
+
+				if(node === "Film") {
+					this.baseFilmZIndex--;
+					this.baseDigitalZIndex++;
+					this.baseTheatreZIndex--;
+
+					return;
+				}
+
+				if(node === "Digital") {
+					this.baseTheatreZIndex++;
+					this.baseDigitalZIndex--;
+					this.baseFilmZIndex--;
+
+					return;
+				}
 			}
 		}
 		
@@ -67,12 +139,10 @@
 		justify-content: space-between;
 	}
 
-	.panel-area li {
-	 	min-width: 33%;
-	 	height: 60vh;
-	 	padding: .5em 0;
-	 	background: black;
+	.sm .panel-area {
+		flex-flow: column;
 	}
+
 
 	
 	.single-panel div {
@@ -120,14 +190,13 @@
 	    line-height: 2em;
 	    font-family: Helvetica;
 	    font-size: 1em;
-	    width: 70%;
-	    height: 45vh;
 	    color: #ecda4c;
 	    letter-spacing: .2em;
 	    font-weight: lighter;
 	    cursor: pointer;
 	    opacity: 0;
 	    box-shadow: 1px 1px #374a47;
+	    width: 65%;
 	}
 
 	.panel-content a {
@@ -135,7 +204,7 @@
 	    font-size: 1em;
 	    letter-spacing: .1em;
 	    cursor: pointer;
-	    color: #fff;
+	    color: #9fd7e8;
 	    font-style: italic;
 	}
 	
@@ -182,33 +251,32 @@
 
 
 	#theatre-area{
-		background-image: url('/assets/mandolin.jpg');
+		background-image: url('/assets/fake/mandolin.jpg');
 	    background-repeat: no-repeat;
-	    height: 100%;
 	    display: inline-block;
 	    width: 100%;
 	    background-size: cover;
-    	background-position: 50% 50%;
 	}
 
 	#film-area{
-		background-image: url('/assets/randomfoxlogo.png');
+		background-image: url('/assets/fake/showbaaz.jpg');
 	    background-repeat: no-repeat;
-	    height: 100%;
 	    display: inline-block;
 	    width: 100%;
 	    background-size: cover;
-    	background-position: 50% 50%;
 	}
 
 	#digital-area {
-		background-image: url('/assets/digital.jpg');
+		background-image: url('/assets/fake/singer.jpg');
 		background-repeat: no-repeat;
-	    height: 100%;
 	    display: inline-block;
 	    width: 100%;
 	    background-size: cover;
-    	background-position: 50% 50%;
+	}
+
+	.sm #film-area,
+	.sm #digital-area {
+		height: 55%;
 	}
 
 
@@ -270,23 +338,99 @@
 	}
 		
 	.md .panel-content {
-		margin-left: 4em;
+		z-index: 13;
+		padding-bottom: 5em;
+		width: auto;
+	}
+
+	.sm .panel-content {
+		margin: 0 auto;
 		z-index: 13;
 	}
 
-	.md .panel-area li {
+	.md .panel-area {
+		position: relative;
+	}
+
+	.sm .panel-area li {
+		width: 100%;
 		position: absolute;
-		width: 78.4%;
+		top: 0;
+	}
+
+	.md .single-panel  {
+		padding: 0;
 	}
 	
-	.md .button-areas {
+	.sm .single-panel:nth-child(1),
+	.md .single-panel:nth-child(1) {
+		z-index: 9;
+	}
+
+	.sm .single-panel:nth-child(2),
+	.md .single-panel:nth-child(2) {
+		z-index: 8;
+	}
+
+	.sm .single-panel:nth-child(3),
+	.md .single-panel:nth-child(3) {
+		z-index: 7;
+	}
+	
+	/*.md .button-areas*/
+	.sm .button-areas {  
 		display: flex;
 		position: relative;
-	    top: -5.5em;
+	    top: -3em;
 	    height: 48px;
-	    margin-left: 1em;
-	    width: 95.5%;
+	    width: 96%;
+	    z-index: 15;
+		margin: 0 auto;
+		align-items: center;
 	}
+	
+	.sm #theatre-area,
+	.sm #film-area,
+	.sm #digital-area {
+		background-size: cover;
+		width: 100%;
+		position: absolute;
+		top:0;
+		height: 51%;
+	}
+
+	.md #theatre-area,
+	.md #film-area,
+	.md #digital-area {
+		background-size: cover;
+		width: 100%;
+	}
+
+	.md #film-area {
+		background-position: 50% 2%;
+	}
+
+	.md #film-area .panel-content {
+		padding-bottom: 7em;
+		margin-left: 3em;
+	}
+
+	.md #digital-area {
+		background-position: 50% 65%;
+	}
+
+	.md #digital-area .panel-content {
+		padding-bottom: 7em;
+		margin-left: 2.2em;
+	}
+
+
+	.sm .button-areas .panel-number
+	.md .button-areas .panel-number {
+		margin: 0 auto;
+	}
+
+
 
 
 </style> 
