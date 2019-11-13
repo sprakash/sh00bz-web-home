@@ -53,7 +53,7 @@
 		}
 	}
 </script>
-<style scoped>
+<style lang="scss" scoped>
 
 h1 {
 	color: #972b7e;
@@ -120,10 +120,10 @@ li {
 .horiz-list{
 	display: flex;
 	flex-direction: row;
-}
 
-.horiz-list li {
-	padding: 0 .5em;
+	li {
+		padding: 0 .5em;
+	}
 }
 
 .space-fill {

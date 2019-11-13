@@ -5,7 +5,7 @@
 
 		I believe human beings must dream big and challenge themselves to break limitations imposed by themselves or others. I aspire next to create my most ambitious work yet : Fontwala inspired by the story of my uncle’s life as an artist, entreprenuer and visionary of Indian letterforms. Read all about Fontwala here.  
 		<span class="quote">“How we spend our days is how we spend our lives.”  - Annie Dillard </span>
-
+	<span class="dwlres">Download Resume</span>
 		</div>
 	</div>
 </template>
@@ -21,7 +21,7 @@
 		}
 	}
 </script>
-<style>
+<style lang="scss">
 
 	.bio .longbio {
 	  text-align: justify;
@@ -32,7 +32,26 @@
 		 display: flex;
 		 flex-direction: column;
 		 flex-flow: column;
+
+		 .sm & {
+		 	font-size: .85em;
+			line-height: 1.5em;
+		 }
 	}
+
+    .dwlres {
+		text-align:left;
+		font-size:.85em;
+		bottom:0;
+		display: block;
+		margin-top: 2em;
+
+		.sm & {
+			text-align: center;
+			width: 100%;
+		}
+	}
+	
 
 	.longbio,
 	.fontwala {
@@ -41,11 +60,6 @@
 	    word-spacing: .2em;
 	    line-height: 2em;
 	    margin: 1em 2em;
-	}
-
-	.sm .longbio {
-		font-size: .85em;
-		line-height: 1.5em;
 	}
 
 	.quote {
@@ -58,12 +72,13 @@
 	    background-color: #e67a8329;
 	    padding:.5em 2em;
 	    margin-top: .5em;
+
+	    .sm & {
+			text-align: center;
+			font-size: .85em;
+    		margin-top: .85em;
+	    }
 	}
 
-	.sm .quote {
-		text-align: center;
-		font-size: .85em;
-    	margin-top: .85em;
-	}
 	
 </style> 

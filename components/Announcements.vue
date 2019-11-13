@@ -18,7 +18,7 @@
 		}
 	}
 </script>
-<style>
+<style lang="scss">
 	#announcements {
 		display: block;
 	    text-align: center;
@@ -35,30 +35,35 @@
 		font-size: .85em;
 		text-align: center;
 		align-items: center;
+
+		h1 {
+			text-shadow: 1px 1px yellow;
+		}
+
+		span {
+			color: #ec4024;
+		}
 	}
 
-	#announce-content h1 {
-		text-shadow: 1px 1px yellow;
-	}
 
-	#announce-content span {
-		color: #ec4024;
-	}
-	
-	.sm #announcements {
-		z-index: 23;
-		line-height: 1.25em;
-    	font-size: .5em;
+	.sm {
+
+		#announcements {
+			z-index: 23;
+			line-height: 1.25em;
+	    	font-size: .5em;
+    	}
+
+    	#announce-content {
+			font-size: .85em;
+			padding: .5em;
+		}
 	}
 
 	.md #announcements {
 		z-index: 23;
 	}
 
-	.sm #announce-content {
-		font-size: .85em;
-		padding: .5em;
-	}
 
 </style>
 

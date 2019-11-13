@@ -1,0 +1,245 @@
+﻿{
+    "Theatre": [
+        {
+            "name": "Rameleela (in Hindi)",
+            "type": "Play with Music ",
+            "role": "Sutradhaar / Tara / Anjana",
+            "director": "Ramesh Khanna",
+            "company": "Sri Dwarka Ramleela Society",
+            "year": "2019",
+            "coverImage" : "../dist/piano.aa1e6821.jpg"
+        },
+        {
+            "name": "Sundays with Chitra & Chaitali",
+            "type": "Play with Music ",
+            "role": "Chitrangadha / Lead",
+            "director": "Isheeta Ganguly",
+            "company": "Tour / Kolkata & Hyderabad, India",
+            "year": "2019"
+        },
+        {
+            "name": "Panniarchy",
+            "type": "Devised experimental",
+            "role": "Ensemble",
+            "director": "Piyush Kumar",
+            "company": "Little Theatre Group / New Delhi, India",
+            "year": "2019"
+        },
+        {
+            "name": "Sultana Daku",
+            "type": "Indian Folk Theatre : Nautanki",
+            "role": "Sumarna Daku / Ensemble",
+            "director": "Dr. Devendra Sharma",
+            "company": "20th Bharat Rang Mahotsava / New Delhi, India",
+            "year": "2019"
+        },
+        {
+            "name": "Three Women",
+            "type": "Play with Music ",
+            "role": "Charu / Lead ",
+            "director": "Isheeta Ganguly",
+            "company": "The Tagore Society / Singapore",
+            "year": "2019"
+        },
+        {
+            "name": "Babyshka",
+            "type": "Experimental non-verbal theatre",
+            "role": "Babyshka / Lead",
+            "director": "Anna Lublina",
+            "company": "Old American Can Factory / New York",
+            "year": "2018"
+        },
+        {
+            "name": "The Music In My Blood",
+            "type": "Play with Music ",
+            "role": "Archana / Lead ",
+            "director": "Sonalee Hardikar",
+            "company": "Hypokrit Theatre Company / New York",
+            "year": "2018"
+        },
+        {
+            "name": "Beyond Sacred",
+            "type": "Documentary Theatre",
+            "role": "Maya's understudy",
+            "director": "Ping Chong",
+            "company": "Ping Chong and Company / Lincoln Center Education, New York ",
+            "year": "2017"
+        },
+        {
+            "name": "Chokher Bali",
+            "type": "Play with Music",
+            "role": "Binodini / Lead ",
+            "director": "Arpita Mukherjee",
+            "company": "Hypokrit Theatre Company / New York",
+            "year": "2016"
+        },
+        {
+            "name": "Monsoon Wedding",
+            "type": "Workshop Musical Reading",
+            "role": "Aditi / Lead ",
+            "director": "Mira Nair",
+            "company": "JumpStart Entertainment / New York",
+            "year": "2015"
+        },
+        {
+            "name": "Romeo & Juliet\n",
+            "type": "Play with Music",
+            "role": "Mercutio",
+            "director": "Arpita Mukherjee",
+            "company": "Hypokrit Theatre Company / New York ",
+            "year": "2015"
+        },
+        {
+            "name": "Taming of the Shrew",
+            "type": "Ensemble",
+            "role": "Hortensio / Kate 2 ",
+            "director": "Ben Prusiner",
+            "company": "The Tempest Ladies / New York",
+            "year": "2014"
+        },
+        {
+            "name": " Girl and her Goddess",
+            "type": "Staged Reading",
+            "role": "Girl / Lead",
+            "director": "Jesca Prudencio",
+            "company": "Ingenue Theatre Company / New York",
+            "year": "2013"
+        },
+        {
+            "name": "The Procedure",
+            "type": "Play",
+            "role": "Dawn / Supporting",
+            "director": "Marcus Yi",
+            "company": "Planet Connections Theatre Festivity / New York",
+            "year": "2012"
+        },
+        {
+            "name": "Once on this Island\n",
+            "type": "Musical",
+            "role": "Storyteller",
+            "director": "Nikki Rothenberg",
+            "company": "Brooklyn Community Players / New York",
+            "year": "2012"
+        },
+        {
+            "name": "The Vagina Monologues\n",
+            "type": "Ensemble",
+            "role": "Ensemble",
+            "director": "Morgaine Jovan",
+            "company": "Barnard College / New York",
+            "year": "2012"
+        },
+        {
+            "name": "Hairspray",
+            "type": "Musical",
+            "role": "Dynamite",
+            "director": "Sue Ellen Nielson",
+            "company": "Stage 1 / East Bay Area",
+            "year": "2012"
+        },
+        {
+            "name": "Ozma of Oz",
+            "type": "Trip-hop musical reading",
+            "role": "Lady Langwidere",
+            "director": "Rob Melrose ",
+            "company": "Cutting Ball Theatre / San Francisco",
+            "year": "2011"
+        },
+        {
+            "name": "Sheherezade XI",
+            "type": "Ensemble",
+            "role": "Ensemble (Jessica & Colette)",
+            "director": "Brady Brophy",
+            "company": "Playwright's Center of SF / San Francisco",
+            "year": "2011"
+        },
+        {
+            "name": "Leading Ladies",
+            "type": "Ensemble",
+            "role": "Ensemble (Mara)",
+            "director": "Samantha Wellen",
+            "company": "TheatreLab / New York",
+            "year": "2010"
+        },
+        {
+            "name": "Cootie Shoots",
+            "type": "Touring Children's Theatre",
+            "role": "Ensemble",
+            "director": "Ensemble",
+            "company": "New Conservatory Theatre / San Francisco",
+            "year": "2010"
+        },
+        {
+            "name": "Beautiful Thing",
+            "type": "Play",
+            "role": "Leah",
+            "director": "Ensemble",
+            "company": "New Conservatory Theatre / San Francisco",
+            "year": "2009"
+        },
+        {
+            "name": "Ramona Quimby",
+            "type": "Play",
+            "role": "Mrs. Griggs",
+            "director": "Jared Randolf",
+            "company": "Bay Area Children's Theatre / East Bay Area",
+            "year": "2009"
+        },
+        {
+            "name": "Midsummer Night’s Dream",
+            "type": "Play",
+            "role": "Hippolyta ",
+            "director": "David Koppel",
+            "company": "Arclight Repertory Theatre / San Jose",
+            "year": "2009"
+        },
+        {
+            "name": "Rogue El Gato",
+            "type": "Touring Children's Theatre",
+            "role": "Mayor and Monster",
+            "director": "Shawn Ferreyra ",
+            "company": "El Gato Theatre / San Francisco",
+            "year": "2009"
+        },
+        {
+            "name": "Macbeth",
+            "type": "Play",
+            "role": "3rd Witch and Nurse",
+            "director": "Scott Ludwig",
+            "company": "Next Stage, San Francisco ",
+            "year": "2009"
+        },
+        {
+            "name": "Sultana Daku",
+            "type": "Indian Folk Theatre : Nautanki",
+            "role": "Sumarna Daku / Ensemble",
+            "director": "Dr. Devendra Sharma",
+            "company": "Naatak / San Jose, CA",
+            "year": "2008"
+        },
+        {
+            "name": "The Odd Couple",
+            "type": "Play",
+            "role": "Cecily Pigeon",
+            "director": "Jeff Hicks",
+            "company": "Actors Theatre Center / Santa Clara, CA",
+            "year": "2007"
+        },
+        {
+            "name": "Our Town",
+            "type": "Play",
+            "role": "Mrs. Webbs ",
+            "director": "Warren Keith",
+            "company": "University Theatre San Jose State / San Jose, CA",
+            "year": "2006"
+        },
+        {
+            "name": "Nickel and Dimed",
+            "type": "Play : Premiere Production",
+            "role": "Holly and Ensemble",
+            "director": "Elizabeth Spreen & Beth Theis",
+            "company": "University Theatre San Jose State / San Jose, CA",
+            "year": "2005"
+        }
+    ]
+}

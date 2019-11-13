@@ -129,28 +129,71 @@
 	}
 	
 </script>
-<style>
+<style lang="scss">
 	.panel-container {
 		font-family: 'Palatino';
 	}
+
 	.panel-area {
 		display: flex;
 		flex:1;
 		justify-content: space-between;
+
+		.sm & {
+			flex-flow: column;
+
+			li {
+				width: 100%;
+				position: absolute;
+				top: 0;
+			}
+		}
+
+		.md & {
+			position: relative;
+		}
 	}
-
-	.sm .panel-area {
-		flex-flow: column;
-	}
-
-
 	
-	.single-panel div {
-		animation: zoomin  ease 3s forwards;
-		 -webkit-animation: zoomin  ease 3s forwards;
-		 -moz-animation: zoomin  ease 3s forwards;
-		 -o-animation: zoomin  ease 3s forwards;
-		 -ms-animation: zoomin  ease 3s forwards;
+	.single-panel  {
+
+		div {
+			 animation: zoomin  ease 3s forwards;
+			 -webkit-animation: zoomin  ease 3s forwards;
+			 -moz-animation: zoomin  ease 3s forwards;
+			 -o-animation: zoomin  ease 3s forwards;
+			 -ms-animation: zoomin  ease 3s forwards;
+		}
+
+		.md & {
+			padding: 0;
+
+			&:nth-child(1) {
+				z-index:9;
+			}
+
+			&:nth-child(2) {
+				z-index:8;
+			}
+
+			&:nth-child(3) {
+				z-index:7;
+			}
+		}
+
+		.sm & {
+			&:nth-child(1) {
+				z-index:9;
+			}
+
+			&:nth-child(2) {
+				z-index:8;
+			}
+
+			&:nth-child(3) {
+				z-index:7;
+			}
+		}
+		
 	}
 
 	.panel-header {
@@ -162,13 +205,48 @@
     	font-weight: lighter;
 	}
 	
-	.panel-content:hover{
-		 animation: fadein ease 1s forwards;
-		 -webkit-animation: fadein ease 1s forwards;
-		 -moz-animation: fadein ease 1s forwards;
-		 -o-animation: fadein ease 1s forwards;
-		 -ms-animation: fadein ease 1s forwards;
-	} 
+	.panel-content {
+		padding: 2em;
+	    line-height: 2em;
+	    font-family: Helvetica;
+	    font-size: 1em;
+	    color: #ecda4c;
+	    letter-spacing: .2em;
+	    font-weight: lighter;
+	    cursor: pointer;
+	    opacity: 0;
+	    box-shadow: 1px 1px #374a47;
+	    width: 65%;
+
+	    a {
+	    	font-family: Palatino;
+		    font-size: 1em;
+		    letter-spacing: .1em;
+		    cursor: pointer;
+		    color: #9fd7e8;
+		    font-style: italic;
+	    }
+
+		&:hover {
+			 animation: fadein ease 1s forwards;
+			 -webkit-animation: fadein ease 1s forwards;
+			 -moz-animation: fadein ease 1s forwards;
+			 -o-animation: fadein ease 1s forwards;
+			 -ms-animation: fadein ease 1s forwards;
+		} 
+
+		.md & {
+	    	z-index: 13;
+			padding-bottom: 5em;
+			width: auto;
+	    }
+
+	    .sm & {
+			margin: 0 auto;
+			z-index: 13;
+		}
+
+	}
 
 	#theatre-area
 	.panel-content {
@@ -185,32 +263,33 @@
 		background-color: rgba(57, 109, 0,  0.9);
 	}
 
-	.panel-content {
-		padding: 2em;
-	    line-height: 2em;
-	    font-family: Helvetica;
-	    font-size: 1em;
-	    color: #ecda4c;
-	    letter-spacing: .2em;
-	    font-weight: lighter;
-	    cursor: pointer;
-	    opacity: 0;
-	    box-shadow: 1px 1px #374a47;
-	    width: 65%;
-	}
-
-	.panel-content a {
-		font-family: Palatino;
-	    font-size: 1em;
-	    letter-spacing: .1em;
-	    cursor: pointer;
-	    color: #9fd7e8;
-	    font-style: italic;
-	}
-	
 	.button-areas {
 		display: none;
+
+		.sm & {
+			display: flex;
+			position: relative;
+		    top: -3em;
+		    height: 48px;
+		    width: 96%;
+		    z-index: 15;
+			margin: 0 auto;
+			align-items: center;
+
+			.panel-number {
+				margin: 0 auto;
+			}
+		}
+
+		.md & {
+
+			.panel-number {
+				margin: 0 auto;
+			}
+		}
 	}
+
+
 	/* Next & previous buttons */
 	.prev, .next {
 	  cursor: pointer;
@@ -229,12 +308,21 @@
 	.next {
 	  right: 0;
 	  border-radius: 3px 0 0 3px;
+
+		/* On hover, add a black background color with a little bit see-through */
+	   &:hover {
+	   		background-color: rgba(0,0,0,0.8);
+	   }
 	}
 
-	/* On hover, add a black background color with a little bit see-through */
-	.prev:hover, .next:hover {
-	  background-color: rgba(0,0,0,0.8);
+	.prev {
+
+		/* On hover, add a black background color with a little bit see-through */
+		&:hover {
+			background-color: rgba(0,0,0,0.8);	
+		}
 	}
+
 
 	.categories {
  		display: flex;
@@ -256,6 +344,19 @@
 	    display: inline-block;
 	    width: 100%;
 	    background-size: cover;
+
+	    .sm & {
+	    	background-size: cover;
+			width: 100%;
+			position: absolute;
+			top:0;
+			height: 47%;
+	    }
+
+	    .md & {
+	    	background-size: cover;
+			width: 100%;
+	    }
 	}
 
 	#film-area{
@@ -264,6 +365,25 @@
 	    display: inline-block;
 	    width: 100%;
 	    background-size: cover;
+
+	    .sm & {
+	    	height: 47%;
+	    	background-size: cover;
+			width: 100%;
+			position: absolute;
+			top:0;
+	    }
+
+	    .md & {
+	    	background-size: cover;
+			width: 100%;
+			background-position: 50% 2%;
+
+			.panel-content {
+				padding-bottom: 7em;
+				margin-left: 3em;
+			}
+	    }
 	}
 
 	#digital-area {
@@ -272,11 +392,25 @@
 	    display: inline-block;
 	    width: 100%;
 	    background-size: cover;
-	}
 
-	.sm #film-area,
-	.sm #digital-area {
-		height: 55%;
+	    .sm & {
+	    	height: 47%;
+	    	background-size: cover;
+			width: 100%;
+			position: absolute;
+			top:0;
+	    }
+
+	    .md & {
+	    	background-size: cover;
+			width: 100%;
+			background-position: 50% 65%;
+
+			.panel-content {
+				padding-bottom: 7em;
+				margin-left: 2.2em;
+			}
+	    }
 	}
 
 
@@ -337,100 +471,5 @@
 	    100%  { opacity: 1; }
 	}
 		
-	.md .panel-content {
-		z-index: 13;
-		padding-bottom: 5em;
-		width: auto;
-	}
-
-	.sm .panel-content {
-		margin: 0 auto;
-		z-index: 13;
-	}
-
-	.md .panel-area {
-		position: relative;
-	}
-
-	.sm .panel-area li {
-		width: 100%;
-		position: absolute;
-		top: 0;
-	}
-
-	.md .single-panel  {
-		padding: 0;
-	}
-	
-	.sm .single-panel:nth-child(1),
-	.md .single-panel:nth-child(1) {
-		z-index: 9;
-	}
-
-	.sm .single-panel:nth-child(2),
-	.md .single-panel:nth-child(2) {
-		z-index: 8;
-	}
-
-	.sm .single-panel:nth-child(3),
-	.md .single-panel:nth-child(3) {
-		z-index: 7;
-	}
-	
-	/*.md .button-areas*/
-	.sm .button-areas {  
-		display: flex;
-		position: relative;
-	    top: -3em;
-	    height: 48px;
-	    width: 96%;
-	    z-index: 15;
-		margin: 0 auto;
-		align-items: center;
-	}
-	
-	.sm #theatre-area,
-	.sm #film-area,
-	.sm #digital-area {
-		background-size: cover;
-		width: 100%;
-		position: absolute;
-		top:0;
-		height: 51%;
-	}
-
-	.md #theatre-area,
-	.md #film-area,
-	.md #digital-area {
-		background-size: cover;
-		width: 100%;
-	}
-
-	.md #film-area {
-		background-position: 50% 2%;
-	}
-
-	.md #film-area .panel-content {
-		padding-bottom: 7em;
-		margin-left: 3em;
-	}
-
-	.md #digital-area {
-		background-position: 50% 65%;
-	}
-
-	.md #digital-area .panel-content {
-		padding-bottom: 7em;
-		margin-left: 2.2em;
-	}
-
-
-	.sm .button-areas .panel-number
-	.md .button-areas .panel-number {
-		margin: 0 auto;
-	}
-
-
-
 
 </style> 

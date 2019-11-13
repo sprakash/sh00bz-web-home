@@ -47,109 +47,143 @@
 	}
 	
 </script>
-<style>
+<style lang="scss">
 	
 	#navigation {
 		width: 70%;
 		margin: 2em 0;
+
+		.sm & {
+			flex: 2;
+			padding: 0;
+			margin: 0;
+		}
+
+		.md & {
+			flex: 2;
+			padding: 0;
+			margin: 0;
+		}
 	}
 	
 	header {
 		flex-grow: 1;
+
+		.sm & {
+			align-items: center;
+		}
+
+		.md & {
+			align-items: center;
+		}
 	}
 
 	nav {
 		margin: 0 2em;
+
+		ul {
+			display: flex;
+			list-style-type: none;
+			justify-content: space-around;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		&:nth-child(1) {
+
+			.sm & {
+				display:none;
+			}
+
+			.md & {
+				display:none;
+			}
+		}
+
+		&:nth-child(2) {
+			display: none;
+
+			.sm & {
+				float: right;
+				cursor: pointer;
+			}
+
+			.md & {
+				float: right;
+				cursor: pointer;
+			}
+		}
 	}
 
-	nav ul {
-		display: flex;
-		list-style-type: none;
-		justify-content: space-around;
-	}
+	li { 
 
-	nav a {
-		text-decoration: none;
-	}
+		a {
+			text-decoration : none;
+			color: #39053f;
+			font-size: .95em;
+	    	font-weight: bold;
 
-	li a {
-		text-decoration : none;
-		color: #39053f;
-		font-size: .95em;
-    	font-weight: bold;
+	    	&:hover {
+	    		color: yellow;
+	    	}
+    	}
 	}
 	
-	li a:hover {
-    		color: yellow;
+	h1 {
+		.sm & {
+			font-size: 1em;
+		}
+
+		.md & {
+			font-size: 1em;
+		}
 	}
 
-	.md h1,
-	.sm h1 {
-		font-size: 1em;
-	}
+	.mobile {
 
-	.md nav:nth-child(1),
-	.sm nav:nth-child(1) {
-		display: none;
-	}
+		.sm & {
+			display: block;
+		}
 
-	nav:nth-child(2) {
-		display: none;
-	}
+		.md & {
+			display: block;
+		}
 
-	.md nav:nth-child(2),
-	.sm nav:nth-child(2) {
-		float: right;
-		cursor: pointer;
-	}
-	
-	.md header,
-	.sm header {
-		align-items: center;
-	}
+		ul {
+			top: 0;
+			position: absolute;
+		    z-index: 24;
+		    width: 100%;
+		    left: 0;
+		    justify-content: space-evenly;
+		    height: 100%;
+		    text-align: center;
+		    display: block;
+		    flex-direction: column;
 
-	.md .mobile,
-	.sm .mobile {
-		display: block;
-	}
+		     li {
+		     	margin: .1em 0;
+				background: linear-gradient(270deg, #f970b1, #e67a83, #7dd2ec);
+				padding: 2em 0;
+				display:block;
 
-	.md #navigation,
-	.sm #navigation {
-		flex: 2;
-		padding: 0;
-		margin: 0;
-	}
+				&:first-child {
 
-	.mobile ul {
-		top: 0;
-		position: absolute;
-	    z-index: 24;
-	    width: 100%;
-	    left: 0;
-	    justify-content: space-evenly;
-	    height: 100%;
-	    text-align: center;
-	    display: block;
-	    flex-direction: column;
-	}
+					a {
+						display: block;
+					    text-align: right;
+						font-size: 2em;
+				    	margin-right: 1em;
+					}
+				}
 
-	.mobile ul li {
-		margin: .1em 0;
-		background: linear-gradient(270deg, #f970b1, #e67a83, #7dd2ec);
-		padding: 2em 0;
-		display:block;
-	}
-
-
-	.mobile ul li:first-child a {
-		display: block;
-	    text-align: right;
-		font-size: 2em;
-    	margin-right: 1em;
-	}
-
-	.mobile ul li a {
-		font-size: 1.85em;
+				a {
+					font-size: 1.85em;
+				}
+		     }
+		}
 	}
 
 	#mobileNav {
