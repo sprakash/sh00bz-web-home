@@ -1,4 +1,5 @@
 <template>
+<v-app>
 	<div id="topest" :class="$mq">
 		<div id="content">
 			<main>
@@ -12,6 +13,7 @@
 			
 		</div>
   </div>
+  <v-app>
 </template>
 <script>
 	import Navigation from './components/Navigation'
@@ -31,13 +33,14 @@
 		}
 	}
 </script>
-<style>
+<style lang="scss">
 
 	html, body {
-		margin: 0;
+		margin: 0 auto;
 		padding: 0;
-		width: 100%;
+		width: 99%;
 		height: 100%;
+		background-color: black;
 	}
 	body {
 		background-color: whitesmoke;
@@ -59,21 +62,30 @@
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
+
+		.md & {
+			flex-direction: column;
+			justify-content: space-evenly;
+			width: 100%;
+			text-align: center;
+			font-size: 1.25em;
+		}
 	}
 
 	#content {
 		display: flex;
 		flex-direction: column;
 		height: 100%;
-	}
 
-	.sm #content {
-		flex-direction: column-reverse;
+		.sm & {
+			flex-direction: column-reverse;
+		}
 	}
 
 	#content-fill {
 /*		height: 59vh;
 */		width: 100%;
+		background-color: whitesmoke;
 	}
 
 	header {
@@ -85,30 +97,17 @@
 		background-size: 100% 100%;
 		color: #39053f;
 		align-items: center;
-	}
 
-	.md header ul {
-		flex-direction: row;
-	}
+		.sm & {
+			z-index: 25;
+		}
 
-	.md ul {
-		flex-direction: column;
-		justify-content: space-evenly;
-		width: 100%;
-		text-align: center;
-		font-size: 1.25em;
-	}
+		ul {
 
-	.sm header {
-		z-index: 25;
-	}
-
-	.md .grouped {
-		width: 80%;
-	}
-	.md  #content{
-		flex-direction: row;
-		flex-wrap: nowrap;
+			.md & {
+				flex-direction: row;		
+			}
+		}
 	}
 	
 	#content,
@@ -121,10 +120,19 @@
 	#grouped {
 		flex-grow: 1;
 		flex-shrink: 0;
+
+		.md & {
+			width: 80%;
+		}
 	}
 
 	#content {
 		flex-shrink: 0;
+
+		.md  &{
+			flex-direction: row;
+			flex-wrap: nowrap;
+		}
 	}
 	/*.md #content-fill {
 		height: 64vh;

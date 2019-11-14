@@ -6,8 +6,7 @@
             "role": "Sutradhaar / Tara / Anjana",
             "director": "Ramesh Khanna",
             "company": "Sri Dwarka Ramleela Society",
-            "year": "2019",
-            "coverImage" : "../dist/piano.aa1e6821.jpg"
+            "year": "2019"
         },
         {
             "name": "Sundays with Chitra & Chaitali",
@@ -135,7 +134,8 @@
             "role": "Dynamite",
             "director": "Sue Ellen Nielson",
             "company": "Stage 1 / East Bay Area",
-            "year": "2012"
+            "year": "2012",
+            "posterImage" : "hairsprayPoster.jpg"
         },
         {
             "name": "Ozma of Oz",

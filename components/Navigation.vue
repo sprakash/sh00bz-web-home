@@ -51,7 +51,7 @@
 	
 	#navigation {
 		width: 70%;
-		margin: 2em 0;
+		margin: 1em 0;
 
 		.sm & {
 			flex: 2;
@@ -121,9 +121,9 @@
 
 		a {
 			text-decoration : none;
-			color: #39053f;
+			color: #39053f !important;
 			font-size: .95em;
-	    	font-weight: bold;
+	    	font-weight: lighter;
 
 	    	&:hover {
 	    		color: yellow;

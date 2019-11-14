@@ -3,6 +3,23 @@
 		<span id="announce-content">
 			<h1>LATEST NEWS : </h1>
 			<span>Shakespeare Replayed: Tyranny released on Amazon Prime, <a href="https://www.amazon.com/Shakespeare-Replayed-Tyranny-Shubhra-Prakash/dp/B01H1IEVMG" target="_blank">click here to watch my performance</a></span>
+			<span class="svgStylin">
+				<span>
+					  <a href="http://twitter.com/durkhaima" target="_blank"><img src="/assets/icons/twitter.svg"></a>
+				</span>
+				<span>
+					  <a href="http://facebook.com/5000roses" target="_blank"><img src="/assets/icons/fb.svg"></a>
+				</span>
+				<span>
+					  <a href="https://www.linkedin.com/in/shubhraprakash/" target="_blank"><img src="/assets/icons/linkedin.svg"></a>
+				</span>
+				<span>
+					  <a href="http://instagram.com/sh000bz" target="_blank"><img src="/assets/icons/insta.svg"></a>
+				</span>
+				<span>
+					  <a href="https://github.com/sprakash/sh00bz-web-home" target="_blank"><img src="/assets/icons/github.svg"></a>
+				</span>
+			</span>
 		</span>
 	</div>
 </template>
@@ -25,7 +42,7 @@
 	    position: relative;
 		background-color: whitesmoke;
 		border: 1px solid grey;    
-	    margin: 0 auto;
+	    margin: auto;
 	    z-index: 9;
 	}
 
@@ -35,13 +52,18 @@
 		font-size: .85em;
 		text-align: center;
 		align-items: center;
+		justify-content: space-between;
 
 		h1 {
 			text-shadow: 1px 1px yellow;
 		}
 
 		span {
-			color: #ec4024;
+			color: deeppink;
+		}
+
+		a {
+			color: deepskyblue;
 		}
 	}
 
@@ -57,11 +79,33 @@
     	#announce-content {
 			font-size: .85em;
 			padding: .5em;
+
+			span {
+				width: 30%;
+			}
 		}
 	}
 
 	.md #announcements {
 		z-index: 23;
+	}
+
+	.svgStylin {
+		text-align: right;
+		position:relative;
+		right:0;
+		display: flex;
+
+		 span {
+
+		 	padding: 0 .5em;
+
+		 	img {
+		 		width: 1.5em;
+		 		height: 1.5em;
+		 	}
+		 	
+		 }
 	}
 
 

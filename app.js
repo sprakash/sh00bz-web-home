@@ -12,6 +12,7 @@ const vue = new Vue ({
 
 
 import Vue from 'vue';
+import Vuetify from 'vuetify';
 import VueMq from 'vue-mq';
 import Router from 'vue-router';
 import App from './App.vue';
@@ -33,6 +34,7 @@ Vue.use(VueMq, {
 }),
 
 Vue.use(Router)
+Vue.use(Vuetify)
 
 const routes= [
     {
@@ -92,6 +94,7 @@ const routes= [
 
 new Vue({
         el: '#app',
+        vuetify: new Vuetify(),
         router: router,
         components: { App },
         render: h => h(App),  

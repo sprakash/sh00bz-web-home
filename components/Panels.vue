@@ -138,6 +138,7 @@
 		display: flex;
 		flex:1;
 		justify-content: space-between;
+		width: 100%;
 
 		.sm & {
 			flex-flow: column;

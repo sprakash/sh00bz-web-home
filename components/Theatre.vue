@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div id="theatre-content">
 	<h1>{{msg}}</h1>
 	<span class="slicinItup"> The world says, "Theatre is dying"... Two thousand years or so and it still seems to be around. Oh well, must be an incredibly slow death.  As for the rest of us who can't help loving it to pieces, performing, writing, putting up shows, doing whatever it takes, to revel in the magic, that is theatre. </span>
     <hr/>
@@ -51,9 +51,9 @@
         </div>
 
 		<header>
-						<h1>Shubhra Prakash</h1>
-						<Navigation/>
-					</header>
+			<h1>Shubhra Prakash</h1>
+			<Navigation/>
+		</header>
 	</div>
 
 
@@ -74,18 +74,25 @@
         },
 		data (){
 			return {
-                showsView: 'resume',
-				shows : [
-				  {fileName:'moonOwl.jpg'},{fileName:'sundayswithChitraAndChaitali.jpg'}
-				]
+                showsView: 'resume'
 			} 
 		}
 	}
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 
-body {
-	background: blue;
+.sm #content {
+    flex-direction: column !important;
+}
+
+.md #grouped {
+    width: 100% !important;
+}
+
+#theatre-content {
+    .md & {
+        align-content  : center;
+    }
 }
 
 header h1 {
@@ -106,6 +113,10 @@ input[type="radio"] {
     color: #3b323c;
     font-family: 'Palatino';
     letter-spacing: .105em;
+
+    .md & {
+        font-size: .85em;
+    }
 
 }
 
@@ -128,6 +139,11 @@ input[type="radio"] {
         font-weight: bolder; 
     }
 
+    .md & {
+        font-size: 1em;
+        flex-direction: row;
+    }
+
 }
 
 #trainingSkills { 
@@ -139,6 +155,12 @@ input[type="radio"] {
     line-height: 2em;
     margin-bottom: 2em;
     display: block;
+
+    .sm &,
+    .md & {
+        text-align: left;
+        font-size: .85em;
+    }
 }
 
 .skills {
@@ -149,6 +171,12 @@ input[type="radio"] {
     line-height: 2em;
     margin-bottom: 2em;
     display: block;
+
+    .sm &,
+    .md & {
+        text-align: left;
+        font-size: .85em;
+    }
 }  
 
 #trainingSkills h1,
@@ -159,6 +187,11 @@ input[type="radio"] {
     background-color: #f6f17163;
     padding: .25em 1em;
     line-height: 2em;
+
+    .sm &,
+    .md & {
+        font-size: 1em;
+    }
 }
 
 </style>

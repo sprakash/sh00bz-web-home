@@ -27,6 +27,26 @@
 					</td>
 				</tr>
 			</table>
+
+
+		<div>
+			 <v-expansion-panels accordion multiple>
+			    <v-expansion-panel v-for="(panelItem,i) in myJson['Theatre']" :key="i">
+			      <v-expansion-panel-header>{{panelItem.role}} in {{panelItem.name}} | {{panelItem.type}} | {{panelItem.year}}</v-expansion-panel-header>
+			      <v-expansion-panel-content>
+			       <ul>
+			       	<li>Type : {{panelItem.type}}</li>
+			       	<li>Role : {{panelItem.role}}</li>
+			       	<li>Director : {{panelItem.director}}</li>
+			       	<li>Company : {{panelItem.company}}</li>
+			       	<li>Year : {{panelItem.year}}</li>
+			       </ul>
+			      </v-expansion-panel-content>
+			    </v-expansion-panel>
+			  </v-expansion-panels>
+    	</div>
+
+
 		</section>
 	</div>
 </template>
@@ -65,10 +85,14 @@
 	
 </script>
 <style lang="scss" scoped>
-	
+
 	table {
 		font-size: .75em;
 		margin-top: 2em;
+
+		.sm & {
+			display: none;
+		}
 	}
 
 	th {
@@ -85,11 +109,19 @@
 		div {
 			text-transform: capitalize;
 		}
+
+		.md & {
+			font-size: 1em;
+		}
 	}
 
 	td {
 		border-bottom: 1px solid grey;
 		padding-left: 2em;
+
+		.md & {
+			font-size: 1em;
+		}
 	}
 
 	.show-container {
