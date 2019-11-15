@@ -33,7 +33,13 @@
 	<section class="connect-lower">
 			<div class="space-fill"></div>
 			<article>The site has been created by yours truly using Vue framework including the blog which has been created using Vue as well. Code can be looked at </article>
+			<div><h3>references</h3>
+				<ul>
+					<li>https://dev.to/alexmourer/click-event-filtering-on-a-json-rendered-list-in-vuejs-3kpn</li>
+				</ul>
+			</div>
 	</section>
+
 	<header>
 						<h1>Shubhra Prakash</h1>
 						<Navigation/>

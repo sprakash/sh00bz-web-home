@@ -2,7 +2,7 @@
     "Theatre": [
         {
             "name": "Rameleela (in Hindi)",
-            "type": "Play with Music ",
+            "type": "Play with Music",
             "role": "Sutradhaar / Tara / Anjana",
             "director": "Ramesh Khanna",
             "company": "Sri Dwarka Ramleela Society",
@@ -10,7 +10,7 @@
         },
         {
             "name": "Sundays with Chitra & Chaitali",
-            "type": "Play with Music ",
+            "type": "Play with Music",
             "role": "Chitrangadha / Lead",
             "director": "Isheeta Ganguly",
             "company": "Tour / Kolkata & Hyderabad, India",
@@ -18,15 +18,15 @@
         },
         {
             "name": "Panniarchy",
-            "type": "Devised experimental",
+            "type": "Experimental Theatre",
             "role": "Ensemble",
             "director": "Piyush Kumar",
             "company": "Little Theatre Group / New Delhi, India",
             "year": "2019"
         },
         {
-            "name": "Sultana Daku",
-            "type": "Indian Folk Theatre : Nautanki",
+            "name": "Sultana Daku - Nautanki",
+            "type": "Indian Theatre",
             "role": "Sumarna Daku / Ensemble",
             "director": "Dr. Devendra Sharma",
             "company": "20th Bharat Rang Mahotsava / New Delhi, India",
@@ -34,7 +34,7 @@
         },
         {
             "name": "Three Women",
-            "type": "Play with Music ",
+            "type": "Play with Music",
             "role": "Charu / Lead ",
             "director": "Isheeta Ganguly",
             "company": "The Tagore Society / Singapore",
@@ -42,7 +42,7 @@
         },
         {
             "name": "Babyshka",
-            "type": "Experimental non-verbal theatre",
+            "type": "Experimental Theatre",
             "role": "Babyshka / Lead",
             "director": "Anna Lublina",
             "company": "Old American Can Factory / New York",
@@ -50,7 +50,7 @@
         },
         {
             "name": "The Music In My Blood",
-            "type": "Play with Music ",
+            "type": "Play with Music",
             "role": "Archana / Lead ",
             "director": "Sonalee Hardikar",
             "company": "Hypokrit Theatre Company / New York",
@@ -74,7 +74,7 @@
         },
         {
             "name": "Monsoon Wedding",
-            "type": "Workshop Musical Reading",
+            "type": "Musical Reading",
             "role": "Aditi / Lead ",
             "director": "Mira Nair",
             "company": "JumpStart Entertainment / New York",
@@ -138,8 +138,8 @@
             "posterImage" : "hairsprayPoster.jpg"
         },
         {
-            "name": "Ozma of Oz",
-            "type": "Trip-hop musical reading",
+            "name": "Ozma of Oz - A Trip Hop Musical",
+            "type": "Staged Reading",
             "role": "Lady Langwidere",
             "director": "Rob Melrose ",
             "company": "Cutting Ball Theatre / San Francisco",
@@ -162,8 +162,8 @@
             "year": "2010"
         },
         {
-            "name": "Cootie Shoots",
-            "type": "Touring Children's Theatre",
+            "name": "Cootie Shots",
+            "type": "Children's Theatre Tour",
             "role": "Ensemble",
             "director": "Ensemble",
             "company": "New Conservatory Theatre / San Francisco",
@@ -173,13 +173,13 @@
             "name": "Beautiful Thing",
             "type": "Play",
             "role": "Leah",
-            "director": "Ensemble",
+            "director": "Andrew Nance",
             "company": "New Conservatory Theatre / San Francisco",
             "year": "2009"
         },
         {
-            "name": "Ramona Quimby",
-            "type": "Play",
+            "name": "Ramona Quimby - Tour",
+            "type": "Children's Theatre",
             "role": "Mrs. Griggs",
             "director": "Jared Randolf",
             "company": "Bay Area Children's Theatre / East Bay Area",
@@ -194,8 +194,8 @@
             "year": "2009"
         },
         {
-            "name": "Rogue El Gato",
-            "type": "Touring Children's Theatre",
+            "name": "Rogue El Gato - Tour",
+            "type": "Children's Theatre",
             "role": "Mayor and Monster",
             "director": "Shawn Ferreyra ",
             "company": "El Gato Theatre / San Francisco",
@@ -210,8 +210,8 @@
             "year": "2009"
         },
         {
-            "name": "Sultana Daku",
-            "type": "Indian Folk Theatre : Nautanki",
+            "name": "Sultana Daku - Nautanki",
+            "type": "Indian Theatre",
             "role": "Sumarna Daku / Ensemble",
             "director": "Dr. Devendra Sharma",
             "company": "Naatak / San Jose, CA",
@@ -234,12 +234,12 @@
             "year": "2006"
         },
         {
-            "name": "Nickel and Dimed",
-            "type": "Play : Premiere Production",
+            "name": "Nickel and Dimed - Premiere Production",
+            "type": "Play",
             "role": "Holly and Ensemble",
             "director": "Elizabeth Spreen & Beth Theis",
             "company": "University Theatre San Jose State / San Jose, CA",
-            "year": "2005"
+            "year": "2005",
         }
     ]
 }

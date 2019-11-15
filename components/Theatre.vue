@@ -4,11 +4,11 @@
 	<span class="slicinItup"> The world says, "Theatre is dying"... Two thousand years or so and it still seems to be around. Oh well, must be an incredibly slow death.  As for the rest of us who can't help loving it to pieces, performing, writing, putting up shows, doing whatever it takes, to revel in the magic, that is theatre. </span>
     <hr/>
 
-	<ul class="twoviews">
+<!-- 	<ul class="twoviews">
 		<li><input type="radio" name="twoview" v-model="showsView" value="resume"/>Resume View</li>
 		<li><input type="radio" name="twoview" v-model="showsView" value="gallery"/>Gallery View</li>
 	</ul>
-
+ -->
 
 		<div id="content-theatre">
             <section v-show="showsView === 'resume'">
@@ -155,6 +155,7 @@ input[type="radio"] {
     line-height: 2em;
     margin-bottom: 2em;
     display: block;
+    font-size: .8em;
 
     .sm &,
     .md & {
@@ -171,6 +172,7 @@ input[type="radio"] {
     line-height: 2em;
     margin-bottom: 2em;
     display: block;
+    font-size: .8em;
 
     .sm &,
     .md & {
@@ -181,7 +183,7 @@ input[type="radio"] {
 
 #trainingSkills h1,
 .skills h1 {
-    font-size: 1.25em;
+    font-size: .85em;
     margin-left: 0;
     width: 95%;
     background-color: #f6f17163;
