@@ -1,8 +1,9 @@
 <template>
 	<div id="theatre-content">
-	<h1>{{msg}}</h1>
-	<span class="slicinItup"> The world says, "Theatre is dying"... Two thousand years or so and it still seems to be around. Oh well, must be an incredibly slow death.  As for the rest of us who can't help loving it to pieces, performing, writing, putting up shows, doing whatever it takes, to revel in the magic, that is theatre. </span>
-    <hr/>
+	<span class="slicinItup"> 
+        <h1>Theatre</h1>
+    Here you can have a look at my work on stage, read blogs I've written about my experience with each show, check out gallery of photos and media based on shows and get an idea of my training and skill set.             <span id="theatre-download">Click to Download Printable Version</span> </span>
+
 
 <!-- 	<ul class="twoviews">
 		<li><input type="radio" name="twoview" v-model="showsView" value="resume"/>Resume View</li>
@@ -22,33 +23,7 @@
 		
         </div>
 
-        <div id="trainingSkills">
-            <h1>TRAINING / LABS / WORKSHOPS</h1>
-            <ul class="trainingList">
-                <li>Where Film &amp; Anthropology Intersect, Workshop on Documentary Filmmaking with Harjant Gill. New Delhi</li>
-                <li>Documentary Theatre and Teaching Artist Training with Ping Chong & Company. New York.</li>
-                <li>Singing in Hindustani Classical, private coaching with Sandip Bhattacharjee. New York and India.</li>
-                <li>On Camera Scene Study with Courtney Burr at Margie Haber Studio, Los Angeles. </li>
-                <li>Film Acting Technique with Nancy Berwid at FirstTake Acting Studio, San Francisco. </li>
-                <li>Musical Theatre Summer Conservatory with Marc Jacobs at Notre Dame De Namur University, Silicon Vallery.</li>
-                <li>Voice/Singing for Musical Theatre, Private Coaching with Michael Pesce, New York City.</li>
-                <li>Acting Shakespeare’s Verse, Private coaching with Deloss Brown, New York City. 
-</li>
-                <li>Classical Commedia D’ell Arte with Stanley Allan Sherman at Roving Classical Commedia, New York City.
-</li>
-<li>Hindustani Classical Music, private coaching with Sandip Bhattacharjee, New York City. 
-</li>
-            </ul>
-            <hr/>
-
-            <h1 class="skills">SKILLS</h1>
-            <ul class="skillsList">
-                <li>Open Water Scuba Certification.</li>
-                <li>Dialects/Accents : South East London, African American, Russian and French.</li>
-                <li>Fluent (Speak, read, write and sing) in Hindi. Conversational Bengali and French.</li>
-            </ul>
-
-        </div>
+       
 
 		<header>
 			<h1>Shubhra Prakash</h1>
@@ -89,9 +64,20 @@
     width: 100% !important;
 }
 
-#theatre-content {
-    .md & {
-        align-content  : center;
+#theatre {
+
+    &-content {
+        .md & {
+            align-content  : center;
+        }
+
+    }
+    
+    &-download {   
+        color: coral;
+        text-decoration: underline;
+        font-size: .85em;
+        cursor: pointer;
     }
 }
 
@@ -105,17 +91,26 @@ input[type="radio"] {
 }
 
 .slicinItup {
-    font-size: 1em;
-    margin: 2em 5em;
-    text-align: center;
+    font-size: 0.85em;
+    padding: 1em;
+    text-align: left;
     display: block;
     line-height: 1.95em;
     color: #3b323c;
-    font-family: 'Palatino';
-    letter-spacing: .105em;
+    letter-spacing: 0.105em;
+    text-transform: lowercase;
+    background-color: white;
+    margin-bottom: 1em;
+    border-bottom: 1px solid darkslateblue;
 
-    .md & {
-        font-size: .85em;
+    h1 { 
+        text-transform: capitalize;
+        margin: 0 0 1em 0;
+        font-size: 1.5em;
+        color: #19abdc;
+        letter-spacing: .15em;
+        font-weight: normal;
+
     }
 
 }
@@ -126,7 +121,6 @@ input[type="radio"] {
     flex-direction: row;
     justify-content: space-between;
     margin: 2em auto 0;
-    font-family: 'Palatino';
     width: 50%;
 
     li {
@@ -147,7 +141,6 @@ input[type="radio"] {
 }
 
 #trainingSkills { 
-    font-family: 'Palatino';
     margin: 2em 5em;
 }
 	
@@ -186,7 +179,7 @@ input[type="radio"] {
     font-size: .85em;
     margin-left: 0;
     width: 95%;
-    background-color: #f6f17163;
+    background-color: #7ed1eb47;
     padding: .25em 1em;
     line-height: 2em;
 

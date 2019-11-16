@@ -31,24 +31,21 @@
 
 			 
 				<div class="show-content">
-					<span class="show-instruction">expand to learn more about each show</span>
+					<span class="show-instruction">click title to learn more about each show</span>
 					 <v-expansion-panels accordion multiple>
 					    <v-expansion-panel v-for="(entry,i) in myJson['Theatre']"
 							    v-if="entry[sortKey] === showFilter || showFilter === 'All'"
 							    :item="entry"
 					     		:key="i">
-					      <v-expansion-panel-header>{{entry.name}} : {{entry.type}}, {{entry.year}} | Role : {{entry.role}} </v-expansion-panel-header>
+					      <v-expansion-panel-header><span class="show-name">{{entry.name}}</span> <span class="show-role"> Role : {{entry.role}} </span><span class="show-year">{{entry.year}} </span><span class="show-location">{{entry.location}}</span></v-expansion-panel-header>
 					      <v-expansion-panel-content>
 					      	<div class="show-expanded"> 
 						       <ul>
-						       	<li>{{entry.name}}</li>
 						       	<li>Type : {{entry.type}}</li>
-						       	<li>Role : {{entry.role}}</li>
 						       	<li>Director : {{entry.director}}</li>
 						       	<li>Company : {{entry.company}}</li>
-						       	<li>Year : {{entry.year}}</li>
 						       </ul>
-						       <div> 
+						       <div class="show-links"> 
 						       		<span>Read blog</span>
 						       		<span>Show Gallery</span> 
 						       </div>
@@ -86,8 +83,49 @@
 						<li>children's theatre</li>
 						<li>tour</li> -->
 					</ul>
-					<span>Download Printable Version</span>
 				</div>
+
+
+			<div id="skillset">
+			 <div id="trainingSkills">
+            <h1>TRAINING / LABS / WORKSHOPS</h1>
+            <ul class="trainingList">
+                <li>Where Film &amp; Anthropology Intersect, Workshop on Documentary Filmmaking with Harjant Gill. New Delhi</li>
+                <li>Documentary Theatre and Teaching Artist Training with Ping Chong & Company. New York.</li>
+                <li>Singing in Hindustani Classical, private coaching with Sandip Bhattacharjee. New York and India.</li>
+                <li>On Camera Scene Study with Courtney Burr at Margie Haber Studio, Los Angeles. </li>
+                <li>Film Acting Technique with Nancy Berwid at FirstTake Acting Studio, San Francisco. </li>
+                <li>Musical Theatre Summer Conservatory with Marc Jacobs at Notre Dame De Namur University, Silicon Vallery.</li>
+                <li>Voice/Singing for Musical Theatre, Private Coaching with Michael Pesce, New York City.</li>
+                <li>Acting Shakespeare’s Verse, Private coaching with Deloss Brown, New York City. 
+</li>
+                <li>Classical Commedia D’ell Arte with Stanley Allan Sherman at Roving Classical Commedia, New York City.
+</li>
+<li>Hindustani Classical Music, private coaching with Sandip Bhattacharjee, New York City. 
+</li>
+            </ul>
+            <hr/>
+
+            <h1 class="skills">SKILLS</h1>
+            <ul class="skillsList">
+                <li>Open Water Scuba Certification.</li>
+                <li>Dialects/Accents : South East London, African American, Russian and French.</li>
+                <li>Fluent (Speak, read, write and sing) in Hindi. Conversational Bengali and French.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
 				
 			</div>
 
@@ -183,12 +221,11 @@
 		&-instruction {
 			font-size: 0.75em;
 		    color: #7774a5;
-		    text-align: center;
+		    text-align: right;
 		    width: 100%;
 		    display: inline-block;
 		    font-weight: lighter;
 		    text-decoration: underline;
-		    margin-bottom: 1.5em;
 		}
 
 		&-filter {
@@ -205,6 +242,73 @@
 
 		&-expanded {
 			background-color: white;
+		}
+
+		&-name {
+			font-size: 1.85em;
+			font-weight: lighter;
+			color: coral;
+			word-break: break-all;
+
+			.sm & {
+				display: block;
+				font-size:2.85em;
+				text-align:left;
+			}
+		}
+		
+		&-year {
+			background-color: #00bcd40d !important;
+			font-size: .25em;
+		}
+
+		&-year, 
+		&-role {
+		    background-color: white;
+		    padding: 1em;
+		    margin: 0 1em;
+		    text-transform: uppercase;
+    		font-size: .05em;
+    		letter-spacing: .05em;
+
+    		.sm & {
+    			display: block;
+    			margin: 1em 0;
+    		}
+		}
+
+		&-links {
+			text-transform: uppercase;
+		    font-size: .5em;
+		    display: flex;
+		    width: 100%;
+		    justify-content: flex-end;
+		    flex-direction: row;
+
+		    span {
+		    	padding: 1em 2em;
+			    margin: 0 2em 2em 0;
+			    background: whitesmoke;
+			    color: #084086;
+			    cursor: pointer;
+			    font-weight: bolder;
+			    border-radius: 7px;
+			    letter-spacing: .15em;
+			    border: 1px solid coral;
+		
+				&:nth-child(2) {
+		    		padding: 1em 0.5em;
+		    	}
+
+		    }
+		}
+
+		&-location {
+			font-size: .25em;
+			text-transform: uppercase;
+			background-color: #50aeff42;
+			color: white;
+			padding: 1em;
 		}
 
 	}
@@ -234,7 +338,6 @@
 
 			
 			display: flex;
-		    width: 100%;
 		    justify-content: center;
 		    flex-wrap: wrap;
 		    flex-direction: row;
@@ -264,33 +367,34 @@
 	.v-expansion-panel {
 
 		button {
-			padding: .5em 5em;
+			padding: .5em 1.5em;
 		    border-radius: 4px;
-		    background-color: whitesmoke;
+		    background-color: floralwhite;
 		    border-color: lightgrey;
 		    font-size:.8em;
 		    color: #084086;
-		    margin: .25em 0;
+		    margin: .5em 0;
 		    text-align: justify;
 		    width: 100%;
 		    font-weight: light;
+		    display: flex;
+		    cursor: pointer;
+
+			.sm &,
+		    .md & {
+		    	flex-direction: column;
+		    	text-align: center;
+		    	flex-wrap: wrap;
+		    }
 		}
 
 		ul {
 			font-size: .75em;
-		    padding: 2em 6em;
+		    padding: .5em 6em;
 		    color: #a60283;
 		    line-height: 1.5em;
 		    background-color: white;
 		    font-weight: lighter;
-
-		    li:nth-child(1) {
-		    	font-size: 1.5em;
-			    font-weight: lighter;
-			    line-height: 2em;
-			    text-decoration: underline;
-			    color: #4d92b3;
-		    }
 		}
 	}
 

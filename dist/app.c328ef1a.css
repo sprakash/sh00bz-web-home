@@ -818,12 +818,11 @@ td[data-v-0034b0] {
 .show-instruction[data-v-0034b0] {
   font-size: 0.75em;
   color: #7774a5;
-  text-align: center;
+  text-align: right;
   width: 100%;
   display: inline-block;
   font-weight: lighter;
   text-decoration: underline;
-  margin-bottom: 1.5em;
 }
 .show-filter[data-v-0034b0] {
   display: -webkit-box;
@@ -845,6 +844,69 @@ td[data-v-0034b0] {
 }
 .show-expanded[data-v-0034b0] {
   background-color: white;
+}
+.show-name[data-v-0034b0] {
+  font-size: 1.85em;
+  font-weight: lighter;
+  color: coral;
+  word-break: break-all;
+}
+.sm .show-name[data-v-0034b0] {
+  display: block;
+  font-size: 2.85em;
+  text-align: left;
+}
+.show-year[data-v-0034b0] {
+  background-color: #00bcd40d !important;
+  font-size: 0.25em;
+}
+.show-year[data-v-0034b0], .show-role[data-v-0034b0] {
+  background-color: white;
+  padding: 1em;
+  margin: 0 1em;
+  text-transform: uppercase;
+  font-size: 0.05em;
+  letter-spacing: 0.05em;
+}
+.sm .show-year[data-v-0034b0], .sm .show-role[data-v-0034b0] {
+  display: block;
+  margin: 1em 0;
+}
+.show-links[data-v-0034b0] {
+  text-transform: uppercase;
+  font-size: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.show-links span[data-v-0034b0] {
+  padding: 1em 2em;
+  margin: 0 2em 2em 0;
+  background: whitesmoke;
+  color: #084086;
+  cursor: pointer;
+  font-weight: bolder;
+  border-radius: 7px;
+  letter-spacing: 0.15em;
+  border: 1px solid coral;
+}
+.show-links span[data-v-0034b0]:nth-child(2) {
+  padding: 1em 0.5em;
+}
+.show-location[data-v-0034b0] {
+  font-size: 0.25em;
+  text-transform: uppercase;
+  background-color: #50aeff42;
+  color: white;
+  padding: 1em;
 }
 .word-cloud[data-v-0034b0] {
   display: -webkit-box;
@@ -872,7 +934,6 @@ td[data-v-0034b0] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -900,31 +961,37 @@ td[data-v-0034b0] {
   color: coral;
 }
 .v-expansion-panel button[data-v-0034b0] {
-  padding: 0.5em 5em;
+  padding: 0.5em 1.5em;
   border-radius: 4px;
-  background-color: whitesmoke;
+  background-color: floralwhite;
   border-color: lightgrey;
   font-size: 0.8em;
   color: #084086;
-  margin: 0.25em 0;
+  margin: 0.5em 0;
   text-align: justify;
   width: 100%;
   font-weight: light;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+.sm .v-expansion-panel button[data-v-0034b0], .md .v-expansion-panel button[data-v-0034b0] {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .v-expansion-panel ul[data-v-0034b0] {
   font-size: 0.75em;
-  padding: 2em 6em;
+  padding: 0.5em 6em;
   color: #a60283;
   line-height: 1.5em;
   background-color: white;
   font-weight: lighter;
-}
-.v-expansion-panel ul li[data-v-0034b0]:nth-child(1) {
-  font-size: 1.5em;
-  font-weight: lighter;
-  line-height: 2em;
-  text-decoration: underline;
-  color: #4d92b3;
 }
 .loadShows {
   width: 200px;
@@ -949,6 +1016,13 @@ td[data-v-0034b0] {
       align-content: center;
 }
 
+#theatre-download {
+  color: coral;
+  text-decoration: underline;
+  font-size: 0.85em;
+  cursor: pointer;
+}
+
 header h1 {
   background: none;
 }
@@ -959,18 +1033,26 @@ input[type=radio] {
 }
 
 .slicinItup {
-  font-size: 1em;
-  margin: 2em 5em;
-  text-align: center;
+  font-size: 0.85em;
+  padding: 1em;
+  text-align: left;
   display: block;
   line-height: 1.95em;
   color: #3b323c;
-  font-family: "Palatino";
   letter-spacing: 0.105em;
+  text-transform: lowercase;
+  background-color: white;
+  margin-bottom: 1em;
+  border-bottom: 1px solid darkslateblue;
 }
 
-.md .slicinItup {
-  font-size: 0.85em;
+.slicinItup h1 {
+  text-transform: capitalize;
+  margin: 0 0 1em 0;
+  font-size: 1.5em;
+  color: #19abdc;
+  letter-spacing: 0.15em;
+  font-weight: normal;
 }
 
 .twoviews {
@@ -986,7 +1068,6 @@ input[type=radio] {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 2em auto 0;
-  font-family: "Palatino";
   width: 50%;
 }
 
@@ -1009,7 +1090,6 @@ input[type=radio] {
 }
 
 #trainingSkills {
-  font-family: "Palatino";
   margin: 2em 5em;
 }
 
@@ -1046,7 +1126,7 @@ input[type=radio] {
   font-size: 0.85em;
   margin-left: 0;
   width: 95%;
-  background-color: #f6f17163;
+  background-color: #7ed1eb47;
   padding: 0.25em 1em;
   line-height: 2em;
 }

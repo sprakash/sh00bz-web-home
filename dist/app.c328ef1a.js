@@ -50455,216 +50455,246 @@ render._withStripped = true
 },{"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"assets/json/theatre.json":[function(require,module,exports) {
 module.exports = {
   "Theatre": [{
-    "name": "Rameleela (in Hindi)",
+    "name": "Rameleela (Hindi)",
     "type": "Play with Music",
     "role": "Sutradhaar / Tara / Anjana",
     "director": "Ramesh Khanna",
-    "company": "Sri Dwarka Ramleela Society",
-    "year": "2019"
+    "company": "Sri Dwarka Ramleela Society, India",
+    "year": "2019",
+    "location": "New Delhi, India"
   }, {
-    "name": "Sundays with Chitra & Chaitali",
+    "name": "Sundays w/ Chitra & Chaitali - Tour",
     "type": "Play with Music",
     "role": "Chitrangadha / Lead",
     "director": "Isheeta Ganguly",
-    "company": "Tour / Kolkata & Hyderabad, India",
-    "year": "2019"
+    "company": "Tour",
+    "year": "2019",
+    "location": "Kolkata & Hyderabad, India"
   }, {
     "name": "Panniarchy",
     "type": "Experimental Theatre",
     "role": "Ensemble",
     "director": "Piyush Kumar",
-    "company": "Little Theatre Group / New Delhi, India",
-    "year": "2019"
+    "company": "Little Theatre Group Repertory",
+    "year": "2019",
+    "location": "New Delhi, India"
   }, {
     "name": "Sultana Daku - Nautanki",
     "type": "Indian Theatre",
     "role": "Sumarna Daku / Ensemble",
     "director": "Dr. Devendra Sharma",
-    "company": "20th Bharat Rang Mahotsava / New Delhi, India",
-    "year": "2019"
+    "company": "20th Bharat Rang Mahotsava - National School of Drama",
+    "year": "2019",
+    "location": "New Delhi, India"
   }, {
     "name": "Three Women",
     "type": "Play with Music",
     "role": "Charu / Lead ",
     "director": "Isheeta Ganguly",
-    "company": "The Tagore Society / Singapore",
-    "year": "2019"
+    "company": "The Tagore Society",
+    "year": "2019",
+    "location": "Singapore"
   }, {
     "name": "Babyshka",
     "type": "Experimental Theatre",
     "role": "Babyshka / Lead",
     "director": "Anna Lublina",
-    "company": "Old American Can Factory / New York",
-    "year": "2018"
+    "company": "Old American Can Factory",
+    "year": "2018",
+    "location": "Brooklyn, New York"
   }, {
     "name": "The Music In My Blood",
     "type": "Play with Music",
     "role": "Archana / Lead ",
     "director": "Sonalee Hardikar",
-    "company": "Hypokrit Theatre Company / New York",
-    "year": "2018"
+    "company": "Hypokrit Theatre Company",
+    "year": "2018",
+    "location": "New York, New York"
   }, {
     "name": "Beyond Sacred",
     "type": "Documentary Theatre",
     "role": "Maya's understudy",
     "director": "Ping Chong",
-    "company": "Ping Chong and Company / Lincoln Center Education, New York ",
-    "year": "2017"
+    "company": "Ping Chong and Company / Lincoln Center Education",
+    "year": "2017",
+    "location": "New York, New York"
   }, {
     "name": "Chokher Bali",
     "type": "Play with Music",
     "role": "Binodini / Lead ",
     "director": "Arpita Mukherjee",
-    "company": "Hypokrit Theatre Company / New York",
-    "year": "2016"
+    "company": "Hypokrit Theatre Company",
+    "year": "2016",
+    "location": "New York, New York"
   }, {
     "name": "Monsoon Wedding",
     "type": "Musical Reading",
     "role": "Aditi / Lead ",
     "director": "Mira Nair",
-    "company": "JumpStart Entertainment / New York",
-    "year": "2015"
+    "company": "JumpStart Entertainment",
+    "year": "2015",
+    "location": "New York, New York"
   }, {
     "name": "Romeo & Juliet\n",
     "type": "Play with Music",
     "role": "Mercutio",
     "director": "Arpita Mukherjee",
-    "company": "Hypokrit Theatre Company / New York ",
-    "year": "2015"
+    "company": "Hypokrit Theatre Company",
+    "year": "2015",
+    "location": "New York, New York"
   }, {
     "name": "Taming of the Shrew",
     "type": "Ensemble",
     "role": "Hortensio / Kate 2 ",
     "director": "Ben Prusiner",
-    "company": "The Tempest Ladies / New York",
-    "year": "2014"
+    "company": "The Tempest Ladies",
+    "year": "2014",
+    "location": "New York, New York"
   }, {
     "name": " Girl and her Goddess",
     "type": "Staged Reading",
     "role": "Girl / Lead",
     "director": "Jesca Prudencio",
-    "company": "Ingenue Theatre Company / New York",
-    "year": "2013"
+    "company": "Ingenue Theatre Company",
+    "year": "2013",
+    "location": "Brooklyn, New York"
   }, {
     "name": "The Procedure",
     "type": "Play",
     "role": "Dawn / Supporting",
     "director": "Marcus Yi",
-    "company": "Planet Connections Theatre Festivity / New York",
-    "year": "2012"
+    "company": "Planet Connections Theatre Festivity",
+    "year": "2012",
+    "location": "New York, New York"
   }, {
     "name": "Once on this Island\n",
     "type": "Musical",
     "role": "Storyteller",
     "director": "Nikki Rothenberg",
-    "company": "Brooklyn Community Players / New York",
-    "year": "2012"
+    "company": "Brooklyn Community Players",
+    "year": "2012",
+    "location": "Brooklyn, New York"
   }, {
     "name": "The Vagina Monologues\n",
     "type": "Ensemble",
     "role": "Ensemble",
     "director": "Morgaine Jovan",
-    "company": "Barnard College / New York",
-    "year": "2012"
+    "company": "Barnard College",
+    "year": "2012",
+    "location": "New York, New York"
   }, {
     "name": "Hairspray",
     "type": "Musical",
     "role": "Dynamite",
     "director": "Sue Ellen Nielson",
-    "company": "Stage 1 / East Bay Area",
+    "company": "Stage 1",
     "year": "2012",
-    "posterImage": "hairsprayPoster.jpg"
+    "posterImage": "hairsprayPoster.jpg",
+    "location": "Fremont, California"
   }, {
-    "name": "Ozma of Oz - A Trip Hop Musical",
+    "name": "Ozma of Oz - Trip Hop Musical",
     "type": "Staged Reading",
     "role": "Lady Langwidere",
     "director": "Rob Melrose ",
-    "company": "Cutting Ball Theatre / San Francisco",
-    "year": "2011"
+    "company": "Cutting Ball Theatre",
+    "year": "2011",
+    "location": "San Francisco, California"
   }, {
     "name": "Sheherezade XI",
     "type": "Ensemble",
     "role": "Ensemble (Jessica & Colette)",
     "director": "Brady Brophy",
-    "company": "Playwright's Center of SF / San Francisco",
-    "year": "2011"
+    "company": "Playwright's Center of SF",
+    "year": "2011",
+    "location": "San Francisco, California"
   }, {
     "name": "Leading Ladies",
     "type": "Ensemble",
     "role": "Ensemble (Mara)",
     "director": "Samantha Wellen",
-    "company": "TheatreLab / New York",
-    "year": "2010"
+    "company": "TheatreLab",
+    "year": "2010",
+    "location": "New York, New York"
   }, {
-    "name": "Cootie Shots",
-    "type": "Children's Theatre Tour",
+    "name": "Cootie Shots - Tour",
+    "type": "Children's Theatre",
     "role": "Ensemble",
     "director": "Ensemble",
-    "company": "New Conservatory Theatre / San Francisco",
-    "year": "2010"
+    "company": "New Conservatory Theatre",
+    "year": "2010",
+    "location": "San Francisco, California"
   }, {
     "name": "Beautiful Thing",
     "type": "Play",
     "role": "Leah",
     "director": "Andrew Nance",
-    "company": "New Conservatory Theatre / San Francisco",
-    "year": "2009"
+    "company": "New Conservatory Theatre",
+    "year": "2009",
+    "location": "San Francisco, California"
   }, {
     "name": "Ramona Quimby - Tour",
     "type": "Children's Theatre",
     "role": "Mrs. Griggs",
     "director": "Jared Randolf",
-    "company": "Bay Area Children's Theatre / East Bay Area",
-    "year": "2009"
+    "company": "Bay Area Children's Theatre",
+    "year": "2009",
+    "location": "East Bay, California"
   }, {
     "name": "Midsummer Night’s Dream",
     "type": "Play",
     "role": "Hippolyta ",
     "director": "David Koppel",
-    "company": "Arclight Repertory Theatre / San Jose",
-    "year": "2009"
+    "company": "Arclight Repertory Theatre",
+    "year": "2009",
+    "location": "San Jose, California"
   }, {
     "name": "Rogue El Gato - Tour",
     "type": "Children's Theatre",
     "role": "Mayor and Monster",
     "director": "Shawn Ferreyra ",
-    "company": "El Gato Theatre / San Francisco",
-    "year": "2009"
+    "company": "El Gato Theatre",
+    "year": "2009",
+    "location": "San Francisco, California"
   }, {
     "name": "Macbeth",
     "type": "Play",
     "role": "3rd Witch and Nurse",
     "director": "Scott Ludwig",
-    "company": "Next Stage, San Francisco ",
-    "year": "2009"
+    "company": "Next Stage",
+    "year": "2009",
+    "location": "San Francisco, California"
   }, {
     "name": "Sultana Daku - Nautanki",
     "type": "Indian Theatre",
     "role": "Sumarna Daku / Ensemble",
     "director": "Dr. Devendra Sharma",
-    "company": "Naatak / San Jose, CA",
-    "year": "2008"
+    "company": "Naatak",
+    "year": "2008",
+    "location": "SF Bay Area, California"
   }, {
     "name": "The Odd Couple",
     "type": "Play",
     "role": "Cecily Pigeon",
     "director": "Jeff Hicks",
-    "company": "Actors Theatre Center / Santa Clara, CA",
-    "year": "2007"
+    "company": "Actors Theatre Center",
+    "year": "2007",
+    "location": "San Jose, California"
   }, {
     "name": "Our Town",
     "type": "Play",
     "role": "Mrs. Webbs ",
     "director": "Warren Keith",
-    "company": "University Theatre San Jose State / San Jose, CA",
-    "year": "2006"
+    "company": "University Theatre San Jose State",
+    "year": "2006",
+    "location": "San Jose, California"
   }, {
-    "name": "Nickel and Dimed - Premiere Production",
+    "name": "Nickel & Dimed - Premiere",
     "type": "Play",
-    "role": "Holly and Ensemble",
+    "role": "Holly & Ensemble",
     "director": "Elizabeth Spreen & Beth Theis",
-    "company": "University Theatre San Jose State / San Jose, CA",
-    "year": "2005"
+    "company": "University Theatre San Jose State",
+    "year": "2005",
+    "location": "San Jose, California"
   }]
 };
 },{}],"components/ShowList.vue":[function(require,module,exports) {
@@ -50679,6 +50709,44 @@ var _theatre = _interopRequireDefault(require("/assets/json/theatre.json"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -50824,7 +50892,7 @@ exports.default = _default;
           { staticClass: "show-content" },
           [
             _c("span", { staticClass: "show-instruction" }, [
-              _vm._v("expand to learn more about each show")
+              _vm._v("click title to learn more about each show")
             ]),
             _vm._v(" "),
             _c(
@@ -50838,29 +50906,26 @@ exports.default = _default;
                       { key: i, attrs: { item: entry } },
                       [
                         _c("v-expansion-panel-header", [
-                          _vm._v(
-                            _vm._s(entry.name) +
-                              " : " +
-                              _vm._s(entry.type) +
-                              ", " +
-                              _vm._s(entry.year) +
-                              " | Role : " +
-                              _vm._s(entry.role) +
-                              " "
-                          )
+                          _c("span", { staticClass: "show-name" }, [
+                            _vm._v(_vm._s(entry.name))
+                          ]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "show-role" }, [
+                            _vm._v(" Role : " + _vm._s(entry.role) + " ")
+                          ]),
+                          _c("span", { staticClass: "show-year" }, [
+                            _vm._v(_vm._s(entry.year) + " ")
+                          ]),
+                          _c("span", { staticClass: "show-location" }, [
+                            _vm._v(_vm._s(entry.location))
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("v-expansion-panel-content", [
                           _c("div", { staticClass: "show-expanded" }, [
                             _c("ul", [
-                              _c("li", [_vm._v(_vm._s(entry.name))]),
-                              _vm._v(" "),
                               _c("li", [
                                 _vm._v("Type : " + _vm._s(entry.type))
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _vm._v("Role : " + _vm._s(entry.role))
                               ]),
                               _vm._v(" "),
                               _c("li", [
@@ -50869,12 +50934,10 @@ exports.default = _default;
                               _vm._v(" "),
                               _c("li", [
                                 _vm._v("Company : " + _vm._s(entry.company))
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [_vm._v("Year : " + _vm._s(entry.year))])
+                              ])
                             ]),
                             _vm._v(" "),
-                            _c("div", [
+                            _c("div", { staticClass: "show-links" }, [
                               _c("span", [_vm._v("Read blog")]),
                               _vm._v(" "),
                               _c("span", [_vm._v("Show Gallery")])
@@ -50911,20 +50974,117 @@ exports.default = _default;
                       }
                     }
                   },
-                  [_vm._v("\n\t\t\t\t\t\t  " + _vm._s(entry) + "\n\t\t\t\t\t")]
+                  [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t  " + _vm._s(entry) + "\n\t\t\t\t\t\t"
+                    )
+                  ]
                 )
               }),
               0
-            ),
-            _vm._v(" "),
-            _c("span", [_vm._v("Download Printable Version")])
-          ])
+            )
+          ]),
+          _vm._v(" "),
+          _vm._m(0)
         ])
       ])
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "skillset" } }, [
+      _c("div", { attrs: { id: "trainingSkills" } }, [
+        _c("h1", [_vm._v("TRAINING / LABS / WORKSHOPS")]),
+        _vm._v(" "),
+        _c("ul", { staticClass: "trainingList" }, [
+          _c("li", [
+            _vm._v(
+              "Where Film & Anthropology Intersect, Workshop on Documentary Filmmaking with Harjant Gill. New Delhi"
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "Documentary Theatre and Teaching Artist Training with Ping Chong & Company. New York."
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "Singing in Hindustani Classical, private coaching with Sandip Bhattacharjee. New York and India."
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "On Camera Scene Study with Courtney Burr at Margie Haber Studio, Los Angeles. "
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "Film Acting Technique with Nancy Berwid at FirstTake Acting Studio, San Francisco. "
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "Musical Theatre Summer Conservatory with Marc Jacobs at Notre Dame De Namur University, Silicon Vallery."
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "Voice/Singing for Musical Theatre, Private Coaching with Michael Pesce, New York City."
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "Acting Shakespeare’s Verse, Private coaching with Deloss Brown, New York City. \n"
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "Classical Commedia D’ell Arte with Stanley Allan Sherman at Roving Classical Commedia, New York City.\n"
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "Hindustani Classical Music, private coaching with Sandip Bhattacharjee, New York City. \n"
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("hr"),
+        _vm._v(" "),
+        _c("h1", { staticClass: "skills" }, [_vm._v("SKILLS")]),
+        _vm._v(" "),
+        _c("ul", { staticClass: "skillsList" }, [
+          _c("li", [_vm._v("Open Water Scuba Certification.")]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "Dialects/Accents : South East London, African American, Russian and French."
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "Fluent (Speak, read, write and sing) in Hindi. Conversational Bengali and French."
+            )
+          ])
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
           return {
@@ -51124,31 +51284,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 var _default = {
   name: 'Theatre',
   components: {
@@ -51179,15 +51314,7 @@ exports.default = _default;
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "theatre-content" } }, [
-    _c("h1", [_vm._v(_vm._s(_vm.msg))]),
-    _vm._v(" "),
-    _c("span", { staticClass: "slicinItup" }, [
-      _vm._v(
-        ' The world says, "Theatre is dying"... Two thousand years or so and it still seems to be around. Oh well, must be an incredibly slow death.  As for the rest of us who can\'t help loving it to pieces, performing, writing, putting up shows, doing whatever it takes, to revel in the magic, that is theatre. '
-      )
-    ]),
-    _vm._v(" "),
-    _c("hr"),
+    _vm._m(0),
     _vm._v(" "),
     _c("div", { attrs: { id: "content-theatre" } }, [
       _c(
@@ -51223,8 +51350,6 @@ exports.default = _default;
       )
     ]),
     _vm._v(" "),
-    _vm._m(0),
-    _vm._v(" "),
     _c(
       "header",
       [_c("h1", [_vm._v("Shubhra Prakash")]), _vm._v(" "), _c("Navigation")],
@@ -51237,89 +51362,13 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "trainingSkills" } }, [
-      _c("h1", [_vm._v("TRAINING / LABS / WORKSHOPS")]),
-      _vm._v(" "),
-      _c("ul", { staticClass: "trainingList" }, [
-        _c("li", [
-          _vm._v(
-            "Where Film & Anthropology Intersect, Workshop on Documentary Filmmaking with Harjant Gill. New Delhi"
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _vm._v(
-            "Documentary Theatre and Teaching Artist Training with Ping Chong & Company. New York."
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _vm._v(
-            "Singing in Hindustani Classical, private coaching with Sandip Bhattacharjee. New York and India."
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _vm._v(
-            "On Camera Scene Study with Courtney Burr at Margie Haber Studio, Los Angeles. "
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _vm._v(
-            "Film Acting Technique with Nancy Berwid at FirstTake Acting Studio, San Francisco. "
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _vm._v(
-            "Musical Theatre Summer Conservatory with Marc Jacobs at Notre Dame De Namur University, Silicon Vallery."
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _vm._v(
-            "Voice/Singing for Musical Theatre, Private Coaching with Michael Pesce, New York City."
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _vm._v(
-            "Acting Shakespeare’s Verse, Private coaching with Deloss Brown, New York City. \n"
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _vm._v(
-            "Classical Commedia D’ell Arte with Stanley Allan Sherman at Roving Classical Commedia, New York City.\n"
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _vm._v(
-            "Hindustani Classical Music, private coaching with Sandip Bhattacharjee, New York City. \n"
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("hr"),
-      _vm._v(" "),
-      _c("h1", { staticClass: "skills" }, [_vm._v("SKILLS")]),
-      _vm._v(" "),
-      _c("ul", { staticClass: "skillsList" }, [
-        _c("li", [_vm._v("Open Water Scuba Certification.")]),
-        _vm._v(" "),
-        _c("li", [
-          _vm._v(
-            "Dialects/Accents : South East London, African American, Russian and French."
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _vm._v(
-            "Fluent (Speak, read, write and sing) in Hindi. Conversational Bengali and French."
-          )
-        ])
+    return _c("span", { staticClass: "slicinItup" }, [
+      _c("h1", [_vm._v("Theatre")]),
+      _vm._v(
+        "\n    Here you can have a look at my work on stage, read blogs I've written about my experience with each show, check out gallery of photos and media based on shows and get an idea of my training and skill set.             "
+      ),
+      _c("span", { attrs: { id: "theatre-download" } }, [
+        _vm._v("Click to Download Printable Version")
       ])
     ])
   }
