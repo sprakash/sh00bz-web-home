@@ -224,7 +224,7 @@
 		    font-size: 1em;
 		    letter-spacing: .1em;
 		    cursor: pointer;
-		    color: #9fd7e8;
+		    color: #9fd7e8 !important;
 		    font-style: italic;
 	    }
 
@@ -340,7 +340,7 @@
 
 
 	#theatre-area{
-		background-image: url('/assets/fake/mandolin.jpg');
+		background-image: url('/assets/fake/sultanaNSD.jpg');
 	    background-repeat: no-repeat;
 	    display: inline-block;
 	    width: 100%;
@@ -361,11 +361,12 @@
 	}
 
 	#film-area{
-		background-image: url('/assets/fake/showbaaz.jpg');
+		background-image: url('/assets/fake/vanillashot.png');
 	    background-repeat: no-repeat;
 	    display: inline-block;
 	    width: 100%;
-	    background-size: cover;
+	    background-size: inherit;
+    	background-position: -248px center;
 
 	    .sm & {
 	    	height: 47%;
@@ -378,7 +379,6 @@
 	    .md & {
 	    	background-size: cover;
 			width: 100%;
-			background-position: 50% 2%;
 
 			.panel-content {
 				padding-bottom: 7em;
@@ -388,7 +388,7 @@
 	}
 
 	#digital-area {
-		background-image: url('/assets/fake/singer.jpg');
+		background-image: url('/assets/fake/digital.jpg');
 		background-repeat: no-repeat;
 	    display: inline-block;
 	    width: 100%;

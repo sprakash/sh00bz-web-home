@@ -5,11 +5,11 @@
 		 	<li id="home"><router-link :to="{name: 'Landing'}">Home</router-link></li>
 			<li id="theatre"><router-link :to="{name: 'Theatre'}">Theatre</router-link></li>
 		    <li id="film"><router-link :to="{name: 'Film' }">Film</router-link></li>
-		    <li id="digital"><router-link :to="{name: 'Digital'}">Digital</router-link></li>
-		    <li id="intersect"><router-link :to="{name: 'Intersect'}">Intersect</router-link></li>
+		    <li id="digital"><router-link :to="{name: 'Digital'}">Digital / Intersect</router-link></li>
+		      <li id="fontwala"><a href="http://sprakash.github.io/portfolio/fontwala.html" target="_blank">Fontwala</a></li>
 		    <li id="gallery"><router-link :to="{name: 'Gallery'}">Gallery</router-link></li>
-		     <li id="blog"><router-link :to="{name: 'Blog'}">Blog</router-link></li>
-		      <li id="connect"><router-link :to="{name: 'Connect'}">Connect</router-link></li>
+		     <li id="blog"><a href="http://shubhraprakash.blogspot.com" target="_blank">Blog</a></li>
+ 	  	 		<li id="connect"><router-link :to="{name: 'Connect'}">Connect</router-link></li>
 			</ul>
 		</nav>
 		<nav class="mobile"><a href="#" v-on:click="openMenu()">&#9776;</a>
@@ -18,11 +18,12 @@
 			 	<li id="home"><router-link :to="{name: 'Landing'}">Home</router-link></li>
 				<li id="theatre"><router-link :to="{name: 'Theatre'}">Theatre</router-link></li>
 			    <li id="film"><router-link :to="{name: 'Film' }">Film</router-link></li>
-			    <li id="digital"><router-link :to="{name: 'Digital'}">Digital</router-link></li>
-			    <li id="intersect"><router-link :to="{name: 'Intersect'}">Intersect</router-link></li>
+			    <li id="digital"><router-link :to="{name: 'Digital'}">Digital / Intersect</router-link></li>
+			    <li id="fontwala"><a href="http://sprakash.github.io/portfolio/fontwala.html" target="_blank">Fontwala</a></li>
 			    <li id="gallery"><router-link :to="{name: 'Gallery'}">Gallery</router-link></li>
-			     <li id="blog"><router-link :to="{name: 'Blog'}">Blog</router-link></li>
-			      <li id="connect"><router-link :to="{name: 'Connect'}">Connect</router-link></li>
+
+  				<li id="blog"><a href="http://www.shubhraprakash.blogspot.com" target="_blank"/>Blog</a></li>    
+ 				<li id="connect"><router-link :to="{name: 'Connect'}">Connect</router-link></li>
 			</ul>
 		</nav>
 	</div>
@@ -85,6 +86,17 @@
 			display: flex;
 			list-style-type: none;
 			justify-content: space-around;
+
+			 li { 
+
+				a {
+					font-weight: bolder;
+
+					&:hover {
+						color: yellow !important;
+					}
+				}
+			 }
 		}
 
 		a {
@@ -188,5 +200,6 @@
 
 	#mobileNav {
 		display: none;
+		position: fixed;
 	}
 </style> 

@@ -1,5 +1,9 @@
 <template>
 	<div id="theatre-content">
+    <header>
+        <h1>Shubhra Prakash</h1>
+            <Navigation/>
+    </header>
 	<span class="slicinItup"> 
         <h1>Theatre</h1>
     Here you can have a look at my work on stage, read blogs I've written about my experience with each show, check out gallery of photos and media based on shows and get an idea of my training and skill set.             <span id="theatre-download">Click to Download Printable Version</span> </span>
@@ -22,13 +26,6 @@
             </section>  
 		
         </div>
-
-       
-
-		<header>
-			<h1>Shubhra Prakash</h1>
-			<Navigation/>
-		</header>
 	</div>
 
 
@@ -56,6 +53,7 @@
 </script>
 <style lang="scss">
 
+
 .sm #content {
     flex-direction: column !important;
 }
@@ -67,6 +65,8 @@
 #theatre {
 
     &-content {
+        margin-top: 3em;
+
         .md & {
             align-content  : center;
         }
@@ -74,11 +74,18 @@
     }
     
     &-download {   
-        color: coral;
+        color: #ff4d0b;
         text-decoration: underline;
         font-size: .85em;
         cursor: pointer;
     }
+}
+
+header {
+    position: fixed;
+    width: 98%;
+    top: 0;
+    bottom: auto;
 }
 
 header h1 {
@@ -141,19 +148,28 @@ input[type="radio"] {
 }
 
 #trainingSkills { 
-    margin: 2em 5em;
+    margin: 1.25em 2em;
 }
 	
 .trainingList {
     line-height: 2em;
     margin-bottom: 2em;
     display: block;
-    font-size: .8em;
+    font-size: .65em;
 
     .sm &,
     .md & {
         text-align: left;
-        font-size: .85em;
+        font-size: .5em;
+    }
+
+    li {
+        border-bottom: 1px solid;
+
+        a {
+            font-weight: bold;
+            color: #ff4d0b !important;
+        }
     }
 }
 
@@ -182,6 +198,7 @@ input[type="radio"] {
     background-color: #7ed1eb47;
     padding: .25em 1em;
     line-height: 2em;
+    letter-spacing: .15em;
 
     .sm &,
     .md & {

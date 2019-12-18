@@ -14,7 +14,7 @@
 					  <a href="https://www.linkedin.com/in/shubhraprakash/" target="_blank"><img src="/assets/icons/linkedin.svg"></a>
 				</span>
 				<span>
-					  <a href="http://instagram.com/sh000bz" target="_blank"><img src="/assets/icons/insta.svg"></a>
+					  <a href="http://instagram.com/sh000bz.artist" target="_blank"><img src="/assets/icons/insta.svg"></a>
 				</span>
 				<span>
 					  <a href="https://github.com/sprakash/sh00bz-web-home" target="_blank"><img src="/assets/icons/github.svg"></a>

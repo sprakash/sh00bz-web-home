@@ -97,9 +97,12 @@
 		background-size: 100% 100%;
 		color: #39053f;
 		align-items: center;
-
+		bottom: 0;
+		top: auto;
+		
 		.sm & {
 			z-index: 25;
+			bottom: 0;
 		}
 
 		ul {
@@ -107,6 +110,10 @@
 			.md & {
 				flex-direction: row;		
 			}
+		}
+
+		.md & {
+			bottom: 0;
 		}
 	}
 	
@@ -140,6 +147,13 @@
 	.sm #content-fill {
 		height: 48vh;
 	}*/
+
+	.mobile {
+
+		a {
+			color: white !important;
+		}
+	}
 
 </style>
 

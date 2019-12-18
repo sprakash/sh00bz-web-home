@@ -19,8 +19,8 @@ import App from './App.vue';
 import Digital from './components/Digital'
 import Theatre from './components/Theatre'
 import Film from './components/Film'
+import Gallery from './components/Gallery'
 import Code from './components/Code'
-import Slideshow from './components/Slideshow'
 import Blog from './components/Blog'
 import Connect from './components/Connect'
 import Landing from './components/Landing'
@@ -64,7 +64,7 @@ const routes= [
     {
     	path: '/gallery',
     	name: 'Gallery',
-    	component: Slideshow,
+    	component: Gallery,
      	props: true
     },
      {

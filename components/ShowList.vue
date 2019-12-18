@@ -37,13 +37,22 @@
 							    v-if="entry[sortKey] === showFilter || showFilter === 'All'"
 							    :item="entry"
 					     		:key="i">
-					      <v-expansion-panel-header><span class="show-name">{{entry.name}}</span> <span class="show-role"> Role : {{entry.role}} </span><span class="show-year">{{entry.year}} </span><span class="show-location">{{entry.location}}</span></v-expansion-panel-header>
+					      <v-expansion-panel-header>
+					      	<span class="show-header">
+						      	<span class="show-name">{{entry.name}}</span> 
+						      	<span class="show-details">
+						      	<span class="show-role"> Role : {{entry.role}} </span><span class="show-year">{{entry.year}} </span><span class="show-location">{{entry.location}}</span></span>
+						    </span>
+
+					      </v-expansion-panel-header>
 					      <v-expansion-panel-content>
 					      	<div class="show-expanded"> 
 						       <ul>
 						       	<li>Type : {{entry.type}}</li>
+						       	<li>Playwright : {{entry.playwright}}</li>
 						       	<li>Director : {{entry.director}}</li>
 						       	<li>Company : {{entry.company}}</li>
+						       	<li class="show-expanded-blurb">{{entry.blurb}}</li>
 						       </ul>
 						       <div class="show-links"> 
 						       		<span>Read blog</span>
@@ -55,59 +64,55 @@
 					  </v-expansion-panels>
 		    	</div>
 
-		    	<div>
+		    	<div class="show-side">
 				<div class="word-cloud">
-					<span>tag cloud</span>
+					<span>filter</span>
 					<ul>
 							<li
 							  v-for="(entry, index) in showFilterList"
 							  :item="entry"
 							  :key="index"
 							  @click="showFilter = entry;"
-							  :class="{ active: entry == showFilter }"
+							  :class="{ showActive: entry == showFilter }"
 							>
 							  {{ entry }}
 						</li>
-						<!-- <li>play</li>
-						<li>play with music</li>
-						<li>devised / experimental</li>
-						<li>indian theatre</li>
-						<li>nautanki</li>
-						<li>non-verbal</li>
-						<li>documentary theatre</li>
-						<li>musical reading</li>
-						<li>workshop</li>
-						<li>musical</li>
-						<li>ensemble</li>
-						<li>trip-hop musical</li>
-						<li>children's theatre</li>
-						<li>tour</li> -->
 					</ul>
 				</div>
 
 
 			<div id="skillset">
 			 <div id="trainingSkills">
-            <h1>TRAINING / LABS / WORKSHOPS</h1>
+            <h1>TRAINING</h1>
             <ul class="trainingList">
-                <li>Where Film &amp; Anthropology Intersect, Workshop on Documentary Filmmaking with Harjant Gill. New Delhi</li>
+               
                 <li>Documentary Theatre and Teaching Artist Training with Ping Chong & Company. New York.</li>
-                <li>Singing in Hindustani Classical, private coaching with Sandip Bhattacharjee. New York and India.</li>
+                <li>Indian Classical Singing (Kirana Gharana), private coaching w/ Sandip Bhattacharjee. New York and India.</li>
                 <li>On Camera Scene Study with Courtney Burr at Margie Haber Studio, Los Angeles. </li>
                 <li>Film Acting Technique with Nancy Berwid at FirstTake Acting Studio, San Francisco. </li>
-                <li>Musical Theatre Summer Conservatory with Marc Jacobs at Notre Dame De Namur University, Silicon Vallery.</li>
+                <li>Musical Theatre Summer Conservatory w/ Marc Jacobs, Notre Dame De Namur University, Silicon Vallery.</li>
                 <li>Voice/Singing for Musical Theatre, Private Coaching with Michael Pesce, New York City.</li>
                 <li>Acting Shakespeare’s Verse, Private coaching with Deloss Brown, New York City. 
 </li>
                 <li>Classical Commedia D’ell Arte with Stanley Allan Sherman at Roving Classical Commedia, New York City.
 </li>
-<li>Hindustani Classical Music, private coaching with Sandip Bhattacharjee, New York City. 
-</li>
+
             </ul>
-            <hr/>
+
+            <h1>LABS / WORKSHOPS</h1>
+            <ul class="trainingList">
+            	<li>Participant @ Where Film &amp; Anthropology Intersect, Workshop on Documentary Filmmaking with Harjant Gill. New Delhi 2019</li>
+            	<li>Participant @ <a href="https://www.tfiny.org/events/detail/immigration_co_lab_nyc" target="_blank">IMMIGRATION CO/LAB | NYC - Tribeca Film Institute</a>. New York City 2017</li>
+            </ul>
+
+            <h1>TALKS / PRESENTATIONS </h1>
+            <ul class="trainingList">
+            	<li><a href="https://www.docville.be/nl/film/webdox-40-user-engagement" target="_blank">Presenter @ WebDox Conference (User Engagement) Leuven, Belgium 2015</a></li>
+            	<li><a href="http://www.sawcc.org/new-films-2015/" target="_blank">Presenter / Filmmaker @ South Asian Women's Creative New Films 2015</a></li>
+            </ul>
 
             <h1 class="skills">SKILLS</h1>
-            <ul class="skillsList">
+            <ul class="trainingList">
                 <li>Open Water Scuba Certification.</li>
                 <li>Dialects/Accents : South East London, African American, Russian and French.</li>
                 <li>Fluent (Speak, read, write and sing) in Hindi. Conversational Bengali and French.</li>
@@ -220,19 +225,20 @@
 
 		&-instruction {
 			font-size: 0.75em;
-		    color: #7774a5;
+		    color: gray;
 		    text-align: right;
 		    width: 100%;
 		    display: inline-block;
+		    letter-spacing: .1em;
 		    font-weight: lighter;
-		    text-decoration: underline;
+		    margin-bottom: 0.5em;
 		}
 
 		&-filter {
 			display: flex;
 			flex-direction : row;
 			.sm & {
-				flex-direction: column-reverse;
+				flex-direction: column;
 			}
 		}
 
@@ -242,31 +248,56 @@
 
 		&-expanded {
 			background-color: white;
+			border: 1px solid lightgray;
+			border-top: none;
+
+			&-blurb {
+			    font-size: 1.2em;
+			    line-height: 1.5em;
+			    padding: 1em 0 .5em;
+			    color: black;
+			}
+		}
+
+		&-header {
+			display: flex;
+			flex-direction: column;
 		}
 
 		&-name {
-			font-size: 1.85em;
-			font-weight: lighter;
-			color: coral;
+			font-size: 1.25em;
+			font-weight: 300;
+			color: black;
 			word-break: break-all;
 
 			.sm & {
 				display: block;
-				font-size:2.85em;
+				font-size: 2 em;
 				text-align:left;
 			}
 		}
+
+		&-details {
+			display: flex;
+		}
 		
 		&-year {
-			background-color: #00bcd40d !important;
 			font-size: .25em;
+			padding: 1em !important;
+			margin: 0 !important;
+			color: deepskyblue;
+			font-weight: bold;
+
+			.sm & {
+				margin: 1em !important;
+			}
 		}
+
 
 		&-year, 
 		&-role {
-		    background-color: white;
-		    padding: 1em;
-		    margin: 0 1em;
+		    padding: 1em 0;
+		    margin: 0 1em 0 0;
 		    text-transform: uppercase;
     		font-size: .05em;
     		letter-spacing: .05em;
@@ -306,9 +337,21 @@
 		&-location {
 			font-size: .25em;
 			text-transform: uppercase;
-			background-color: #50aeff42;
-			color: white;
+			color: #ff4d0b;
 			padding: 1em;
+			text-align: right;
+			background: #fff8dcbd;
+    		margin: 0 1em;
+			
+			.sm & {
+				margin: 1em 0;
+				padding: 1em 0;
+			}
+		}
+
+		&-side {
+			  display: flex;
+    		  flex-direction: column;
 		}
 
 	}
@@ -317,6 +360,8 @@
 		display: flex;
 		margin-top: 2em;
 		flex-direction: column;
+		width: 70%;
+    	margin: 0 auto;
 		
 
 		span {
@@ -329,14 +374,9 @@
 		    text-align: center;
 		}
 		ul {
-
-		
-    padding: 0.5em 1em;
-    text-align: center;
-    font-size: 0.75em;
-    
-
-			
+		    padding: 0.5em 1em;
+		    text-align: center;
+		    font-size: 0.75em;
 			display: flex;
 		    justify-content: center;
 		    flex-wrap: wrap;
@@ -345,19 +385,20 @@
 			li {
 
 				background-color: #d3d8d961;
-    color: #818db5;
+    			color: #818db5;
 				font-weight: lighter;
 				padding: .5em 1em;
 				text-align: center;
 				font-size: .85em;
-    border: 2px solid #e9ecff;
+    			border: 2px solid #e9ecff;
 				margin: .25em;
 				cursor: pointer;	
 				letter-spacing: .1em;
 				text-transform: lowercase;	
 
 				&:nth-child(1) {
-					color: coral;
+					font-weight: bolder;
+					letter-spacing: .25em;
 				}		     
 			}
 
@@ -365,20 +406,20 @@
 	}
 
 	.v-expansion-panel {
+		margin-bottom: .5em;
 
 		button {
-			padding: .5em 1.5em;
+			padding: 1em 1.5em;
 		    border-radius: 4px;
 		    background-color: floralwhite;
-		    border-color: lightgrey;
 		    font-size:.8em;
 		    color: #084086;
-		    margin: .5em 0;
 		    text-align: justify;
 		    width: 100%;
 		    font-weight: light;
 		    display: flex;
 		    cursor: pointer;
+			justify-content: space-between;
 
 			.sm &,
 		    .md & {
@@ -390,15 +431,17 @@
 
 		ul {
 			font-size: .75em;
-		    padding: .5em 6em;
-		    color: #a60283;
+		    padding: .5em 1.5em;
+		    color: darkblue;
 		    line-height: 1.5em;
 		    background-color: white;
 		    font-weight: lighter;
+		    letter-spacing: .05em;
 		}
 	}
 
-	.darr {
+	.showActive {
+		border: 2px solid #ff4d0b !important;
 	}
 	
 </style>

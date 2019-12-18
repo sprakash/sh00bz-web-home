@@ -49292,6 +49292,7 @@ exports.default = void 0;
 //
 //
 //
+//
 var _default = {
   name: 'Navigation',
   data: function data() {
@@ -49362,22 +49363,13 @@ exports.default = _default;
           { attrs: { id: "digital" } },
           [
             _c("router-link", { attrs: { to: { name: "Digital" } } }, [
-              _vm._v("Digital")
+              _vm._v("Digital / Intersect")
             ])
           ],
           1
         ),
         _vm._v(" "),
-        _c(
-          "li",
-          { attrs: { id: "intersect" } },
-          [
-            _c("router-link", { attrs: { to: { name: "Intersect" } } }, [
-              _vm._v("Intersect")
-            ])
-          ],
-          1
-        ),
+        _vm._m(0),
         _vm._v(" "),
         _c(
           "li",
@@ -49390,16 +49382,7 @@ exports.default = _default;
           1
         ),
         _vm._v(" "),
-        _c(
-          "li",
-          { attrs: { id: "blog" } },
-          [
-            _c("router-link", { attrs: { to: { name: "Blog" } } }, [
-              _vm._v("Blog")
-            ])
-          ],
-          1
-        ),
+        _vm._m(1),
         _vm._v(" "),
         _c(
           "li",
@@ -49482,22 +49465,13 @@ exports.default = _default;
           { attrs: { id: "digital" } },
           [
             _c("router-link", { attrs: { to: { name: "Digital" } } }, [
-              _vm._v("Digital")
+              _vm._v("Digital / Intersect")
             ])
           ],
           1
         ),
         _vm._v(" "),
-        _c(
-          "li",
-          { attrs: { id: "intersect" } },
-          [
-            _c("router-link", { attrs: { to: { name: "Intersect" } } }, [
-              _vm._v("Intersect")
-            ])
-          ],
-          1
-        ),
+        _vm._m(2),
         _vm._v(" "),
         _c(
           "li",
@@ -49510,16 +49484,7 @@ exports.default = _default;
           1
         ),
         _vm._v(" "),
-        _c(
-          "li",
-          { attrs: { id: "blog" } },
-          [
-            _c("router-link", { attrs: { to: { name: "Blog" } } }, [
-              _vm._v("Blog")
-            ])
-          ],
-          1
-        ),
+        _vm._m(3),
         _vm._v(" "),
         _c(
           "li",
@@ -49535,7 +49500,76 @@ exports.default = _default;
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { attrs: { id: "fontwala" } }, [
+      _c(
+        "a",
+        {
+          attrs: {
+            href: "http://sprakash.github.io/portfolio/fontwala.html",
+            target: "_blank"
+          }
+        },
+        [_vm._v("Fontwala")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { attrs: { id: "blog" } }, [
+      _c(
+        "a",
+        {
+          attrs: {
+            href: "http://shubhraprakash.blogspot.com",
+            target: "_blank"
+          }
+        },
+        [_vm._v("Blog")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { attrs: { id: "fontwala" } }, [
+      _c(
+        "a",
+        {
+          attrs: {
+            href: "http://sprakash.github.io/portfolio/fontwala.html",
+            target: "_blank"
+          }
+        },
+        [_vm._v("Fontwala")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { attrs: { id: "blog" } }, [
+      _c(
+        "a",
+        {
+          attrs: {
+            href: "http://www.shubhraprakash.blogspot.com",
+            target: "_blank"
+          }
+        },
+        [_vm._v("Blog")]
+      )
+    ])
+  }
+]
 render._withStripped = true
 
           return {
@@ -49820,7 +49854,7 @@ render._withStripped = true
       
       }
     })();
-},{"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/fake/mandolin.jpg":[["mandolin.254498a3.jpg","assets/fake/mandolin.jpg"],"assets/fake/mandolin.jpg"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/fake/showbaaz.jpg":[["showbaaz.87f8cfb6.jpg","assets/fake/showbaaz.jpg"],"assets/fake/showbaaz.jpg"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/fake/singer.jpg":[["singer.4a21b1ee.jpg","assets/fake/singer.jpg"],"assets/fake/singer.jpg"],"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Bio.vue":[function(require,module,exports) {
+},{"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/fake/sultanaNSD.jpg":[["sultanaNSD.f75e9fb3.jpg","assets/fake/sultanaNSD.jpg"],"assets/fake/sultanaNSD.jpg"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/fake/vanillashot.png":[["vanillashot.615772a3.png","assets/fake/vanillashot.png"],"assets/fake/vanillashot.png"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/fake/digital.jpg":[["digital.c133ef26.jpg","assets/fake/digital.jpg"],"assets/fake/digital.jpg"],"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Bio.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -49871,8 +49905,19 @@ var staticRenderFns = [
       _c("div", { staticClass: "longbio" }, [
         _c("span", [
           _vm._v(
-            "Welcome to my website. Here you can learn about my work on stage, film and with web technologies. I explore my creative self as a performer, writer and producer.   Please feel free to reach out to me. \n\n\tI believe human beings must dream big and challenge themselves to break limitations imposed by themselves or others. I aspire next to create my most ambitious work yet : Fontwala inspired by the story of my uncle’s life as an artist, entreprenuer and visionary of Indian letterforms. Read all about Fontwala here."
-          )
+            "Welcome to my website. Here you can learn about my work on stage, film and digital medium. I explore my creative self as a performer, writer and producer.   Please feel free to reach out to me. \n\n\tI believe human beings must dream big and challenge themselves to break limitations imposed by themselves or others. I aspire next to create my most ambitious work yet : Fontwala inspired by the story of my uncle’s life as an artist, entreprenuer and visionary of Indian letterforms. Read all about Fontwala "
+          ),
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "http://sprakash.github.io/portfolio/fontwala.html",
+                target: "_blank"
+              }
+            },
+            [_vm._v("here")]
+          ),
+          _vm._v(".")
         ]),
         _vm._v(" "),
         _c("span", { staticClass: "quote" }, [
@@ -49881,7 +49926,11 @@ var staticRenderFns = [
           )
         ]),
         _vm._v(" "),
-        _c("span", { staticClass: "dwlres" }, [_vm._v("Download Resume")])
+        _c("section", { attrs: { id: "bio-action" } }, [
+          _c("span", [_vm._v("Download Resume")]),
+          _vm._v(" "),
+          _c("span", [_vm._v("Sign up for Newsletter")])
+        ])
       ])
     ])
   }
@@ -50053,7 +50102,7 @@ var staticRenderFns = [
               "a",
               {
                 attrs: {
-                  href: "http://instagram.com/sh000bz",
+                  href: "http://instagram.com/sh000bz.artist",
                   target: "_blank"
                 }
               },
@@ -50156,6 +50205,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
+//
 var _default = {
   name: 'Landing',
   components: {
@@ -50179,7 +50230,7 @@ var _default = {
         next: "digital-next",
         content: "Have a look at the short films I have been a part of as a creator, producer and performer."
       }, {
-        title: "Digital",
+        title: "Digital / Intersect",
         id: "digital-area",
         prev: "film-prev",
         next: "theatre-next",
@@ -50204,17 +50255,17 @@ exports.default = _default;
   return _c("div", { attrs: { id: "landing" } }, [
     _c("main", [_c("Panels", { attrs: { panels: _vm.panels } })], 1),
     _vm._v(" "),
-    _c(
-      "header",
-      [_c("h1", [_vm._v("Shubhra Prakash")]), _vm._v(" "), _c("Navigation")],
-      1
-    ),
-    _vm._v(" "),
     _c("section", [
       _c("div", { attrs: { id: "announcements" } }, [_c("Announcements")], 1)
     ]),
     _vm._v(" "),
-    _c("section", { attrs: { id: "bio" } }, [_c("Bio")], 1)
+    _c("section", { attrs: { id: "bio" } }, [_c("Bio")], 1),
+    _vm._v(" "),
+    _c(
+      "header",
+      [_c("h1", [_vm._v("Shubhra Prakash")]), _vm._v(" "), _c("Navigation")],
+      1
+    )
   ])
 }
 var staticRenderFns = []
@@ -50459,242 +50510,374 @@ module.exports = {
     "type": "Play with Music",
     "role": "Sutradhaar / Tara / Anjana",
     "director": "Ramesh Khanna",
+    "playwright": "Ramesh Khanna",
     "company": "Sri Dwarka Ramleela Society, India",
     "year": "2019",
-    "location": "New Delhi, India"
+    "location": "New Delhi, India",
+    "blurb": "Ramleela is a one of a kind yearly celebration of the great epic of Ramayana performed on stage all over India. This particular production was the biggest one of its kind in New Delhi where the average audience numbers soared to 100,000. On the final day of this ten day performance we had the Prime Minister of India Narendra Modi as our chief guest.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "Sundays w/ Chitra & Chaitali - Tour",
     "type": "Play with Music",
     "role": "Chitrangadha / Lead",
     "director": "Isheeta Ganguly",
+    "playwright": "Isheeta Ganguly",
     "company": "Tour",
     "year": "2019",
-    "location": "Kolkata & Hyderabad, India"
+    "location": "Kolkata & Hyderabad, India",
+    "blurb": "I enjoyed playing a Manipuri warrior princess with a bow and arrow in this touring production I was a part of in India.I had the privilege of learning the dances from Sohini Roy Chowdhury which brought back memories of learning Bharatnatyam as a child. The play draws from Rabindranath Tagore's Chitrangada, which tells the tale of the warrior princess Chitra's crisis of identity, as she grapples with the expectations that Arjun from the Mahabharata has from her. This production arranged by YPO Kolkata had Shashi Tharoor as the chief guest.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "Panniarchy",
     "type": "Experimental Theatre",
     "role": "Ensemble",
     "director": "Piyush Kumar",
+    "playwright": "LTG Repertory actors",
     "company": "Little Theatre Group Repertory",
     "year": "2019",
-    "location": "New Delhi, India"
+    "location": "New Delhi, India",
+    "blurb": "I got to devise this piece with our ensemble Little Theatre Group Repertory. The play पन्नीarchy is directed by Piyush Kumar.  We told the story of plastic using docu-drama, physical theatre and collected all the plastic over a period of month that we used in our devising process and in the show.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "Sultana Daku - Nautanki",
     "type": "Indian Theatre",
     "role": "Sumarna Daku / Ensemble",
     "director": "Dr. Devendra Sharma",
+    "playwright": "Natha Ram Gaud",
     "company": "20th Bharat Rang Mahotsava - National School of Drama",
     "year": "2019",
-    "location": "New Delhi, India"
+    "location": "New Delhi, India",
+    "blurb": "Got to perform a nautanki, at the National School of Drama's renowed annual theatre festival : 20th Bharat Rang Mahotsava. I had performed this eleven years prior in SF Bay Area. Performing and singing in India with some of the actual nautanki professionals was unforgettable.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "Three Women",
     "type": "Play with Music",
     "role": "Charu / Lead ",
     "director": "Isheeta Ganguly",
+    "playwright": "Isheeta Ganguly",
     "company": "The Tagore Society",
     "year": "2019",
-    "location": "Singapore"
+    "location": "Singapore",
+    "blurb": "First time performing in Singapore, Isheeta Ganguly's play with live Rabindra sangeet that takes three of Rabindranath Tagore's heroines and questions their fate as depicted in the popular they belong to.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "Babyshka",
     "type": "Experimental Theatre",
     "role": "Babyshka / Lead",
     "director": "Anna Lublina",
+    "playwright": "Anna Lublina and ensemble",
     "company": "Old American Can Factory",
     "year": "2018",
-    "location": "Brooklyn, New York"
+    "location": "Brooklyn, New York",
+    "blurb": "Anna Lublina led us in creating non-verbal devised piece where I once again got in touch with physical theatre performance. ",
+    "bloglink": "",
+    "gallerylink": ""
+  }, {
+    "name": "Songs in the key of Yi",
+    "type": "Musical Revue / Song Cycle",
+    "role": "Singer",
+    "director": "Marcus Yi / Musical Director : Sobina Chi",
+    "playwright": "Marcus Yi",
+    "company": "Living Room Theatre",
+    "year": "2018",
+    "location": "New York, New York",
+    "blurb": "Sang an original composition 'Unbreakable' by Marcus Yi",
+    "bloglink": "",
+    "galleryLink": ""
   }, {
     "name": "The Music In My Blood",
     "type": "Play with Music",
     "role": "Archana / Lead ",
     "director": "Sonalee Hardikar",
+    "playwright": "Shubhra Prakash & Sonalee Hardikar",
     "company": "Hypokrit Theatre Company",
     "year": "2018",
-    "location": "New York, New York"
+    "location": "New York, New York",
+    "blurb": "Most challenging work I've ever done bringing a story revolving Indian classical music to stage in New York. The journey began in 2015 with my curiousity with Indian classical music and me interviewing my guru Sandip Bhattacharjee. The first rendition was directed by Marcus Yi and second by Sonalee Hardikar with whom I co-wrote the second rendition. We staged 14 shows in Manhattan's Off-Broadway stage Amercian Actor's Theatre.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "Beyond Sacred",
     "type": "Documentary Theatre",
-    "role": "Maya's understudy",
+    "role": "Maha's understudy",
     "director": "Ping Chong",
+    "playwright": "Ping Chong & ensemble",
     "company": "Ping Chong and Company / Lincoln Center Education",
     "year": "2017",
-    "location": "New York, New York"
+    "location": "New York, New York",
+    "blurb": "Five Americans were interviewed and performed their stories about being Muslim in America. I got to understudy one of them. This documentary theatre piece was performed in several schools in New York as well along with a larger tour around the country with the main cast.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "Chokher Bali",
     "type": "Play with Music",
     "role": "Binodini / Lead ",
     "director": "Arpita Mukherjee",
+    "playwright": "Partha Chatterjee",
     "company": "Hypokrit Theatre Company",
     "year": "2016",
-    "location": "New York, New York"
+    "location": "New York, New York",
+    "blurb": "I got to act and sing bengali songs, which is technically my first language. I also enjoyed contributing to the musical direction of the show by suggesting mashups of Bengali and Western music. We performed 23 shows in Manhattan's Theatre for the New City.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
-    "name": "Monsoon Wedding",
-    "type": "Musical Reading",
+    "name": "Monsoon Wedding - Musical",
+    "type": "Staged Reading",
     "role": "Aditi / Lead ",
     "director": "Mira Nair",
+    "playwright": "Sabrina Dhawan",
     "company": "JumpStart Entertainment",
     "year": "2015",
-    "location": "New York, New York"
+    "location": "New York, New York",
+    "blurb": "I had seen Monsoon Wedding the film so being in a workshop reading playing the lead Aditi under the direction of Mira Nair and musical direction of Vishal Bhardwaj in New York City was a dream come true.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "Romeo & Juliet\n",
     "type": "Play with Music",
     "role": "Mercutio",
     "director": "Arpita Mukherjee",
+    "playwright": "William Shakespeare",
     "company": "Hypokrit Theatre Company",
     "year": "2015",
-    "location": "New York, New York"
+    "location": "New York, New York",
+    "blurb": "Our debut show as a new theare company which is co-founded by me. We were bringing a bollywood aesthetic to Shakespeare's classic. We staged 23 shows in the freezing February cold in Manhattan's Access Theatre with a double cast and had many sold out shows.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "Taming of the Shrew",
     "type": "Ensemble",
     "role": "Hortensio / Kate 2 ",
     "director": "Ben Prusiner",
+    "playwright": "William Shakespeare",
     "company": "The Tempest Ladies",
     "year": "2014",
-    "location": "New York, New York"
+    "location": "New York, New York",
+    "blurb": "Fierce ensemble of ladies gave me an opportunity to join them as they re-imagined and experimented with an all female cast for Taming of the Shrew. We shared roles and swapped them mid-show.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
-    "name": " Girl and her Goddess",
+    "name": "Girl and her Goddess",
     "type": "Staged Reading",
     "role": "Girl / Lead",
     "director": "Jesca Prudencio",
+    "playwright": "Vikas Menon",
     "company": "Ingenue Theatre Company",
     "year": "2013",
-    "location": "Brooklyn, New York"
+    "location": "Brooklyn, New York",
+    "blurb": "A night of staged readings in Brooklyn of works by South Asian artists.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "The Procedure",
     "type": "Play",
     "role": "Dawn / Supporting",
     "director": "Marcus Yi",
+    "playwright": "Marcus Yi",
     "company": "Planet Connections Theatre Festivity",
     "year": "2012",
-    "location": "New York, New York"
+    "location": "New York, New York",
+    "blurb": "Enjoyed learning about Singaporean dialect and slang.  First show ever with Marcus Yi who remains a friend and collaborator, because of whom I have found a lot of confidence in creating my own work.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "Once on this Island\n",
     "type": "Musical",
     "role": "Storyteller",
     "director": "Nikki Rothenberg",
+    "playwright": "Book & Lyrics by Lynn Ahrens, Music by Stephen Flaherty",
     "company": "Brooklyn Community Players",
     "year": "2012",
-    "location": "Brooklyn, New York"
+    "location": "Brooklyn, New York",
+    "blurb": "Thankful to Corinne and Chris for creating an opportunity for us to stage Once on this Island. I fell in love with this music.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "The Vagina Monologues\n",
     "type": "Ensemble",
     "role": "Ensemble",
     "director": "Morgaine Jovan",
+    "playwright": "Eve Ensler",
     "company": "Barnard College",
     "year": "2012",
-    "location": "New York, New York"
+    "location": "New York, New York",
+    "blurb": "Young ladies from Barnard, led by the fierce Morgaine approached this powerful work with total committment. We all held each other up, and trusted each other to do this work. Morgaine adopted inclusivity across genders, religion, race, in all aspects of this production, casting, staging, bringing personal stories, etc.  ",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "Hairspray",
     "type": "Musical",
     "role": "Dynamite",
     "director": "Sue Ellen Nielson",
+    "playwright": "Music by Marc Shaiman, lyrics by Scott Wittman &amp; Marc Shaiman, book by Mark O'Donnell &amp; Thomas Meehan and basis by John Waters",
     "company": "Stage 1",
     "year": "2012",
     "posterImage": "hairsprayPoster.jpg",
-    "location": "Fremont, California"
+    "location": "Fremont, California",
+    "blurb": "As a part of Dynamites I thoroughly enjoyed the music of this show and sang my heart. Who won't sing along to Welcome to the 60s!' ? One of my favorite musicals.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "Ozma of Oz - Trip Hop Musical",
     "type": "Staged Reading",
     "role": "Lady Langwidere",
     "director": "Rob Melrose ",
+    "playwright": "Rob Melrose",
     "company": "Cutting Ball Theatre",
     "year": "2011",
-    "location": "San Francisco, California"
+    "location": "San Francisco, California",
+    "blurb": "One of a kind experience to work with the innovative Rob Melrose and Zonk! a band I have become a fan of.  How often will I get to be a part of Trip-hop musical?",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "Sheherezade XI",
     "type": "Ensemble",
     "role": "Ensemble (Jessica & Colette)",
     "director": "Brady Brophy",
+    "playwright": "Multiple",
     "company": "Playwright's Center of SF",
     "year": "2011",
-    "location": "San Francisco, California"
+    "location": "San Francisco, California",
+    "blurb": "A collection of short skits where I played many parts, a talented cast who also were friends.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "Leading Ladies",
     "type": "Ensemble",
     "role": "Ensemble (Mara)",
     "director": "Samantha Wellen",
+    "playwright": "Ensemble",
     "company": "TheatreLab",
     "year": "2010",
-    "location": "New York, New York"
+    "location": "New York, New York",
+    "blurb": "First show in New York, stories of women who stood their ground and achieved goals despite of their difficult circumstances. Forever thankful to Larissa Dzegar for creating the opportunity. ",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
-    "name": "Cootie Shots - Tour",
+    "name": "Cootie Shots: Theatrical Inoculations Against Bigotry for Kids, Parents and Teachers - Tour",
     "type": "Children's Theatre",
     "role": "Ensemble",
     "director": "Ensemble",
-    "company": "New Conservatory Theatre",
+    "playwright": "A Fringe Benefits Project. Edited by Norma Bowles with Mark E. Rosenthal",
+    "company": "YouthAware at New Conservatory Theatre",
     "year": "2010",
-    "location": "San Francisco, California"
+    "location": "San Francisco, California",
+    "blurb": "A show our ensembled loved performing for kids while engaging them in countering bullying.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "Beautiful Thing",
     "type": "Play",
     "role": "Leah",
     "director": "Andrew Nance",
+    "playwright": "Jonathan Harvey ",
     "company": "New Conservatory Theatre",
     "year": "2009",
-    "location": "San Francisco, California"
+    "location": "San Francisco, California",
+    "blurb": "Received training in South East London accent to portray a vibrant character Leah in one of my favorite theatres in San Francisco. Can we just take a moment and give props to NCTC, Andrew Nance for casting a South Asian actor in a role that has nothing to do with the ethnicity ? THANK YOU!",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "Ramona Quimby - Tour",
     "type": "Children's Theatre",
-    "role": "Mrs. Griggs",
+    "role": "Mrs. Griggs & Aunt Sally",
     "director": "Jared Randolf",
+    "playwright": "",
     "company": "Bay Area Children's Theatre",
     "year": "2009",
-    "location": "East Bay, California"
+    "location": "East Bay, California",
+    "blurb": "Berkeley and SF shows for full houses with audience full of children always got us to do our best. Didn't complain that we got to sign autographs, posters and flyers for the children.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "Midsummer Night’s Dream",
     "type": "Play",
-    "role": "Hippolyta ",
+    "role": "Hippolyta",
     "director": "David Koppel",
+    "playwright": "William Shakespeare",
     "company": "Arclight Repertory Theatre",
     "year": "2009",
-    "location": "San Jose, California"
+    "location": "San Jose, California",
+    "blurb": "We explored the play with a Mayan theme. There was traditional dance and music and the fairies became Ushmals.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "Rogue El Gato - Tour",
     "type": "Children's Theatre",
     "role": "Mayor and Monster",
+    "playwright": "Shawn Ferreyra",
     "director": "Shawn Ferreyra ",
-    "company": "El Gato Theatre",
+    "company": "El Gato Del Diablo",
     "year": "2009",
-    "location": "San Francisco, California"
+    "location": "San Francisco, California",
+    "blurb": "It was especially fun to play two villians for an audience full of children. Their reactions could not be tamed. I enjoyed played up the characters to make it entertaining for the children.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "Macbeth",
     "type": "Play",
     "role": "3rd Witch and Nurse",
     "director": "Scott Ludwig",
+    "playwright": "William Shakespeare",
     "company": "Next Stage",
     "year": "2009",
-    "location": "San Francisco, California"
+    "location": "San Francisco, California",
+    "blurb": "We performed the Scottish play in an old episcopalian church on top of Gough St which would get well covered in SF fog by show time, a haunting atmosphere perfect for this tragic tale.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "Sultana Daku - Nautanki",
     "type": "Indian Theatre",
     "role": "Sumarna Daku / Ensemble",
     "director": "Dr. Devendra Sharma",
+    "playwright": "Natha Ram Gaud",
     "company": "Naatak",
     "year": "2008",
-    "location": "SF Bay Area, California"
+    "location": "SF Bay Area, California",
+    "blurb": "Performing and learning about Indian theatre style of nautanki was an unforgettable experience. To sing in nautanki style in a show in SF bay area was an incredible experience.  We were covered by several publications including a special segment on NPR's PRI-the world.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "The Odd Couple",
     "type": "Play",
     "role": "Cecily Pigeon",
     "director": "Jeff Hicks",
+    "playwright": "Neil Simon",
     "company": "Actors Theatre Center",
     "year": "2007",
-    "location": "San Jose, California"
+    "location": "San Jose, California",
+    "blurb": "Got a chance to practice comedy on stage as one of the Pigeon sisters in a classical stage show",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "Our Town",
     "type": "Play",
     "role": "Mrs. Webbs ",
     "director": "Warren Keith",
+    "playwright": "Thornton Wilder",
     "company": "University Theatre San Jose State",
     "year": "2006",
-    "location": "San Jose, California"
+    "location": "San Jose, California",
+    "blurb": "Learned a lot playing Mrs. Webbs in the direction of David Warren Keith. Knowledge of period costumes by our costume department and specific make up and hair styles was a learning experience.",
+    "bloglink": "",
+    "gallerylink": ""
   }, {
     "name": "Nickel & Dimed - Premiere",
     "type": "Play",
     "role": "Holly & Ensemble",
     "director": "Elizabeth Spreen & Beth Theis",
+    "playwright": "Joan Holden, based on NICKEL AND DIMED, ON (NOT) GETTING BY IN AMERICA by Barbara Ehrenreich",
     "company": "University Theatre San Jose State",
     "year": "2005",
-    "location": "San Jose, California"
+    "location": "San Jose, California",
+    "blurb": "Debut performance in San Jose State University in a play being adapted from a national bestseller NICKEL AND DIMED, ON (NOT) GETTING BY IN AMERICA by Barbara Ehrenreich.",
+    "bloglink": "",
+    "gallerylink": ""
   }]
 };
 },{}],"components/ShowList.vue":[function(require,module,exports) {
@@ -50709,6 +50892,11 @@ var _theatre = _interopRequireDefault(require("/assets/json/theatre.json"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//
+//
+//
+//
+//
 //
 //
 //
@@ -50906,18 +51094,22 @@ exports.default = _default;
                       { key: i, attrs: { item: entry } },
                       [
                         _c("v-expansion-panel-header", [
-                          _c("span", { staticClass: "show-name" }, [
-                            _vm._v(_vm._s(entry.name))
-                          ]),
-                          _vm._v(" "),
-                          _c("span", { staticClass: "show-role" }, [
-                            _vm._v(" Role : " + _vm._s(entry.role) + " ")
-                          ]),
-                          _c("span", { staticClass: "show-year" }, [
-                            _vm._v(_vm._s(entry.year) + " ")
-                          ]),
-                          _c("span", { staticClass: "show-location" }, [
-                            _vm._v(_vm._s(entry.location))
+                          _c("span", { staticClass: "show-header" }, [
+                            _c("span", { staticClass: "show-name" }, [
+                              _vm._v(_vm._s(entry.name))
+                            ]),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "show-details" }, [
+                              _c("span", { staticClass: "show-role" }, [
+                                _vm._v(" Role : " + _vm._s(entry.role) + " ")
+                              ]),
+                              _c("span", { staticClass: "show-year" }, [
+                                _vm._v(_vm._s(entry.year) + " ")
+                              ]),
+                              _c("span", { staticClass: "show-location" }, [
+                                _vm._v(_vm._s(entry.location))
+                              ])
+                            ])
                           ])
                         ]),
                         _vm._v(" "),
@@ -50929,11 +51121,21 @@ exports.default = _default;
                               ]),
                               _vm._v(" "),
                               _c("li", [
+                                _vm._v(
+                                  "Playwright : " + _vm._s(entry.playwright)
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
                                 _vm._v("Director : " + _vm._s(entry.director))
                               ]),
                               _vm._v(" "),
                               _c("li", [
                                 _vm._v("Company : " + _vm._s(entry.company))
+                              ]),
+                              _vm._v(" "),
+                              _c("li", { staticClass: "show-expanded-blurb" }, [
+                                _vm._v(_vm._s(entry.blurb))
                               ])
                             ]),
                             _vm._v(" "),
@@ -50955,9 +51157,9 @@ exports.default = _default;
           1
         ),
         _vm._v(" "),
-        _c("div", [
+        _c("div", { staticClass: "show-side" }, [
           _c("div", { staticClass: "word-cloud" }, [
-            _c("span", [_vm._v("tag cloud")]),
+            _c("span", [_vm._v("filter")]),
             _vm._v(" "),
             _c(
               "ul",
@@ -50966,7 +51168,7 @@ exports.default = _default;
                   "li",
                   {
                     key: index,
-                    class: { active: entry == _vm.showFilter },
+                    class: { showActive: entry == _vm.showFilter },
                     attrs: { item: entry },
                     on: {
                       click: function($event) {
@@ -50998,15 +51200,9 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "skillset" } }, [
       _c("div", { attrs: { id: "trainingSkills" } }, [
-        _c("h1", [_vm._v("TRAINING / LABS / WORKSHOPS")]),
+        _c("h1", [_vm._v("TRAINING")]),
         _vm._v(" "),
         _c("ul", { staticClass: "trainingList" }, [
-          _c("li", [
-            _vm._v(
-              "Where Film & Anthropology Intersect, Workshop on Documentary Filmmaking with Harjant Gill. New Delhi"
-            )
-          ]),
-          _vm._v(" "),
           _c("li", [
             _vm._v(
               "Documentary Theatre and Teaching Artist Training with Ping Chong & Company. New York."
@@ -51015,7 +51211,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("li", [
             _vm._v(
-              "Singing in Hindustani Classical, private coaching with Sandip Bhattacharjee. New York and India."
+              "Indian Classical Singing (Kirana Gharana), private coaching w/ Sandip Bhattacharjee. New York and India."
             )
           ]),
           _vm._v(" "),
@@ -51033,7 +51229,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("li", [
             _vm._v(
-              "Musical Theatre Summer Conservatory with Marc Jacobs at Notre Dame De Namur University, Silicon Vallery."
+              "Musical Theatre Summer Conservatory w/ Marc Jacobs, Notre Dame De Namur University, Silicon Vallery."
             )
           ]),
           _vm._v(" "),
@@ -51053,20 +51249,77 @@ var staticRenderFns = [
             _vm._v(
               "Classical Commedia D’ell Arte with Stanley Allan Sherman at Roving Classical Commedia, New York City.\n"
             )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("h1", [_vm._v("LABS / WORKSHOPS")]),
+        _vm._v(" "),
+        _c("ul", { staticClass: "trainingList" }, [
+          _c("li", [
+            _vm._v(
+              "Participant @ Where Film & Anthropology Intersect, Workshop on Documentary Filmmaking with Harjant Gill. New Delhi 2019"
+            )
           ]),
           _vm._v(" "),
           _c("li", [
-            _vm._v(
-              "Hindustani Classical Music, private coaching with Sandip Bhattacharjee, New York City. \n"
+            _vm._v("Participant @ "),
+            _c(
+              "a",
+              {
+                attrs: {
+                  href:
+                    "https://www.tfiny.org/events/detail/immigration_co_lab_nyc",
+                  target: "_blank"
+                }
+              },
+              [_vm._v("IMMIGRATION CO/LAB | NYC - Tribeca Film Institute")]
+            ),
+            _vm._v(". New York City 2017")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("h1", [_vm._v("TALKS / PRESENTATIONS ")]),
+        _vm._v(" "),
+        _c("ul", { staticClass: "trainingList" }, [
+          _c("li", [
+            _c(
+              "a",
+              {
+                attrs: {
+                  href:
+                    "https://www.docville.be/nl/film/webdox-40-user-engagement",
+                  target: "_blank"
+                }
+              },
+              [
+                _vm._v(
+                  "Presenter @ WebDox Conference (User Engagement) Leuven, Belgium 2015"
+                )
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "http://www.sawcc.org/new-films-2015/",
+                  target: "_blank"
+                }
+              },
+              [
+                _vm._v(
+                  "Presenter / Filmmaker @ South Asian Women's Creative New Films 2015"
+                )
+              ]
             )
           ])
         ]),
         _vm._v(" "),
-        _c("hr"),
-        _vm._v(" "),
         _c("h1", { staticClass: "skills" }, [_vm._v("SKILLS")]),
         _vm._v(" "),
-        _c("ul", { staticClass: "skillsList" }, [
+        _c("ul", { staticClass: "trainingList" }, [
           _c("li", [_vm._v("Open Water Scuba Certification.")]),
           _vm._v(" "),
           _c("li", [
@@ -51281,9 +51534,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
-//
-//
-//
 var _default = {
   name: 'Theatre',
   components: {
@@ -51314,6 +51564,12 @@ exports.default = _default;
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "theatre-content" } }, [
+    _c(
+      "header",
+      [_c("h1", [_vm._v("Shubhra Prakash")]), _vm._v(" "), _c("Navigation")],
+      1
+    ),
+    _vm._v(" "),
     _vm._m(0),
     _vm._v(" "),
     _c("div", { attrs: { id: "content-theatre" } }, [
@@ -51348,13 +51604,7 @@ exports.default = _default;
         [_c("ShowGallery", { attrs: { shows: _vm.shows } })],
         1
       )
-    ]),
-    _vm._v(" "),
-    _c(
-      "header",
-      [_c("h1", [_vm._v("Shubhra Prakash")]), _vm._v(" "), _c("Navigation")],
-      1
-    )
+    ])
   ])
 }
 var staticRenderFns = [
@@ -51428,8 +51678,67 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default = {
   name: 'Film',
+  components: {
+    Navigation: _Navigation.default
+  },
   created: function created() {
     this.msg = this.$route.params.isSlideshow;
   },
@@ -51453,16 +51762,149 @@ exports.default = _default;
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("h1", [_vm._v("Hello Film Page")]),
-    _vm._v(" "),
     _c(
       "header",
       [_c("h1", [_vm._v("Shubhra Prakash")]), _vm._v(" "), _c("Navigation")],
       1
-    )
+    ),
+    _vm._v(" "),
+    _vm._m(0)
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "section",
+      { staticClass: "slicinItup", attrs: { id: "film-content" } },
+      [
+        _c("section", { attrs: { id: "film-title" } }, [
+          _c("h1", [_vm._v("Film")]),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "film-tag" } }, [
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "http://www.randomfoxproductions.com",
+                  target: "_blank"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "foxlogo",
+                  attrs: { src: "/randomfoxlogo.42505791.png" }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c("span", [
+              _vm._v("\nCo-Founded a production company "),
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href: "http://www.randomfoxproductions.com",
+                    target: "_blank"
+                  }
+                },
+                [_vm._v("(Random Fox Productions)")]
+              ),
+              _vm._v(
+                " of diverse filmmakers, writers and actors to create short film and interactive content. An experiment to create socially aware content and address issues such as, racism and gender discrimination. \n"
+              ),
+              _c("hr")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("section", { attrs: { id: "films" } }, [
+          _c("div", [
+            _c("h2", [_vm._v("Actor & Co-Producer")]),
+            _vm._v(" "),
+            _c("h3", [_vm._v("Vanilla")]),
+            _vm._v(" "),
+            _c("img", {
+              attrs: { src: "/vanilla.00c394b1.jpg" }
+            }),
+            _vm._v(" "),
+            _c("div", { staticClass: "descript" }, [
+              _vm._v(
+                "\n\t\t\t\tStella is a baker who has been running her business with a recipe for a delicious vanilla donut. Will Stella be able to accept other bakers who arrive with new recipes and flavors ? We conceptualized, shot and edited 'Vanilla' in 72 hours as part of Asian American Film Lab's 72 hr film shootout in New York. We were placed in Top Ten picks and Random Fox took home a Screenwriting excellence award.  \n\t\t\t"
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", [
+            _c("h2", [_vm._v("Director & Co-Producer")]),
+            _vm._v(" "),
+            _c("h3", [_vm._v("Funny Faces")]),
+            _vm._v(" "),
+            _c("img", {
+              attrs: { src: "/funnyfaces.544a1b33.png" }
+            }),
+            _vm._v(" "),
+            _c("div", { staticClass: "descript" }, [
+              _vm._v(
+                "\n\t\t\t\tTwo female comedians have been formed into a team. The establishment has laid down the rules, only one of the two is allowed to face the audience and perform the jokes, the other must work behind the scenes. Together they must challenge both the establishment and their own beliefs on talent, beauty and being an artist. Funny Faces was a result of a 72 hour film shootout competition, a worldwide contest that is conducted annually by Asian American Film Lab in New York City, where the theme was “Two Faces”. Funny Faces placed in the top ten.\n\n\n\t\t\tInvited to speak at a "
+              ),
+              _c(
+                "a",
+                { attrs: { href: "http://www.sawcc.org/new-films-2015/" } },
+                [
+                  _vm._v(
+                    "panel organized by South Asian Women's Creative Collective (SAWCC) about filmmaking as a south asian female"
+                  )
+                ]
+              ),
+              _vm._v(
+                " about filmmaking as a south asian female. Funny Faces was a finalist in their film competition.\n\n\n\t\t\t"
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", [
+            _c("h2", [_vm._v("Writer, Director & Producer")]),
+            _vm._v(" "),
+            _c("h3", [_vm._v("Three Dates")]),
+            _vm._v(" "),
+            _c("img", {
+              attrs: { src: "/threedates.dc3eaffe.jpg" }
+            }),
+            _vm._v(" "),
+            _c("div", { staticClass: "descript" }, [
+              _vm._v(
+                "\n\t\t\t\tMy first short “Three Dates” was about an ethnically ambiguous man facing judgement from his dates when they discover his true ethnicity. I used comedy to point at possible stereotypes attached to particular ethnicities. Three Dates, was screened at the 2013 New York Indian Film Festival. This short film led to the creation of Random Fox Productions.\n\t\t\t"
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("hr"),
+        _vm._v(" "),
+        _c("section", { attrs: { id: "miscell" } }, [
+          _c("div", [
+            _c("h2", [_vm._v("Subtitles & Translations (Hindi to English)")]),
+            _vm._v(" "),
+            _c("h3", [_vm._v("Karma Killings on Netflix")]),
+            _vm._v(" "),
+            _c("div", { staticClass: "descript" })
+          ]),
+          _vm._v(" "),
+          _c("div", [
+            _c("h2", [_vm._v("Transcription")]),
+            _vm._v(" "),
+            _c("h3", [_vm._v("Vamp")]),
+            _vm._v(" "),
+            _c("div", { staticClass: "descript" })
+          ])
+        ])
+      ]
+    )
+  }
+]
 render._withStripped = true
 
           return {
@@ -51495,7 +51937,89 @@ render._withStripped = true
       
       }
     })();
-},{"./Navigation":"components/Navigation.vue","_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Code.vue":[function(require,module,exports) {
+},{"./Navigation":"components/Navigation.vue","/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/fake/randomfoxlogo.png":[["randomfoxlogo.42505791.png","assets/fake/randomfoxlogo.png"],"assets/fake/randomfoxlogo.png"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/fake/vanilla.jpg":[["vanilla.00c394b1.jpg","assets/fake/vanilla.jpg"],"assets/fake/vanilla.jpg"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/fake/funnyfaces.png":[["funnyfaces.544a1b33.png","assets/fake/funnyfaces.png"],"assets/fake/funnyfaces.png"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/fake/threedates.jpg":[["threedates.dc3eaffe.jpg","assets/fake/threedates.jpg"],"assets/fake/threedates.jpg"],"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Gallery.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {};
+exports.default = _default;
+        var $3abc3a = exports.default || module.exports;
+      
+      if (typeof $3abc3a === 'function') {
+        $3abc3a = $3abc3a.options;
+      }
+    
+        /* template */
+        Object.assign($3abc3a, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "gallery" } }, [
+      _c("h1", [_vm._v("Gallery")]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "Simply, images or visuals from my work that I like looking at and want to share with the world."
+        )
+      ]),
+      _vm._v(" "),
+      _c("section", { attrs: { id: "all-visuals" } })
+    ])
+  }
+]
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: "data-v-3abc3a",
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$3abc3a', $3abc3a);
+          } else {
+            api.reload('$3abc3a', $3abc3a);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Code.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -51573,131 +52097,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"store/GalleryImagesStore.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var GalleryImagesStore = {
-  data: {
-    landingImages: ['Limg1', 'Limg2', 'Limg3', 'Limg4'],
-    theatreImages: ['Timg1', 'Timg2', 'Timg3', 'Timg4'],
-    filmImages: ['Fimg1', 'Fimg2', 'Fimg3', 'Fimg4'],
-    otherImages: ['Oimg1', 'Oimg2', 'Oimg3', 'Oimg4']
-  },
-  methods: {
-    loadImages: function loadImages(galleryName) {
-      console.log('loading');
-    }
-  }
-};
-var _default = GalleryImagesStore;
-exports.default = _default;
-},{}],"components/Slideshow.vue":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _GalleryImagesStore = _interopRequireDefault(require("../store/GalleryImagesStore"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default = {
-  name: 'Slideshow',
-  created: function created() {
-    this.msg = this.$route.params.isSlideshow;
-  },
-  data: function data() {
-    return {
-      GalleryImagesStore: _GalleryImagesStore.default.data
-    };
-  },
-  methods: {
-    loadGallery: function loadGallery(galleryName) {
-      _GalleryImagesStore.default.methods.loadGallery(galleryName);
-    }
-  }
-};
-exports.default = _default;
-        var $46a70b = exports.default || module.exports;
-      
-      if (typeof $46a70b === 'function') {
-        $46a70b = $46a70b.options;
-      }
-    
-        /* template */
-        Object.assign($46a70b, (function () {
-          var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "slide-gallery", attrs: { id: "sliding-yo" } }, [
-      _vm._v("\n\t\tHEY HEY HEY \n\t\t" + _vm._s(_vm.msg) + "\n\t\t"),
-      _vm.msg === true
-        ? _c(
-            "ul",
-            _vm._l(_vm.GalleryImagesStore.theatreImages, function(singleImage) {
-              return _c("li", [_vm._v(_vm._s(singleImage) + " STUFF ")])
-            }),
-            0
-          )
-        : _vm._e()
-    ])
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-
-          return {
-            render: render,
-            staticRenderFns: staticRenderFns,
-            _compiled: true,
-            _scopeId: null,
-            functional: undefined
-          };
-        })());
-      
-    /* hot reload */
-    (function () {
-      if (module.hot) {
-        var api = require('vue-hot-reload-api');
-        api.install(require('vue'));
-        if (api.compatible) {
-          module.hot.accept();
-          if (!module.hot.data) {
-            api.createRecord('$46a70b', $46a70b);
-          } else {
-            api.reload('$46a70b', $46a70b);
-          }
-        }
-
-        
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-      }
-    })();
-},{"../store/GalleryImagesStore":"store/GalleryImagesStore.js","_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Blog.vue":[function(require,module,exports) {
+},{"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Blog.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -51782,6 +52182,12 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
+
+var _Navigation = _interopRequireDefault(require("./Navigation"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
 //
 //
 //
@@ -51832,6 +52238,9 @@ exports.default = void 0;
 //
 var _default = {
   name: 'Connect',
+  components: {
+    Navigation: _Navigation.default
+  },
   created: function created() {
     this.msg = this.$route.params.isSlideshow;
   },
@@ -51855,21 +52264,13 @@ exports.default = _default;
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("h1", [_vm._v("Connect")]),
-    _vm._v(" "),
-    _c("hr", { staticClass: "divide" }),
-    _vm._v(" "),
-    _vm._m(0),
-    _vm._v(" "),
-    _c("hr"),
-    _vm._v(" "),
-    _vm._m(1),
-    _vm._v(" "),
     _c(
       "header",
       [_c("h1", [_vm._v("Shubhra Prakash")]), _vm._v(" "), _c("Navigation")],
       1
-    )
+    ),
+    _vm._v(" "),
+    _vm._m(0)
   ])
 }
 var staticRenderFns = [
@@ -51877,79 +52278,81 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", [
-      _c("figure", [
-        _c("div", { staticClass: "contact-img" }),
-        _vm._v(" "),
-        _c("figcaption", [
-          _vm._v("Photo from Broadway style Singing Recital "),
-          _c("br"),
-          _vm._v(
-            "at Musical Theatre Summer Conservatory at Notre DaNamur University, California."
-          )
-        ])
-      ]),
+    return _c("section", { attrs: { id: "connect" } }, [
+      _c("h1", [_vm._v("Connect")]),
       _vm._v(" "),
-      _c("ul", [
-        _c("li", [
-          _vm._v("Email me at "),
-          _c(
-            "a",
-            {
-              staticClass: "email-link",
-              attrs: { href: "mailto:prakashnitza@gmail.com" }
-            },
-            [_vm._v("prakashnitza@gmail.com")]
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _vm._v("Social Media : \n\t\t\t\t"),
-          _c("ul", { staticClass: "horiz-list" }, [
-            _c("li", [_vm._v("Facebook")]),
+      _c("section", { attrs: { id: "connect-sections" } }, [
+        _c("section", [
+          _c("figure", [
+            _c("div", { staticClass: "contact-img" }),
             _vm._v(" "),
-            _c("li", [_vm._v("Twitter")]),
-            _vm._v(" "),
-            _c("li", [_vm._v("Instagram")]),
-            _vm._v(" "),
-            _c("li", [_vm._v("LinkedIn")])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _vm._v("Download\n\t\t\t\t"),
+            _c("figcaption", [
+              _vm._v("Photo from Broadway style Singing Recital "),
+              _c("br"),
+              _vm._v(
+                "at Musical Theatre Summer Conservatory at Notre DaNamur University, California."
+              )
+            ])
+          ]),
+          _vm._v(" "),
           _c("ul", [
-            _c("li", [_vm._v("Performer (Stage and Film) Resume")]),
+            _c("li", [
+              _vm._v("Email me at "),
+              _c(
+                "a",
+                {
+                  staticClass: "email-link",
+                  attrs: { href: "mailto:prakashnitza@gmail.com" }
+                },
+                [_vm._v("prakashnitza@gmail.com")]
+              )
+            ]),
             _vm._v(" "),
-            _c("li", [_vm._v("Producer Resume")]),
+            _c("li", [
+              _vm._v("Social Media : \n\t\t\t\t\t\t\t"),
+              _c("ul", { staticClass: "horiz-list" }, [
+                _c("li", [_vm._v("Facebook")]),
+                _vm._v(" "),
+                _c("li", [_vm._v("Twitter")]),
+                _vm._v(" "),
+                _c("li", [_vm._v("Instagram")]),
+                _vm._v(" "),
+                _c("li", [_vm._v("LinkedIn")])
+              ])
+            ]),
             _vm._v(" "),
-            _c("li", [_vm._v("Front End Dev Resume")])
+            _c("li", [
+              _vm._v("Download\n\t\t\t\t\t\t\t"),
+              _c("ul", [
+                _c("li", [_vm._v("Performer (Stage and Film) Resume")]),
+                _vm._v(" "),
+                _c("li", [_vm._v("Producer Resume")]),
+                _vm._v(" "),
+                _c("li", [_vm._v("Front End Dev Resume")])
+              ])
+            ])
           ])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("section", { staticClass: "connect-lower" }, [
-      _c("div", { staticClass: "space-fill" }),
-      _vm._v(" "),
-      _c("article", [
-        _vm._v(
-          "The site has been created by yours truly using Vue framework including the blog which has been created using Vue as well. Code can be looked at "
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", [
-        _c("h3", [_vm._v("references")]),
+        ]),
         _vm._v(" "),
-        _c("ul", [
-          _c("li", [
+        _c("section", { staticClass: "connect-lower" }, [
+          _c("div", { staticClass: "space-fill" }),
+          _vm._v(" "),
+          _c("article", [
             _vm._v(
-              "https://dev.to/alexmourer/click-event-filtering-on-a-json-rendered-list-in-vuejs-3kpn"
+              "The site has been created by yours truly using Vue framework including the blog which has been created using Vue as well. Code can be looked at "
             )
+          ]),
+          _vm._v(" "),
+          _c("div", [
+            _c("h3", [_vm._v("references")]),
+            _vm._v(" "),
+            _c("ul", [
+              _c("li", [
+                _vm._v(
+                  "https://dev.to/alexmourer/click-event-filtering-on-a-json-rendered-list-in-vuejs-3kpn"
+                )
+              ])
+            ])
           ])
         ])
       ])
@@ -51988,7 +52391,7 @@ render._withStripped = true
       
       }
     })();
-},{"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/piano.jpg":[["piano.aa1e6821.jpg","assets/piano.jpg"],"assets/piano.jpg"],"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"app.js":[function(require,module,exports) {
+},{"./Navigation":"components/Navigation.vue","/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/piano.jpg":[["piano.aa1e6821.jpg","assets/piano.jpg"],"assets/piano.jpg"],"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"app.js":[function(require,module,exports) {
 "use strict";
 
 var _vue = _interopRequireDefault(require("vue"));
@@ -52007,9 +52410,9 @@ var _Theatre = _interopRequireDefault(require("./components/Theatre"));
 
 var _Film = _interopRequireDefault(require("./components/Film"));
 
-var _Code = _interopRequireDefault(require("./components/Code"));
+var _Gallery = _interopRequireDefault(require("./components/Gallery"));
 
-var _Slideshow = _interopRequireDefault(require("./components/Slideshow"));
+var _Code = _interopRequireDefault(require("./components/Code"));
 
 var _Blog = _interopRequireDefault(require("./components/Blog"));
 
@@ -52063,7 +52466,7 @@ var routes = [{
 }, {
   path: '/gallery',
   name: 'Gallery',
-  component: _Slideshow.default,
+  component: _Gallery.default,
   props: true
 }, {
   path: '/blog',
@@ -52095,7 +52498,7 @@ new _vue.default({
     return h(_App.default);
   }
 });
-},{"vue":"node_modules/vue/dist/vue.runtime.esm.js","vuetify":"node_modules/vuetify/dist/vuetify.js","vue-mq":"node_modules/vue-mq/dist/vue-mq.es.js","vue-router":"node_modules/vue-router/dist/vue-router.esm.js","./App.vue":"App.vue","./components/Digital":"components/Digital.vue","./components/Theatre":"components/Theatre.vue","./components/Film":"components/Film.vue","./components/Code":"components/Code.vue","./components/Slideshow":"components/Slideshow.vue","./components/Blog":"components/Blog.vue","./components/Connect":"components/Connect.vue","./components/Landing":"components/Landing.vue"}],"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"vue":"node_modules/vue/dist/vue.runtime.esm.js","vuetify":"node_modules/vuetify/dist/vuetify.js","vue-mq":"node_modules/vue-mq/dist/vue-mq.es.js","vue-router":"node_modules/vue-router/dist/vue-router.esm.js","./App.vue":"App.vue","./components/Digital":"components/Digital.vue","./components/Theatre":"components/Theatre.vue","./components/Film":"components/Film.vue","./components/Gallery":"components/Gallery.vue","./components/Code":"components/Code.vue","./components/Blog":"components/Blog.vue","./components/Connect":"components/Connect.vue","./components/Landing":"components/Landing.vue"}],"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -52123,7 +52526,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53797" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49496" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
