@@ -54,7 +54,7 @@
 	}
 
 	h1 {
-		margin: 0.67em 1em;
+		margin: 0.67em .5em;
 		line-height: 1.5em;
 	}
 
@@ -99,7 +99,8 @@
 		align-items: center;
 		bottom: 0;
 		top: auto;
-		
+		z-index:999;
+
 		.sm & {
 			z-index: 25;
 			bottom: 0;
@@ -154,6 +155,11 @@
 			color: white !important;
 		}
 	}
+
+	.router-link-exact-active{
+			color: #f4ff42 !important;
+	}
+
 
 </style>
 

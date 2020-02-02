@@ -11,6 +11,7 @@
             "location" : "New Delhi, India",
             "blurb" : "Ramleela is a one of a kind yearly celebration of the great epic of Ramayana performed on stage all over India. This particular production was the biggest one of its kind in New Delhi where the average audience numbers soared to 100,000. On the final day of this ten day performance we had the Prime Minister of India Narendra Modi as our chief guest.",
             "bloglink" : "",
+            "poster": "/assets/fake/ramleela.jpg",
             "gallerylink" : ""
         },
         {
@@ -251,7 +252,7 @@
         {
             "name": "Sheherezade XI",
             "type": "Ensemble",
-            "role": "Ensemble (Jessica & Colette)",
+            "role": "Ensemble (Jessica & Colette",
             "director": "Brady Brophy",
             "playwright" : "Multiple",
             "company": "Playwright's Center of SF",
@@ -275,7 +276,7 @@
             "gallerylink" : ""
         },
         {
-            "name": "Cootie Shots: Theatrical Inoculations Against Bigotry for Kids, Parents and Teachers - Tour",
+            "name": "Cootie Shots: Theatrical Inoculations Against Bigotry for Kids, Parents & Teachers - Tour",
             "type": "Children's Theatre",
             "role": "Ensemble",
             "director": "Ensemble",

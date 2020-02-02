@@ -99,13 +99,22 @@
 		 span {
 
 		 	padding: 0 .5em;
+			margin: 0 .25em;
 
 		 	img {
 		 		width: 1.5em;
 		 		height: 1.5em;
 		 	}
+
+		 	 &:hover {
+		 	    border: 1px solid #00BCD4;
+			    border-radius: 10px;
+			    background-color: #00bcd436;
+		 	}
 		 	
 		 }
+
+		
 	}
 
 

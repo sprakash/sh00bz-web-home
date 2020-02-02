@@ -31,7 +31,10 @@
 
 			 
 				<div class="show-content">
-					<span class="show-instruction">click title to learn more about each show</span>
+					<div class="show-headers">
+						<span>List of Shows</span>
+						<span class="show-instruction">click title to learn more about each show</span>
+					</div>
 					 <v-expansion-panels accordion multiple>
 					    <v-expansion-panel v-for="(entry,i) in myJson['Theatre']"
 							    v-if="entry[sortKey] === showFilter || showFilter === 'All'"
@@ -161,7 +164,6 @@
 				sortTag: 'tags',
 			 	showFilterList: ["All","Play", "Play with Music", "Indian Theatre","Experimental Theatre", "Documentary Theatre", "Musical", "Ensemble", "Children's Theatre", "Staged Reading"],
 			 	showFilter: "All"
-
 			}
 		},		
 		computed: {
@@ -179,7 +181,7 @@
 	
 </script>
 <style lang="scss" scoped>
-
+	
 	table {
 		font-size: .75em;
 		margin-top: 2em;
@@ -223,15 +225,27 @@
 			margin: 0 auto;
 		}
 
-		&-instruction {
+		&-headers {
 			font-size: 0.75em;
 		    color: gray;
-		    text-align: right;
 		    width: 100%;
-		    display: inline-block;
+		    display: flex;
 		    letter-spacing: .1em;
 		    font-weight: lighter;
 		    margin-bottom: 0.5em;
+		    padding: .5em;
+		    justify-content: space-between;
+
+		    span {
+		    	width: 50%; 
+		    	padding: 0 .5em;
+
+		    	&:last-child {
+			    	text-align: right;
+			    }
+		    }
+
+		    
 		}
 
 		&-filter {
@@ -262,10 +276,12 @@
 		&-header {
 			display: flex;
 			flex-direction: column;
+			line-height: 2em;
+    		letter-spacing: .11em;
 		}
 
 		&-name {
-			font-size: 1.25em;
+			font-size: 1.15em;
 			font-weight: 300;
 			color: black;
 			word-break: break-all;
@@ -276,13 +292,9 @@
 				text-align:left;
 			}
 		}
-
-		&-details {
-			display: flex;
-		}
 		
 		&-year {
-			font-size: .25em;
+			font-size: .75em;
 			padding: 1em !important;
 			margin: 0 !important;
 			color: deepskyblue;
@@ -297,9 +309,9 @@
 		&-year, 
 		&-role {
 		    padding: 1em 0;
-		    margin: 0 1em 0 0;
+		    margin: 0 5em 0 0;
 		    text-transform: uppercase;
-    		font-size: .05em;
+    		font-size: .85em;
     		letter-spacing: .05em;
 
     		.sm & {
@@ -335,13 +347,13 @@
 		}
 
 		&-location {
-			font-size: .25em;
+			font-size: .75em;
 			text-transform: uppercase;
 			color: #ff4d0b;
-			padding: 1em;
+			padding:0 1em;
 			text-align: right;
 			background: #fff8dcbd;
-    		margin: 0 1em;
+    		margin: 0 2em;
 			
 			.sm & {
 				margin: 1em 0;
@@ -412,7 +424,7 @@
 			padding: 1em 1.5em;
 		    border-radius: 4px;
 		    background-color: floralwhite;
-		    font-size:.8em;
+		    font-size: 1em;
 		    color: #084086;
 		    text-align: justify;
 		    width: 100%;

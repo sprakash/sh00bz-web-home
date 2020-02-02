@@ -48915,7 +48915,7 @@ if (inBrowser && window.Vue) {
 
 var _default = VueRouter;
 exports.default = _default;
-},{}],"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -48947,7 +48947,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -48982,7 +48982,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/vue-hot-reload-api/dist/index.js":[function(require,module,exports) {
+},{"./bundle-url":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/vue-hot-reload-api/dist/index.js":[function(require,module,exports) {
 var Vue // late bind
 var version
 var map = Object.create(null)
@@ -49310,14 +49310,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $a3bfda = exports.default || module.exports;
+        var $ce7cfd = exports.default || module.exports;
       
-      if (typeof $a3bfda === 'function') {
-        $a3bfda = $a3bfda.options;
+      if (typeof $ce7cfd === 'function') {
+        $ce7cfd = $ce7cfd.options;
       }
     
         /* template */
-        Object.assign($a3bfda, (function () {
+        Object.assign($ce7cfd, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -49589,9 +49589,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$a3bfda', $a3bfda);
+            api.createRecord('$ce7cfd', $ce7cfd);
           } else {
-            api.reload('$a3bfda', $a3bfda);
+            api.reload('$ce7cfd', $ce7cfd);
           }
         }
 
@@ -49602,7 +49602,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Panels.vue":[function(require,module,exports) {
+},{"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Panels.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -49737,14 +49737,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $82a0ff = exports.default || module.exports;
+        var $2d8b5f = exports.default || module.exports;
       
-      if (typeof $82a0ff === 'function') {
-        $82a0ff = $82a0ff.options;
+      if (typeof $2d8b5f === 'function') {
+        $2d8b5f = $2d8b5f.options;
       }
     
         /* template */
-        Object.assign($82a0ff, (function () {
+        Object.assign($2d8b5f, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -49841,9 +49841,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$82a0ff', $82a0ff);
+            api.createRecord('$2d8b5f', $2d8b5f);
           } else {
-            api.reload('$82a0ff', $82a0ff);
+            api.reload('$2d8b5f', $2d8b5f);
           }
         }
 
@@ -49854,7 +49854,7 @@ render._withStripped = true
       
       }
     })();
-},{"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/fake/sultanaNSD.jpg":[["sultanaNSD.f75e9fb3.jpg","assets/fake/sultanaNSD.jpg"],"assets/fake/sultanaNSD.jpg"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/fake/vanillashot.png":[["vanillashot.615772a3.png","assets/fake/vanillashot.png"],"assets/fake/vanillashot.png"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/fake/digital.jpg":[["digital.c133ef26.jpg","assets/fake/digital.jpg"],"assets/fake/digital.jpg"],"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Bio.vue":[function(require,module,exports) {
+},{"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\fake\\sultanaNSD.jpg":[["sultanaNSD.f75e9fb3.jpg","assets/fake/sultanaNSD.jpg"],"assets/fake/sultanaNSD.jpg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\fake\\vanillashot.png":[["vanillashot.615772a3.png","assets/fake/vanillashot.png"],"assets/fake/vanillashot.png"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\fake\\digital.jpg":[["digital.c133ef26.jpg","assets/fake/digital.jpg"],"assets/fake/digital.jpg"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Bio.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -49882,14 +49882,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $dba37c = exports.default || module.exports;
+        var $e04139 = exports.default || module.exports;
       
-      if (typeof $dba37c === 'function') {
-        $dba37c = $dba37c.options;
+      if (typeof $e04139 === 'function') {
+        $e04139 = $e04139.options;
       }
     
         /* template */
-        Object.assign($dba37c, (function () {
+        Object.assign($e04139, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -49954,9 +49954,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$dba37c', $dba37c);
+            api.createRecord('$e04139', $e04139);
           } else {
-            api.reload('$dba37c', $dba37c);
+            api.reload('$e04139', $e04139);
           }
         }
 
@@ -49967,7 +49967,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Announcements.vue":[function(require,module,exports) {
+},{"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Announcements.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -50007,14 +50007,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $844458 = exports.default || module.exports;
+        var $9b8ccc = exports.default || module.exports;
       
-      if (typeof $844458 === 'function') {
-        $844458 = $844458.options;
+      if (typeof $9b8ccc === 'function') {
+        $9b8ccc = $9b8ccc.options;
       }
     
         /* template */
-        Object.assign($844458, (function () {
+        Object.assign($9b8ccc, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -50154,9 +50154,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$844458', $844458);
+            api.createRecord('$9b8ccc', $9b8ccc);
           } else {
-            api.reload('$844458', $844458);
+            api.reload('$9b8ccc', $9b8ccc);
           }
         }
 
@@ -50167,7 +50167,7 @@ render._withStripped = true
       
       }
     })();
-},{"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/icons/twitter.svg":[["twitter.f2da1eec.svg","assets/icons/twitter.svg"],"assets/icons/twitter.svg"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/icons/fb.svg":[["fb.efb36eed.svg","assets/icons/fb.svg"],"assets/icons/fb.svg"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/icons/linkedin.svg":[["linkedin.15978cba.svg","assets/icons/linkedin.svg"],"assets/icons/linkedin.svg"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/icons/insta.svg":[["insta.f364b010.svg","assets/icons/insta.svg"],"assets/icons/insta.svg"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/icons/github.svg":[["github.373d19b5.svg","assets/icons/github.svg"],"assets/icons/github.svg"],"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Landing.vue":[function(require,module,exports) {
+},{"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\icons\\twitter.svg":[["twitter.f2da1eec.svg","assets/icons/twitter.svg"],"assets/icons/twitter.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\icons\\fb.svg":[["fb.efb36eed.svg","assets/icons/fb.svg"],"assets/icons/fb.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\icons\\linkedin.svg":[["linkedin.15978cba.svg","assets/icons/linkedin.svg"],"assets/icons/linkedin.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\icons\\insta.svg":[["insta.f364b010.svg","assets/icons/insta.svg"],"assets/icons/insta.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\icons\\github.svg":[["github.373d19b5.svg","assets/icons/github.svg"],"assets/icons/github.svg"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Landing.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -50230,7 +50230,7 @@ var _default = {
         next: "digital-next",
         content: "Have a look at the short films I have been a part of as a creator, producer and performer."
       }, {
-        title: "Digital / Intersect",
+        title: "Digital",
         id: "digital-area",
         prev: "film-prev",
         next: "theatre-next",
@@ -50240,14 +50240,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $6f87a4 = exports.default || module.exports;
+        var $c8ca7b = exports.default || module.exports;
       
-      if (typeof $6f87a4 === 'function') {
-        $6f87a4 = $6f87a4.options;
+      if (typeof $c8ca7b === 'function') {
+        $c8ca7b = $c8ca7b.options;
       }
     
         /* template */
-        Object.assign($6f87a4, (function () {
+        Object.assign($c8ca7b, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -50275,7 +50275,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-6f87a4",
+            _scopeId: "data-v-c8ca7b",
             functional: undefined
           };
         })());
@@ -50288,9 +50288,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$6f87a4', $6f87a4);
+            api.createRecord('$c8ca7b', $c8ca7b);
           } else {
-            api.reload('$6f87a4', $6f87a4);
+            api.reload('$c8ca7b', $c8ca7b);
           }
         }
 
@@ -50301,7 +50301,7 @@ render._withStripped = true
       
       }
     })();
-},{"./Panels":"components/Panels.vue","./Navigation":"components/Navigation.vue","./Bio":"components/Bio.vue","./Announcements":"components/Announcements.vue","_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"App.vue":[function(require,module,exports) {
+},{"./Panels":"components/Panels.vue","./Navigation":"components/Navigation.vue","./Bio":"components/Bio.vue","./Announcements":"components/Announcements.vue","_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"App.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -50349,14 +50349,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $f9f3f7 = exports.default || module.exports;
+        var $0353c4 = exports.default || module.exports;
       
-      if (typeof $f9f3f7 === 'function') {
-        $f9f3f7 = $f9f3f7.options;
+      if (typeof $0353c4 === 'function') {
+        $0353c4 = $0353c4.options;
       }
     
         /* template */
-        Object.assign($f9f3f7, (function () {
+        Object.assign($0353c4, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -50404,9 +50404,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$f9f3f7', $f9f3f7);
+            api.createRecord('$0353c4', $0353c4);
           } else {
-            api.reload('$f9f3f7', $f9f3f7);
+            api.reload('$0353c4', $0353c4);
           }
         }
 
@@ -50417,13 +50417,55 @@ render._withStripped = true
       
       }
     })();
-},{"./components/Navigation":"components/Navigation.vue","./components/Landing":"components/Landing.vue","./components/Bio":"components/Bio.vue","./components/Announcements":"components/Announcements.vue","_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Digital.vue":[function(require,module,exports) {
+},{"./components/Navigation":"components/Navigation.vue","./components/Landing":"components/Landing.vue","./components/Bio":"components/Bio.vue","./components/Announcements":"components/Announcements.vue","_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Digital.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
+
+var _Navigation = _interopRequireDefault(require("./Navigation"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -50436,48 +50478,209 @@ exports.default = void 0;
 //
 var _default = {
   name: 'Digital',
+  components: {
+    Navigation: _Navigation.default
+  },
   created: function created() {
     this.msg = this.$route.params.isSlideshow;
   },
   data: function data() {
     return {
-      msg: 'Welcome to the Digital section'
+      msg: 'Welcome to the Digital / Intersect section'
     };
   }
 };
 exports.default = _default;
-        var $fd5131 = exports.default || module.exports;
+        var $84363e = exports.default || module.exports;
       
-      if (typeof $fd5131 === 'function') {
-        $fd5131 = $fd5131.options;
+      if (typeof $84363e === 'function') {
+        $84363e = $84363e.options;
       }
     
         /* template */
-        Object.assign($fd5131, (function () {
+        Object.assign($84363e, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("h1", [_vm._v(_vm._s(_vm.msg))]),
+    _c("header", [_vm._m(0), _vm._v(" "), _c("Navigation")], 1),
     _vm._v(" "),
-    _c("span", [_vm._v("Lovin it")]),
-    _vm._v(" "),
-    _c(
-      "header",
-      [_c("h1", [_vm._v("Shubhra Prakash")]), _vm._v(" "), _c("Navigation")],
-      1
-    )
+    _vm._m(1)
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h1", [
+      _c("span", [_vm._v("S")]),
+      _vm._v("hubhra "),
+      _c("span", [_vm._v("P")]),
+      _vm._v("rakash")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "section",
+      { staticClass: "slicinItup", attrs: { id: "digital-content" } },
+      [
+        _c("section", { attrs: { id: "digital-title" } }, [
+          _c("h1", [_vm._v("Digital / Intersect")]),
+          _vm._v(" "),
+          _c("span", [
+            _vm._v(
+              "\nhere are projects I've worked on that lie at intersection of filmmaking, digital and design, "
+            ),
+            _c("strong", [
+              _vm._v("click on each section to learn more about the project.")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("hr"),
+        _vm._v(" "),
+        _c("section", { attrs: { id: "digital-groups" } }, [
+          _c("section", { staticClass: "digital-groups" }, [
+            _c("div", [
+              _c("h3", [
+                _vm._v("Priya's Shakti \t"),
+                _c("span", [
+                  _vm._v("short film and augmented reality comic book")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      href:
+                        "https://sprakash.github.io/portfolio/priyashakti.html",
+                      target: "_blank"
+                    }
+                  },
+                  [_vm._v("[watch]")]
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href:
+                      "https://sprakash.github.io/portfolio/priyashakti.html",
+                    target: "_blank"
+                  }
+                },
+                [
+                  _c("img", {
+                    attrs: { src: "/priyashakti.95c97309.jpg" }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c("p", { staticClass: "artby" }, [
+                _vm._v("Above art by Dan Goldman.")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", [
+              _c("section", [
+                _c("h3", [
+                  _vm._v("Fontwala: Stone to mobile, what remains ? "),
+                  _c("span", [_vm._v("digital art exhibition")]),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href:
+                          "https://sprakash.github.io/portfolio/fontwala.html",
+                        target: "_blank"
+                      }
+                    },
+                    [_vm._v("[watch]")]
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      href:
+                        "https://sprakash.github.io/portfolio/fontwala.html",
+                      target: "_blank"
+                    }
+                  },
+                  [
+                    _c("img", {
+                      attrs: { src: "/rajeev-typoface.2a8ef396.jpg" }
+                    })
+                  ]
+                ),
+                _vm._v(" "),
+                _c("p", { staticClass: "artby" }, [
+                  _vm._v("Above art by Rajeev Prakash Khare.")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("section", [
+                _c("h3", [
+                  _vm._v("Cast Me! "),
+                  _c("span", [
+                    _vm._v("interactive 'choose your own adventure' short film")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href: "https://video.helloeko.com/v/AK8lqV",
+                        target: "_blank"
+                      }
+                    },
+                    [_vm._v("[play]")]
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      href: "https://video.helloeko.com/v/AK8lqV",
+                      target: "_blank"
+                    }
+                  },
+                  [
+                    _c("img", {
+                      attrs: { src: "/castme.5f133f99.png" }
+                    })
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "descript" }, [
+                  _vm._v(
+                    '\n\t\t\t\t\t\ta "choose your own adventure" style short film created as an entry for The Challenge of Diversity competition by Interlude (now acquired by eKo), Games for Change and Tribeca Film Festival. The viewer has the opportunity to audition 5 actresses for the same role of Kaos, sidekick to the superhero in the superhero movie “Bang & Kaos”. The viewer is a casting director and decides who gets called back. The theme was diversity in casting. I picked actresses of different ethnicities and using Interlude’s (now acquired by eKo) platform created an experience where the user can make a decision to cast the role. Through this work I addressed my own challenges as an actor in the audition room as a person of color.  I developed the concept, served as director, editor and producer.\n\t\t\t\t\t'
+                  )
+                ])
+              ])
+            ])
+          ])
+        ])
+      ]
+    )
+  }
+]
 render._withStripped = true
 
           return {
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-fd5131",
+            _scopeId: "data-v-84363e",
             functional: undefined
           };
         })());
@@ -50490,9 +50693,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$fd5131', $fd5131);
+            api.createRecord('$84363e', $84363e);
           } else {
-            api.reload('$fd5131', $fd5131);
+            api.reload('$84363e', $84363e);
           }
         }
 
@@ -50503,7 +50706,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"assets/json/theatre.json":[function(require,module,exports) {
+},{"./Navigation":"components/Navigation.vue","C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\fake\\priyashakti.jpg":[["priyashakti.95c97309.jpg","assets/fake/priyashakti.jpg"],"assets/fake/priyashakti.jpg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\fake\\rajeev-typoface.jpg":[["rajeev-typoface.2a8ef396.jpg","assets/fake/rajeev-typoface.jpg"],"assets/fake/rajeev-typoface.jpg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\fake\\castme.png":[["castme.5f133f99.png","assets/fake/castme.png"],"assets/fake/castme.png"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"assets/json/theatre.json":[function(require,module,exports) {
 module.exports = {
   "Theatre": [{
     "name": "Rameleela (Hindi)",
@@ -50516,6 +50719,7 @@ module.exports = {
     "location": "New Delhi, India",
     "blurb": "Ramleela is a one of a kind yearly celebration of the great epic of Ramayana performed on stage all over India. This particular production was the biggest one of its kind in New Delhi where the average audience numbers soared to 100,000. On the final day of this ten day performance we had the Prime Minister of India Narendra Modi as our chief guest.",
     "bloglink": "",
+    "poster": "/assets/fake/ramleela.jpg",
     "gallerylink": ""
   }, {
     "name": "Sundays w/ Chitra & Chaitali - Tour",
@@ -50737,7 +50941,7 @@ module.exports = {
   }, {
     "name": "Sheherezade XI",
     "type": "Ensemble",
-    "role": "Ensemble (Jessica & Colette)",
+    "role": "Ensemble (Jessica & Colette",
     "director": "Brady Brophy",
     "playwright": "Multiple",
     "company": "Playwright's Center of SF",
@@ -50759,7 +50963,7 @@ module.exports = {
     "bloglink": "",
     "gallerylink": ""
   }, {
-    "name": "Cootie Shots: Theatrical Inoculations Against Bigotry for Kids, Parents and Teachers - Tour",
+    "name": "Cootie Shots: Theatrical Inoculations Against Bigotry for Kids, Parents & Teachers - Tour",
     "type": "Children's Theatre",
     "role": "Ensemble",
     "director": "Ensemble",
@@ -51033,6 +51237,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
+//
+//
 var _default = {
   name: 'ShowList',
   props: {
@@ -51060,14 +51267,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $0034b0 = exports.default || module.exports;
+        var $f03973 = exports.default || module.exports;
       
-      if (typeof $0034b0 === 'function') {
-        $0034b0 = $0034b0.options;
+      if (typeof $f03973 === 'function') {
+        $f03973 = $f03973.options;
       }
     
         /* template */
-        Object.assign($0034b0, (function () {
+        Object.assign($f03973, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -51079,9 +51286,7 @@ exports.default = _default;
           "div",
           { staticClass: "show-content" },
           [
-            _c("span", { staticClass: "show-instruction" }, [
-              _vm._v("click title to learn more about each show")
-            ]),
+            _vm._m(0),
             _vm._v(" "),
             _c(
               "v-expansion-panels",
@@ -51187,13 +51392,25 @@ exports.default = _default;
             )
           ]),
           _vm._v(" "),
-          _vm._m(0)
+          _vm._m(1)
         ])
       ])
     ])
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "show-headers" }, [
+      _c("span", [_vm._v("List of Shows")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "show-instruction" }, [
+        _vm._v("click title to learn more about each show")
+      ])
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -51344,7 +51561,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-0034b0",
+            _scopeId: "data-v-f03973",
             functional: undefined
           };
         })());
@@ -51357,9 +51574,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$0034b0', $0034b0);
+            api.createRecord('$f03973', $f03973);
           } else {
-            api.reload('$0034b0', $0034b0);
+            api.reload('$f03973', $f03973);
           }
         }
 
@@ -51370,7 +51587,7 @@ render._withStripped = true
       
       }
     })();
-},{"/assets/json/theatre.json":"assets/json/theatre.json","_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/ShowGallery.vue":[function(require,module,exports) {
+},{"/assets/json/theatre.json":"assets/json/theatre.json","_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/ShowGallery.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -51425,14 +51642,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $fe1079 = exports.default || module.exports;
+        var $39c967 = exports.default || module.exports;
       
-      if (typeof $fe1079 === 'function') {
-        $fe1079 = $fe1079.options;
+      if (typeof $39c967 === 'function') {
+        $39c967 = $39c967.options;
       }
     
         /* template */
-        Object.assign($fe1079, (function () {
+        Object.assign($39c967, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -51473,9 +51690,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$fe1079', $fe1079);
+            api.createRecord('$39c967', $39c967);
           } else {
-            api.reload('$fe1079', $fe1079);
+            api.reload('$39c967', $39c967);
           }
         }
 
@@ -51486,7 +51703,7 @@ render._withStripped = true
       
       }
     })();
-},{"/assets/json/theatre.json":"assets/json/theatre.json","_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Theatre.vue":[function(require,module,exports) {
+},{"/assets/json/theatre.json":"assets/json/theatre.json","_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Theatre.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -51502,6 +51719,8 @@ var _ShowGallery = _interopRequireDefault(require("./ShowGallery"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//
+//
 //
 //
 //
@@ -51551,63 +51770,72 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $4a6dc9 = exports.default || module.exports;
+        var $69e577 = exports.default || module.exports;
       
-      if (typeof $4a6dc9 === 'function') {
-        $4a6dc9 = $4a6dc9.options;
+      if (typeof $69e577 === 'function') {
+        $69e577 = $69e577.options;
       }
     
         /* template */
-        Object.assign($4a6dc9, (function () {
+        Object.assign($69e577, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { attrs: { id: "theatre-content" } }, [
-    _c(
-      "header",
-      [_c("h1", [_vm._v("Shubhra Prakash")]), _vm._v(" "), _c("Navigation")],
-      1
-    ),
+  return _c("div", [
+    _c("header", [_vm._m(0), _vm._v(" "), _c("Navigation")], 1),
     _vm._v(" "),
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "content-theatre" } }, [
-      _c(
-        "section",
-        {
-          directives: [
-            {
-              name: "show",
-              rawName: "v-show",
-              value: _vm.showsView === "resume",
-              expression: "showsView === 'resume'"
-            }
-          ]
-        },
-        [_c("ShowList", { attrs: { shows: _vm.shows } })],
-        1
-      ),
+    _c("section", { attrs: { id: "theatre-content" } }, [
+      _vm._m(1),
       _vm._v(" "),
-      _c(
-        "section",
-        {
-          directives: [
-            {
-              name: "show",
-              rawName: "v-show",
-              value: _vm.showsView === "gallery",
-              expression: "showsView === 'gallery'"
-            }
-          ]
-        },
-        [_c("ShowGallery", { attrs: { shows: _vm.shows } })],
-        1
-      )
+      _c("div", { attrs: { id: "content-theatre" } }, [
+        _c(
+          "section",
+          {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: _vm.showsView === "resume",
+                expression: "showsView === 'resume'"
+              }
+            ]
+          },
+          [_c("ShowList", { attrs: { shows: _vm.shows } })],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "section",
+          {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: _vm.showsView === "gallery",
+                expression: "showsView === 'gallery'"
+              }
+            ]
+          },
+          [_c("ShowGallery", { attrs: { shows: _vm.shows } })],
+          1
+        )
+      ])
     ])
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h1", [
+      _c("span", [_vm._v("S")]),
+      _vm._v("hubhra "),
+      _c("span", [_vm._v("P")]),
+      _vm._v("rakash")
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -51642,9 +51870,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$4a6dc9', $4a6dc9);
+            api.createRecord('$69e577', $69e577);
           } else {
-            api.reload('$4a6dc9', $4a6dc9);
+            api.reload('$69e577', $69e577);
           }
         }
 
@@ -51655,7 +51883,7 @@ render._withStripped = true
       
       }
     })();
-},{"./Navigation":"components/Navigation.vue","./ShowList":"components/ShowList.vue","./ShowGallery":"components/ShowGallery.vue","_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Film.vue":[function(require,module,exports) {
+},{"./Navigation":"components/Navigation.vue","./ShowList":"components/ShowList.vue","./ShowGallery":"components/ShowGallery.vue","_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Film.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -51667,6 +51895,28 @@ var _Navigation = _interopRequireDefault(require("./Navigation"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -51749,29 +51999,36 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $491ad4 = exports.default || module.exports;
+        var $4a13f1 = exports.default || module.exports;
       
-      if (typeof $491ad4 === 'function') {
-        $491ad4 = $491ad4.options;
+      if (typeof $4a13f1 === 'function') {
+        $4a13f1 = $4a13f1.options;
       }
     
         /* template */
-        Object.assign($491ad4, (function () {
+        Object.assign($4a13f1, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c(
-      "header",
-      [_c("h1", [_vm._v("Shubhra Prakash")]), _vm._v(" "), _c("Navigation")],
-      1
-    ),
+    _c("header", [_vm._m(0), _vm._v(" "), _c("Navigation")], 1),
     _vm._v(" "),
-    _vm._m(0)
+    _vm._m(1)
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h1", [
+      _c("span", [_vm._v("S")]),
+      _vm._v("hubhra "),
+      _c("span", [_vm._v("P")]),
+      _vm._v("rakash")
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -51820,7 +52077,7 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("section", { attrs: { id: "films" } }, [
+        _c("section", { staticClass: "films-group", attrs: { id: "films" } }, [
           _c("div", [
             _c("h2", [_vm._v("Actor & Co-Producer")]),
             _vm._v(" "),
@@ -51830,9 +52087,21 @@ var staticRenderFns = [
               attrs: { src: "/vanilla.00c394b1.jpg" }
             }),
             _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "films-watch",
+                attrs: {
+                  href: "https://www.youtube.com/watch?v=HzFG3Vi6zw8",
+                  target: "_blank"
+                }
+              },
+              [_vm._v("[watch here]")]
+            ),
+            _vm._v(" "),
             _c("div", { staticClass: "descript" }, [
               _vm._v(
-                "\n\t\t\t\tStella is a baker who has been running her business with a recipe for a delicious vanilla donut. Will Stella be able to accept other bakers who arrive with new recipes and flavors ? We conceptualized, shot and edited 'Vanilla' in 72 hours as part of Asian American Film Lab's 72 hr film shootout in New York. We were placed in Top Ten picks and Random Fox took home a Screenwriting excellence award.  \n\t\t\t"
+                "\nStella is a baker who has been running her business with a recipe for a delicious vanilla donut. Will Stella be able to accept other bakers who arrive with new recipes and flavors ? We conceptualized, shot and edited 'Vanilla' in 72 hours as part of Asian American Film Lab's 72 hr film shootout in New York. We were placed in Top Ten picks and Random Fox took home a Screenwriting excellence award. \n\t\t\t"
               )
             ])
           ]),
@@ -51846,9 +52115,21 @@ var staticRenderFns = [
               attrs: { src: "/funnyfaces.544a1b33.png" }
             }),
             _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "films-watch",
+                attrs: {
+                  href: "https://www.youtube.com/watch?v=b5XSnrcGjqs",
+                  target: "_blank"
+                }
+              },
+              [_vm._v("[watch here]")]
+            ),
+            _vm._v(" "),
             _c("div", { staticClass: "descript" }, [
               _vm._v(
-                "\n\t\t\t\tTwo female comedians have been formed into a team. The establishment has laid down the rules, only one of the two is allowed to face the audience and perform the jokes, the other must work behind the scenes. Together they must challenge both the establishment and their own beliefs on talent, beauty and being an artist. Funny Faces was a result of a 72 hour film shootout competition, a worldwide contest that is conducted annually by Asian American Film Lab in New York City, where the theme was “Two Faces”. Funny Faces placed in the top ten.\n\n\n\t\t\tInvited to speak at a "
+                "\n\t\t\t\tTwo female comedians make a team but the establishment has laid down the rules, only one of the two is allowed to face the audience and perform the jokes. The other must work behind the scenes. Together they must challenge both the establishment and their own beliefs on talent, beauty and being an artist.  Funny Faces was a result of a 72 hour film shootout competition, a worldwide contest that is conducted annually by Asian American Film Lab in New York City, where the theme was “Two Faces”. Funny Faces placed in the top ten. Invited to speak at a "
               ),
               _c(
                 "a",
@@ -51860,7 +52141,7 @@ var staticRenderFns = [
                 ]
               ),
               _vm._v(
-                " about filmmaking as a south asian female. Funny Faces was a finalist in their film competition.\n\n\n\t\t\t"
+                " about filmmaking as a south asian female. Funny Faces was a finalist in their film competition.\n\t\t\t"
               )
             ])
           ]),
@@ -51871,12 +52152,21 @@ var staticRenderFns = [
             _c("h3", [_vm._v("Three Dates")]),
             _vm._v(" "),
             _c("img", {
-              attrs: { src: "/threedates.dc3eaffe.jpg" }
+              attrs: { src: "/gotchai.692cc71e.png" }
             }),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "films-watch",
+                attrs: { href: "https://vimeo.com/65866310", target: "_blank" }
+              },
+              [_vm._v("[watch here]")]
+            ),
             _vm._v(" "),
             _c("div", { staticClass: "descript" }, [
               _vm._v(
-                "\n\t\t\t\tMy first short “Three Dates” was about an ethnically ambiguous man facing judgement from his dates when they discover his true ethnicity. I used comedy to point at possible stereotypes attached to particular ethnicities. Three Dates, was screened at the 2013 New York Indian Film Festival. This short film led to the creation of Random Fox Productions.\n\t\t\t"
+                "\n\t\t\t\tMy first short “Three Dates” was about an ethnically ambiguous man facing judgement from his dates when they discover his true ethnicity. I used comedy to point at possible stereotypes attached to particular ethnicities. Three Dates, was screened at the 2013 New York Indian Film Festival. This short film led to the creation of Random Fox Productions.\n\n\t\t\t"
               )
             ])
           ])
@@ -51885,20 +52175,98 @@ var staticRenderFns = [
         _c("hr"),
         _vm._v(" "),
         _c("section", { attrs: { id: "miscell" } }, [
-          _c("div", [
-            _c("h2", [_vm._v("Subtitles & Translations (Hindi to English)")]),
-            _vm._v(" "),
-            _c("h3", [_vm._v("Karma Killings on Netflix")]),
-            _vm._v(" "),
-            _c("div", { staticClass: "descript" })
+          _c("h2", [
+            _vm._v("Translation & Transciption / Subtitles (Hindi to English)")
           ]),
           _vm._v(" "),
-          _c("div", [
-            _c("h2", [_vm._v("Transcription")]),
+          _c("div", { staticClass: "films-group" }, [
+            _c("div", [
+              _c("h3", [_vm._v("Priya's Mirror")]),
+              _vm._v(" "),
+              _c("h4", [_vm._v("augmented reality comic book")]),
+              _vm._v(" "),
+              _c("img", {
+                attrs: { src: "/priyasmirror.2119e84a.png" }
+              }),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "films-watch",
+                  attrs: {
+                    href: "https://www.priyashakti.com/priyas-mirror",
+                    target: "_blank"
+                  }
+                },
+                [_vm._v("[read]")]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "descript" }, [
+                _vm._v(
+                  "\n\t\t\t\t\t Translated the English comic book into Hindi.  In Priya's mirror, Priya joins forces with a group of acid attack survivors as they fight against the demon-king, Ahankar, and his tyrannical hold on them. Funded by the World Bank, the next edition titled, PRIYA’S MIRROR, focuses on acid attacks and tackles the problem of gender violence around the world. The comic book was created by and features acid attack survivors from New York City, Bogota, and New Delhi. PRIYA’S MIRROR premiered at the New York Film Festival, at Film Society of Lincoln Center, NYC from September 30 to October 16, 2016 and at the Mumbai Comic Con, Oct 22-23, 2016.\n\t\t\t\t"
+                )
+              ])
+            ]),
             _vm._v(" "),
-            _c("h3", [_vm._v("Vamp")]),
+            _c("div", [
+              _c("h3", [_vm._v("Karma Killings")]),
+              _vm._v(" "),
+              _c("h4", [_vm._v("netflix / amazon video / itunes")]),
+              _vm._v(" "),
+              _c("img", {
+                attrs: { src: "/karmak.bebe07d1.jpeg" }
+              }),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "films-watch",
+                  attrs: {
+                    href: "https://www.karmakillings.com/",
+                    target: "_blank"
+                  }
+                },
+                [_vm._v("[watch]")]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "descript" }, [
+                _vm._v(
+                  "\n\t\t\t\t\t“The Karma Killings,” is a modern-day crime thriller mixed in with Indian mythology and class warfare. The documentary delves into India’s most infamous serial killings and its impact on a nation. Told through the people directly involved, the film unravels the complexities of the case and goes beyond the sensational headlines to present a suspenseful and scary mystery.  And has a huge twist – one of the killers maybe innocent?\n\t\t\t\t"
+                )
+              ])
+            ]),
             _vm._v(" "),
-            _c("div", { staticClass: "descript" })
+            _c("div", [
+              _c("h3", [_vm._v("Theater and Sex Work")]),
+              _vm._v(" "),
+              _c("h4", [_vm._v("short documentary")]),
+              _vm._v(" "),
+              _c("img", {
+                attrs: { src: "/vamp.c1fb0973.png" }
+              }),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "films-watch",
+                  attrs: {
+                    href: "https://vimeo.com/220498985",
+                    target: "_blank"
+                  }
+                },
+                [_vm._v("[watch]")]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "descript" }, [
+                _vm._v(
+                  "Transcribed and also translated all spoken Hindi in Theater and Sex Work, VAMP's Performance as Resistance a short documentary which was a project by "
+                ),
+                _c("b", [_vm._v("Barnard Center For Research On Women")]),
+                _vm._v(
+                  " was created by Shayoni Mitra Edited and Produced by Pulkit Datta.\n\t\t\t\t"
+                )
+              ])
+            ])
           ])
         ])
       ]
@@ -51911,7 +52279,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-491ad4",
+            _scopeId: "data-v-4a13f1",
             functional: undefined
           };
         })());
@@ -51924,9 +52292,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$491ad4', $491ad4);
+            api.createRecord('$4a13f1', $4a13f1);
           } else {
-            api.reload('$491ad4', $491ad4);
+            api.reload('$4a13f1', $4a13f1);
           }
         }
 
@@ -51937,13 +52305,18 @@ render._withStripped = true
       
       }
     })();
-},{"./Navigation":"components/Navigation.vue","/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/fake/randomfoxlogo.png":[["randomfoxlogo.42505791.png","assets/fake/randomfoxlogo.png"],"assets/fake/randomfoxlogo.png"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/fake/vanilla.jpg":[["vanilla.00c394b1.jpg","assets/fake/vanilla.jpg"],"assets/fake/vanilla.jpg"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/fake/funnyfaces.png":[["funnyfaces.544a1b33.png","assets/fake/funnyfaces.png"],"assets/fake/funnyfaces.png"],"/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/fake/threedates.jpg":[["threedates.dc3eaffe.jpg","assets/fake/threedates.jpg"],"assets/fake/threedates.jpg"],"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Gallery.vue":[function(require,module,exports) {
+},{"./Navigation":"components/Navigation.vue","C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\fake\\randomfoxlogo.png":[["randomfoxlogo.42505791.png","assets/fake/randomfoxlogo.png"],"assets/fake/randomfoxlogo.png"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\fake\\vanilla.jpg":[["vanilla.00c394b1.jpg","assets/fake/vanilla.jpg"],"assets/fake/vanilla.jpg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\fake\\funnyfaces.png":[["funnyfaces.544a1b33.png","assets/fake/funnyfaces.png"],"assets/fake/funnyfaces.png"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\fake\\gotchai.png":[["gotchai.692cc71e.png","assets/fake/gotchai.png"],"assets/fake/gotchai.png"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\fake\\priyasmirror.png":[["priyasmirror.2119e84a.png","assets/fake/priyasmirror.png"],"assets/fake/priyasmirror.png"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\fake\\karmak.jpeg":[["karmak.bebe07d1.jpeg","assets/fake/karmak.jpeg"],"assets/fake/karmak.jpeg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\fake\\vamp.png":[["vamp.c1fb0973.png","assets/fake/vamp.png"],"assets/fake/vamp.png"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Gallery.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
+
+var _Navigation = _interopRequireDefault(require("./Navigation"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 //
 //
 //
@@ -51953,38 +52326,125 @@ exports.default = void 0;
 //
 //
 //
-var _default = {};
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  name: 'Gallery',
+  components: {
+    Navigation: _Navigation.default
+  },
+  created: function created() {},
+  data: function data() {
+    return {
+      msg: 'Welcome to the Gallery section'
+    };
+  },
+  methods: {
+    getImgUrl: function getImgUrl(item) {}
+  }
+};
 exports.default = _default;
-        var $3abc3a = exports.default || module.exports;
+        var $5c499d = exports.default || module.exports;
       
-      if (typeof $3abc3a === 'function') {
-        $3abc3a = $3abc3a.options;
+      if (typeof $5c499d === 'function') {
+        $5c499d = $5c499d.options;
       }
     
         /* template */
-        Object.assign($3abc3a, (function () {
+        Object.assign($5c499d, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c("header", [_vm._m(0), _vm._v(" "), _c("Navigation")], 1),
+    _vm._v(" "),
+    _vm._m(1)
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "gallery" } }, [
-      _c("h1", [_vm._v("Gallery")]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "Simply, images or visuals from my work that I like looking at and want to share with the world."
-        )
-      ]),
-      _vm._v(" "),
-      _c("section", { attrs: { id: "all-visuals" } })
+    return _c("h1", [
+      _c("span", [_vm._v("S")]),
+      _vm._v("hubhra "),
+      _c("span", [_vm._v("P")]),
+      _vm._v("rakash")
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "section",
+      { staticClass: "slicinItup", attrs: { id: "gallery-content" } },
+      [
+        _c("section", { attrs: { id: "gallery-title" } }, [
+          _c("h1", [_vm._v("Gallery")]),
+          _vm._v(" "),
+          _c("span", [_vm._v(" click on an image to get more info ")])
+        ]),
+        _vm._v(" "),
+        _c("hr"),
+        _vm._v(" "),
+        _c("section", { staticClass: "photo-areas" }, [
+          _c("section", [
+            _c("h2", [_vm._v("posters")]),
+            _vm._v(" "),
+            _c("section", { staticClass: "photo-posters" })
+          ]),
+          _vm._v(" "),
+          _c("section", [
+            _c("h2", [_vm._v("production shots")]),
+            _vm._v(" "),
+            _c("section", { staticClass: "photo-productionShots" })
+          ]),
+          _vm._v(" "),
+          _c("section", [
+            _c("h2", [_vm._v("backstage photos")]),
+            _vm._v(" "),
+            _c("section", { staticClass: "photo-backstage" })
+          ])
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -51993,7 +52453,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-3abc3a",
+            _scopeId: null,
             functional: undefined
           };
         })());
@@ -52006,9 +52466,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$3abc3a', $3abc3a);
+            api.createRecord('$5c499d', $5c499d);
           } else {
-            api.reload('$3abc3a', $3abc3a);
+            api.reload('$5c499d', $5c499d);
           }
         }
 
@@ -52019,7 +52479,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Code.vue":[function(require,module,exports) {
+},{"./Navigation":"components/Navigation.vue","_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Code.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -52043,14 +52503,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $a4cac9 = exports.default || module.exports;
+        var $634968 = exports.default || module.exports;
       
-      if (typeof $a4cac9 === 'function') {
-        $a4cac9 = $a4cac9.options;
+      if (typeof $634968 === 'function') {
+        $634968 = $634968.options;
       }
     
         /* template */
-        Object.assign($a4cac9, (function () {
+        Object.assign($634968, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -52071,7 +52531,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-a4cac9",
+            _scopeId: "data-v-634968",
             functional: undefined
           };
         })());
@@ -52084,9 +52544,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$a4cac9', $a4cac9);
+            api.createRecord('$634968', $634968);
           } else {
-            api.reload('$a4cac9', $a4cac9);
+            api.reload('$634968', $634968);
           }
         }
 
@@ -52097,7 +52557,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Blog.vue":[function(require,module,exports) {
+},{"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Blog.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -52121,14 +52581,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $5f24d5 = exports.default || module.exports;
+        var $44bc14 = exports.default || module.exports;
       
-      if (typeof $5f24d5 === 'function') {
-        $5f24d5 = $5f24d5.options;
+      if (typeof $44bc14 === 'function') {
+        $44bc14 = $44bc14.options;
       }
     
         /* template */
-        Object.assign($5f24d5, (function () {
+        Object.assign($44bc14, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -52149,7 +52609,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-5f24d5",
+            _scopeId: "data-v-44bc14",
             functional: undefined
           };
         })());
@@ -52162,9 +52622,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$5f24d5', $5f24d5);
+            api.createRecord('$44bc14', $44bc14);
           } else {
-            api.reload('$5f24d5', $5f24d5);
+            api.reload('$44bc14', $44bc14);
           }
         }
 
@@ -52175,7 +52635,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Connect.vue":[function(require,module,exports) {
+},{"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"components/Connect.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -52187,6 +52647,29 @@ var _Navigation = _interopRequireDefault(require("./Navigation"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -52251,26 +52734,22 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $2a1f67 = exports.default || module.exports;
+        var $34fe56 = exports.default || module.exports;
       
-      if (typeof $2a1f67 === 'function') {
-        $2a1f67 = $2a1f67.options;
+      if (typeof $34fe56 === 'function') {
+        $34fe56 = $34fe56.options;
       }
     
         /* template */
-        Object.assign($2a1f67, (function () {
+        Object.assign($34fe56, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c(
-      "header",
-      [_c("h1", [_vm._v("Shubhra Prakash")]), _vm._v(" "), _c("Navigation")],
-      1
-    ),
+    _c("header", [_vm._m(0), _vm._v(" "), _c("Navigation")], 1),
     _vm._v(" "),
-    _vm._m(0)
+    _vm._m(1)
   ])
 }
 var staticRenderFns = [
@@ -52278,85 +52757,241 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", { attrs: { id: "connect" } }, [
-      _c("h1", [_vm._v("Connect")]),
-      _vm._v(" "),
-      _c("section", { attrs: { id: "connect-sections" } }, [
-        _c("section", [
-          _c("figure", [
-            _c("div", { staticClass: "contact-img" }),
-            _vm._v(" "),
-            _c("figcaption", [
-              _vm._v("Photo from Broadway style Singing Recital "),
-              _c("br"),
-              _vm._v(
-                "at Musical Theatre Summer Conservatory at Notre DaNamur University, California."
-              )
-            ])
-          ]),
+    return _c("h1", [
+      _c("span", [_vm._v("S")]),
+      _vm._v("hubhra "),
+      _c("span", [_vm._v("P")]),
+      _vm._v("rakash")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "section",
+      { staticClass: "slicinItup", attrs: { id: "connect-content" } },
+      [
+        _c("section", { attrs: { id: "connect-title" } }, [
+          _c("h1", [_vm._v("Connect")]),
           _vm._v(" "),
-          _c("ul", [
-            _c("li", [
-              _vm._v("Email me at "),
-              _c(
-                "a",
-                {
-                  staticClass: "email-link",
-                  attrs: { href: "mailto:prakashnitza@gmail.com" }
-                },
-                [_vm._v("prakashnitza@gmail.com")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v("Social Media : \n\t\t\t\t\t\t\t"),
-              _c("ul", { staticClass: "horiz-list" }, [
-                _c("li", [_vm._v("Facebook")]),
-                _vm._v(" "),
-                _c("li", [_vm._v("Twitter")]),
-                _vm._v(" "),
-                _c("li", [_vm._v("Instagram")]),
-                _vm._v(" "),
-                _c("li", [_vm._v("LinkedIn")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v("Download\n\t\t\t\t\t\t\t"),
-              _c("ul", [
-                _c("li", [_vm._v("Performer (Stage and Film) Resume")]),
-                _vm._v(" "),
-                _c("li", [_vm._v("Producer Resume")]),
-                _vm._v(" "),
-                _c("li", [_vm._v("Front End Dev Resume")])
-              ])
-            ])
+          _c("span", [
+            _vm._v(
+              " \n        \tcheck out the social media channels on which you can connect with me as well as download resumes of my work.\n        "
+            )
           ])
         ]),
         _vm._v(" "),
-        _c("section", { staticClass: "connect-lower" }, [
-          _c("div", { staticClass: "space-fill" }),
-          _vm._v(" "),
-          _c("article", [
-            _vm._v(
-              "The site has been created by yours truly using Vue framework including the blog which has been created using Vue as well. Code can be looked at "
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", [
-            _c("h3", [_vm._v("references")]),
-            _vm._v(" "),
-            _c("ul", [
-              _c("li", [
-                _vm._v(
-                  "https://dev.to/alexmourer/click-event-filtering-on-a-json-rendered-list-in-vuejs-3kpn"
-                )
+        _c("hr"),
+        _vm._v(" "),
+        _c("section", { attrs: { id: "connect-sections" } }, [
+          _c("section", [
+            _c("div", { attrs: { id: "connect-sections-imgs" } }, [
+              _c("div", [
+                _c("ul", { staticClass: "connect-lists" }, [
+                  _c("li", [
+                    _vm._v("Email me : "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "email-link",
+                        attrs: { href: "mailto:prakashnitza@gmail.com" }
+                      },
+                      [_vm._v("prakashnitza@gmail.com")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "horiz" }, [
+                    _c("span", [_vm._v("Social Media :")]),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "svgStylin" }, [
+                      _c("span", [
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href: "http://twitter.com/durkhaima",
+                              target: "_blank"
+                            }
+                          },
+                          [
+                            _c("img", {
+                              attrs: {
+                                src: "/twitter.f2da1eec.svg"
+                              }
+                            })
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("span", [
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href: "http://facebook.com/5000roses",
+                              target: "_blank"
+                            }
+                          },
+                          [
+                            _c("img", {
+                              attrs: {
+                                src: "/fb.efb36eed.svg"
+                              }
+                            })
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("span", [
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href:
+                                "https://www.linkedin.com/in/shubhraprakash/",
+                              target: "_blank"
+                            }
+                          },
+                          [
+                            _c("img", {
+                              attrs: {
+                                src: "/linkedin.15978cba.svg"
+                              }
+                            })
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("span", [
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href: "http://instagram.com/sh000bz.artist",
+                              target: "_blank"
+                            }
+                          },
+                          [
+                            _c("img", {
+                              attrs: {
+                                src: "/insta.f364b010.svg"
+                              }
+                            })
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("span", [
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href:
+                                "https://github.com/sprakash/sh00bz-web-home",
+                              target: "_blank"
+                            }
+                          },
+                          [
+                            _c("img", {
+                              attrs: {
+                                src: "/github.373d19b5.svg"
+                              }
+                            })
+                          ]
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "horiz" }, [
+                    _c("span", [_vm._v("Download resumes :  ")]),
+                    _vm._v(" "),
+                    _c("ul", [
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href:
+                                "https://docs.google.com/document/d/15wWIfWqhrHIK-SoJdlzfSozrzwNbPE6_DrH_5b7liR0/edit?usp=sharing",
+                              target: "_blank"
+                            }
+                          },
+                          [_vm._v("Performer (Stage and Film)")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href:
+                                "https://docs.google.com/document/d/1CheP0X2h12-bBMLgyNOi0bW3rYJEFcayY99ygmdUXhU/edit?usp=sharing",
+                              target: "_blank"
+                            }
+                          },
+                          [_vm._v("Front End Dev")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href:
+                                "https://drive.google.com/file/d/17VQnvQwIPGOppYrIMFwCxnx_KpBSlMoS/view?usp=sharing",
+                              target: "_blank"
+                            }
+                          },
+                          [_vm._v("Cumulative")]
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "connect-lower" }, [
+                _c("div", [
+                  _vm._v("references for development"),
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href:
+                          "https://dev.to/alexmourer/click-event-filtering-on-a-json-rendered-list-in-vuejs-3kpn",
+                        target: "_blank"
+                      }
+                    },
+                    [_c("sup", [_vm._v("(1)")])]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("article", [
+                  _vm._v(
+                    "The site has been created by yours truly using Vue framework. The code can be checked out at : "
+                  ),
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href: "https://github.com/sprakash/sh00bz-web-home",
+                        target: "_blank"
+                      }
+                    },
+                    [_vm._v("github link")]
+                  ),
+                  _vm._v(".")
+                ])
               ])
             ])
           ])
         ])
-      ])
-    ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -52365,7 +53000,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-2a1f67",
+            _scopeId: null,
             functional: undefined
           };
         })());
@@ -52378,9 +53013,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$2a1f67', $2a1f67);
+            api.createRecord('$34fe56', $34fe56);
           } else {
-            api.reload('$2a1f67', $2a1f67);
+            api.reload('$34fe56', $34fe56);
           }
         }
 
@@ -52391,7 +53026,7 @@ render._withStripped = true
       
       }
     })();
-},{"./Navigation":"components/Navigation.vue","/Users/durkhaima/Documents/webstudy/sh00bz-web-home/src/home/assets/piano.jpg":[["piano.aa1e6821.jpg","assets/piano.jpg"],"assets/piano.jpg"],"_css_loader":"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"app.js":[function(require,module,exports) {
+},{"./Navigation":"components/Navigation.vue","C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\icons\\twitter.svg":[["twitter.f2da1eec.svg","assets/icons/twitter.svg"],"assets/icons/twitter.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\icons\\fb.svg":[["fb.efb36eed.svg","assets/icons/fb.svg"],"assets/icons/fb.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\icons\\linkedin.svg":[["linkedin.15978cba.svg","assets/icons/linkedin.svg"],"assets/icons/linkedin.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\icons\\insta.svg":[["insta.f364b010.svg","assets/icons/insta.svg"],"assets/icons/insta.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\icons\\github.svg":[["github.373d19b5.svg","assets/icons/github.svg"],"assets/icons/github.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\fake\\shakespeare.jpg":[["shakespeare.a844b4e5.jpg","assets/fake/shakespeare.jpg"],"assets/fake/shakespeare.jpg"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"app.js":[function(require,module,exports) {
 "use strict";
 
 var _vue = _interopRequireDefault(require("vue"));
@@ -52498,7 +53133,7 @@ new _vue.default({
     return h(_App.default);
   }
 });
-},{"vue":"node_modules/vue/dist/vue.runtime.esm.js","vuetify":"node_modules/vuetify/dist/vuetify.js","vue-mq":"node_modules/vue-mq/dist/vue-mq.es.js","vue-router":"node_modules/vue-router/dist/vue-router.esm.js","./App.vue":"App.vue","./components/Digital":"components/Digital.vue","./components/Theatre":"components/Theatre.vue","./components/Film":"components/Film.vue","./components/Gallery":"components/Gallery.vue","./components/Code":"components/Code.vue","./components/Blog":"components/Blog.vue","./components/Connect":"components/Connect.vue","./components/Landing":"components/Landing.vue"}],"../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"vue":"node_modules/vue/dist/vue.runtime.esm.js","vuetify":"node_modules/vuetify/dist/vuetify.js","vue-mq":"node_modules/vue-mq/dist/vue-mq.es.js","vue-router":"node_modules/vue-router/dist/vue-router.esm.js","./App.vue":"App.vue","./components/Digital":"components/Digital.vue","./components/Theatre":"components/Theatre.vue","./components/Film":"components/Film.vue","./components/Gallery":"components/Gallery.vue","./components/Code":"components/Code.vue","./components/Blog":"components/Blog.vue","./components/Connect":"components/Connect.vue","./components/Landing":"components/Landing.vue"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -52526,7 +53161,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49496" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54835" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -52702,5 +53337,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","app.js"], null)
+},{}]},{},["../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","app.js"], null)
 //# sourceMappingURL=/app.c328ef1a.js.map

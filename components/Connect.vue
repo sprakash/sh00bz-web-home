@@ -1,48 +1,71 @@
 <template>
 	<div>
 	<header>
-       <h1>Shubhra Prakash</h1>
-	   <Navigation/>
-    </header>
-    <section id="connect">
-		<h1>Connect</h1>
+		<h1><span>S</span>hubhra <span>P</span>rakash</h1>
+		<Navigation/>
+	</header>
+	<section class="slicinItup" id="connect-content"> 
+<section id="connect-title">
+        <h1>Connect</h1>
+        <span> 
+        	check out the social media channels on which you can connect with me as well as download resumes of my work.
+        </span>
+</section>
+<hr/>
 		<section id="connect-sections">
 		<section>
+			<!-- <img src="/assets/piano.jpg"/>
 				<figure>
-					<div class="contact-img"></div>
-					<figcaption>Photo from Broadway style Singing Recital </br>at Musical Theatre Summer Conservatory at Notre DaNamur University, California.</figcaption>
-				</figure>
-				<ul>
-					<li>Email me at <a class="email-link" href="mailto:prakashnitza@gmail.com">prakashnitza@gmail.com</a> </li>
-					<li>Social Media : 
-							<ul class="horiz-list">
-								<li>Facebook</li>
-								<li>Twitter</li>
-								<li>Instagram</li>
-								<li>LinkedIn</li>
-							</ul>
-					</li>
-					<li>Download
-							<ul>
-								<li>Performer (Stage and Film) Resume</li>
-								<li>Producer Resume</li>
-								<li>Front End Dev Resume</li>
-							</ul>
-
-					</li>
-				</ul>
-
-
-			</section>
-			<section class="connect-lower">
-					<div class="space-fill"></div>
-					<article>The site has been created by yours truly using Vue framework including the blog which has been created using Vue as well. Code can be looked at </article>
-					<div><h3>references</h3>
-						<ul>
-							<li>https://dev.to/alexmourer/click-event-filtering-on-a-json-rendered-list-in-vuejs-3kpn</li>
-						</ul>
+					<div class="contact-img">
+						
 					</div>
+
+					<figcaption>Photo from Broadway style Singing Recital </br>at Musical Theatre Summer Conservatory at Notre DaNamur University, California.</figcaption>
+				</figure> -->
+				<div id="connect-sections-imgs">
+					<div>
+						<ul class="connect-lists">
+							<li>Email me : <a class="email-link" href="mailto:prakashnitza@gmail.com">prakashnitza@gmail.com</a> </li>
+							<li class="horiz"><span>Social Media :</span>
+									<span class="svgStylin">
+										<span>
+											  <a href="http://twitter.com/durkhaima" target="_blank"><img src="/assets/icons/twitter.svg"></a>
+										</span>
+										<span>
+											  <a href="http://facebook.com/5000roses" target="_blank"><img src="/assets/icons/fb.svg"></a>
+										</span>
+										<span>
+											  <a href="https://www.linkedin.com/in/shubhraprakash/" target="_blank"><img src="/assets/icons/linkedin.svg"></a>
+										</span>
+										<span>
+											  <a href="http://instagram.com/sh000bz.artist" target="_blank"><img src="/assets/icons/insta.svg"></a>
+										</span>
+										<span>
+											  <a href="https://github.com/sprakash/sh00bz-web-home" target="_blank"><img src="/assets/icons/github.svg"></a>
+										</span>
+									</span>
+							</li>
+							<li class="horiz"><span>Download resumes :  </span>
+									<ul>
+										<li><a href="https://docs.google.com/document/d/15wWIfWqhrHIK-SoJdlzfSozrzwNbPE6_DrH_5b7liR0/edit?usp=sharing" target="_blank">Performer (Stage and Film)</a></li>
+										<li><a href="https://docs.google.com/document/d/1CheP0X2h12-bBMLgyNOi0bW3rYJEFcayY99ygmdUXhU/edit?usp=sharing" target="_blank">Front End Dev</a></li>
+										<li><a href="https://drive.google.com/file/d/17VQnvQwIPGOppYrIMFwCxnx_KpBSlMoS/view?usp=sharing" target="_blank">Cumulative</a></li>
+									</ul>
+
+							</li>
+						</ul>
+
+					</div>
+
+					<div class="connect-lower">
+						
+						<div>references for development<a href="https://dev.to/alexmourer/click-event-filtering-on-a-json-rendered-list-in-vuejs-3kpn" target="_blank"><sup>(1)</sup></a></div>
+							
+							<article>The site has been created by yours truly using Vue framework. The code can be checked out at : <a href="https://github.com/sprakash/sh00bz-web-home" target="_blank">github link</a>.</article>						
+					</div>
+				</div>
 			</section>
+			
 		</section>
 	</section>
 	</div>
@@ -64,96 +87,92 @@
 		}
 	}
 </script>
-<style lang="scss" scoped>
-
-section {
-	width:100%;
-	display: inline-flex;
-	align-items: center;
-	justify-content: space-around;
-	font-family: Palatino;
+<style lang="scss">
+#app {
+	width: 100%;
 }
 
+.slicinItup {
+	padding-top: 5em;
+}
+	
 #connect {
-	display: block;
-	margin-top: 5em;
-	padding: 0 1em;
+	&-content {
+		font-weight: 100;
+	}
+	&-sections {
+		&-imgs {
+			background-image: url(/assets/fake/shakespeare.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: white;
+			padding: 3em 5em;
 
-	 h1 { 
-		text-transform: capitalize;
-	    margin: 0 0 1em 0;
-	    font-size: 1.5em;
-	    color: #f78a1b;
-	    letter-spacing: 0.15em;
-	    font-weight: normal;
-	 }
-
-	 &-sections {
-	 	display: flex;
-	 	flex-direction: column;
-	 }
-}
-
-
-figure {
-	margin: 0;
-}
-
-figcaption {
-	font-size: .7em;
-	font-weight: lighter;
-	font-style: italic;
-	margin: 1em 0;
-	color: #380ed5;
-	text-align:center;
-	line-height: 1.4em;
-}
-
-article {
-	font-size: .7em;
-	font-weight: bold;
-	display: flex;
-}
-
-li {
-	line-height: 2em;
-}
-
-.divide {
-	width: 30%;
-	margin-bottom: 2em;
-}
-
-.contact-img {
-	background-image: url(/assets/piano.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 262px;
-    display:inline-block;
-}
-
-.connect-lower {
-	display: flex;
-	flex-direction:  column
-}
-
-.email-link {
-	color: #d058c0;
-}
-
-.horiz-list{
-	display: flex;
-	flex-direction: row;
-
-	li {
-		padding: 0 .5em;
+			a {
+				color: deepskyblue !important;
+				font-weight: normal;
+				letter-spacing: .2em;
+				text-decoration: underline;
+			}
+		}
 	}
 }
 
-.space-fill {
-	height: 10vh;
-	width:100%;
+.connect { 
+
+	&-lists {
+		li {
+			padding: .5em 0;
+		}
+	}
+
+	&-lower {
+		padding-top: 10em;
+		bottom: 0;
+
+		article {
+			font-weight: normal;
+			padding-top: 1em;
+		}
+	}
+}
+
+.horiz {
+	display: flex;
+
+	li {
+		margin: 0 2em;
+		padding: 0;
+	}
+}
+
+.svgStylin {
+	color: white;
+
+	span {
+		&:hover {
+			background: none;
+			border: none;
+		}
+	}
+
+	a {
+
+		&:hover {
+			background-color: none;
+			border-color: none;
+		}
+	}
+
+	 img {
+	 	background-color: #7b897b;
+	 	border-radius: 5px;
+	 	cursor: pointer;
+
+	 	&:hover {
+	 		background-color: white;
+	 	}
+	 }
 }
 
 	

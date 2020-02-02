@@ -1,10 +1,11 @@
 <template>
-	<div id="theatre-content">
+	<div>
     <header>
-        <h1>Shubhra Prakash</h1>
+        <h1><span>S</span>hubhra <span>P</span>rakash</h1>
             <Navigation/>
     </header>
-	<span class="slicinItup"> 
+    <section id="theatre-content">
+	<span  class="slicinItup"> 
         <h1>Theatre</h1>
     Here you can have a look at my work on stage, read blogs I've written about my experience with each show, check out gallery of photos and media based on shows and get an idea of my training and skill set.             <span id="theatre-download">Click to Download Printable Version</span> </span>
 
@@ -14,7 +15,7 @@
 		<li><input type="radio" name="twoview" v-model="showsView" value="gallery"/>Gallery View</li>
 	</ul>
  -->
-
+    
 		<div id="content-theatre">
             <section v-show="showsView === 'resume'">
                 <ShowList v-bind:shows="shows"/>
@@ -26,6 +27,7 @@
             </section>  
 		
         </div>
+    </section>
 	</div>
 
 
@@ -53,7 +55,6 @@
 </script>
 <style lang="scss">
 
-
 .sm #content {
     flex-direction: column !important;
 }
@@ -65,8 +66,7 @@
 #theatre {
 
     &-content {
-        margin-top: 3em;
-
+        
         .md & {
             align-content  : center;
         }
@@ -117,6 +117,7 @@ input[type="radio"] {
         color: #19abdc;
         letter-spacing: .15em;
         font-weight: normal;
+        padding-top: 1em;
 
     }
 

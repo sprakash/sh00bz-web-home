@@ -69,13 +69,21 @@
 	
 	header {
 		flex-grow: 1;
+		opacity: .9;
 
 		.sm & {
 			align-items: center;
+			position: static;
 		}
 
 		.md & {
 			align-items: center;
+		}
+
+		h1 {
+			span {
+				font-size: 2em;
+			}
 		}
 	}
 
@@ -91,6 +99,7 @@
 
 				a {
 					font-weight: bolder;
+					letter-spacing: .085em;
 
 					&:hover {
 						color: yellow !important;
@@ -177,7 +186,8 @@
 
 		     li {
 		     	margin: .1em 0;
-				background: linear-gradient(270deg, #f970b1, #e67a83, #7dd2ec);
+				background: linear-gradient(270deg, #f970b1, #e67a8399, #4ba8f3);
+				/** background: linear-gradient(270deg, #f970b1, #e67a83, #7dd2ec); */
 				padding: 2em 0;
 				display:block;
 
