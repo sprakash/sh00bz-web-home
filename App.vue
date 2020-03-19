@@ -1,19 +1,14 @@
 <template>
-<v-app>
 	<div id="topest" :class="$mq">
 		<div id="content">
-			<main>
 				<section id="grouped">
 					<section id="content-fill">
 						<router-view/>
 						<Landing/>
 					</section>
-				</section>
-			</main>
-			
+				</section>			
 		</div>
-  </div>
-  <v-app>
+   </div>
 </template>
 <script>
 	import Navigation from './components/Navigation'
@@ -72,19 +67,17 @@
 		}
 	}
 
-	#content {
-		display: flex;
-		flex-direction: column;
-		height: 100%;
 
+	#content {
+		background-color: lightblue;
 		.sm & {
 			flex-direction: column-reverse;
 		}
 	}
 
 	#content-fill {
-/*		height: 59vh;
-*/		width: 100%;
+		width: 100%;
+		height: 100%;
 		background-color: whitesmoke;
 	}
 
@@ -118,16 +111,19 @@
 		}
 	}
 	
-	#content,
 	#topest {
 		display: flex;
 		flex-direction: column;
 		align-items: stretch;
+		background-color: cornflowerblue;
 	}
 
 	#grouped {
-		flex-grow: 1;
-		flex-shrink: 0;
+		display: flex;
+		flex-direction: column;
+		background-color: magenta; 
+		align-items: stretch;
+		height: 100%;
 
 		.md & {
 			width: 80%;
@@ -135,19 +131,13 @@
 	}
 
 	#content {
-		flex-shrink: 0;
-
+		height: 100%;
 		.md  &{
 			flex-direction: row;
 			flex-wrap: nowrap;
 		}
 	}
-	/*.md #content-fill {
-		height: 64vh;
-	}
-	.sm #content-fill {
-		height: 48vh;
-	}*/
+
 
 	.mobile {
 

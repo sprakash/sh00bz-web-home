@@ -104,6 +104,7 @@
 		 	img {
 		 		width: 1.5em;
 		 		height: 1.5em;
+		 		background-color: #efbbec85;
 		 	}
 
 		 	 &:hover {

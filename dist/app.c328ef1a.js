@@ -50207,6 +50207,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
 var _default = {
   name: 'Landing',
   components: {
@@ -50253,19 +50254,27 @@ exports.default = _default;
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "landing" } }, [
-    _c("main", [_c("Panels", { attrs: { panels: _vm.panels } })], 1),
-    _vm._v(" "),
-    _c("section", [
-      _c("div", { attrs: { id: "announcements" } }, [_c("Announcements")], 1)
-    ]),
-    _vm._v(" "),
-    _c("section", { attrs: { id: "bio" } }, [_c("Bio")], 1),
-    _vm._v(" "),
-    _c(
-      "header",
-      [_c("h1", [_vm._v("Shubhra Prakash")]), _vm._v(" "), _c("Navigation")],
-      1
-    )
+    _c("main", [
+      _c("section", [_c("Panels", { attrs: { panels: _vm.panels } })], 1),
+      _vm._v(" "),
+      _c("section", [
+        _c("div", { attrs: { id: "announcements" } }, [_c("Announcements")], 1)
+      ]),
+      _vm._v(" "),
+      _c("section", { attrs: { id: "bio" } }, [_c("Bio")], 1),
+      _vm._v(" "),
+      _c("section", { attrs: { id: "header" } }, [
+        _c(
+          "header",
+          [
+            _c("h1", [_vm._v("Shubhra Prakash")]),
+            _vm._v(" "),
+            _c("Navigation")
+          ],
+          1
+        )
+      ])
+    ])
   ])
 }
 var staticRenderFns = []
@@ -50331,11 +50340,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
-//
-//
-//
-//
-//
 var _default = {
   name: 'App',
   components: {
@@ -50361,28 +50365,18 @@ exports.default = _default;
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "v-app",
-    [
-      _c("div", { class: _vm.$mq, attrs: { id: "topest" } }, [
-        _c("div", { attrs: { id: "content" } }, [
-          _c("main", [
-            _c("section", { attrs: { id: "grouped" } }, [
-              _c(
-                "section",
-                { attrs: { id: "content-fill" } },
-                [_c("router-view", [_c("Landing")], 1)],
-                1
-              )
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("v-app")
-    ],
-    1
-  )
+  return _c("div", { class: _vm.$mq, attrs: { id: "topest" } }, [
+    _c("div", { attrs: { id: "content" } }, [
+      _c("section", { attrs: { id: "grouped" } }, [
+        _c(
+          "section",
+          { attrs: { id: "content-fill" } },
+          [_c("router-view", [_c("Landing")], 1)],
+          1
+        )
+      ])
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -53161,7 +53155,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54835" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51038" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

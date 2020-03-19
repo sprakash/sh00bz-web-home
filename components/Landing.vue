@@ -1,24 +1,25 @@
 <template>
 	<div id="landing">
 		<main>
-			<Panels v-bind:panels="panels"/>
-		</main>
-		
-					<section>
-						<div id="announcements">
-							<Announcements/>
-						</div>
-					</section>
-					<section id="bio">
-						<Bio/>
-					</section>
-
-					<header>
-						<h1>Shubhra Prakash</h1>
-						<Navigation/>
-					</header>
+			<section>
+             <Panels v-bind:panels="panels"/>
+            </section>
+			<section>
+                <div id="announcements">
+					<Announcements/>
+				</div>
+			</section>
+			<section id="bio">
+			     <Bio/>
+			</section>
+            <section id="header">
+		      <header>
+                <h1>Shubhra Prakash</h1>
+                <Navigation/>
+              </header>
+            </section>
+		</main>			
 	</div>
-
 </template>
 <script>
 	import Panels from './Panels'
@@ -45,10 +46,26 @@
 	}
 </script>
 <style lang="scss" scoped>
- header {
+#landing {
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+main > section {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+  header {
  	bottom: 0;
 	top: auto;
- }
+  }
 
 </style>
 

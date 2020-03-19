@@ -64,7 +64,7 @@
 
 	.longbio,
 	.fontwala {
-		font-family: 'Palatino';
+		font-family: 'Helvetica';
 	    font-size: .93em;
 	    word-spacing: .2em;
 	    line-height: 2em;
