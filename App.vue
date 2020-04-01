@@ -90,8 +90,7 @@
 		background-size: 100% 100%;
 		color: #39053f;
 		align-items: center;
-		bottom: 0;
-		top: auto;
+		flex-grow: 1;
 		z-index:999;
 
 		.sm & {

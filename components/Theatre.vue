@@ -81,12 +81,12 @@
     }
 }
 
-header {
-    position: fixed;
-    width: 98%;
-    top: 0;
-    bottom: auto;
-}
+// header {
+//     position: fixed;
+//     width: 98%;
+//     top: 0;
+//     bottom: auto;
+// }
 
 header h1 {
     background: none;

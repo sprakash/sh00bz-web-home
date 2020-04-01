@@ -58,8 +58,11 @@
 						       	<li class="show-expanded-blurb">{{entry.blurb}}</li>
 						       </ul>
 						       <div class="show-links"> 
-						       		<span>Read blog</span>
-						       		<span>Show Gallery</span> 
+						       		<span><a 
+						       				 v-if="entry.bloglink !== ''"
+
+						       			v-bind:href="entry.bloglink" target="_blank">More info</a></span>
+						       		<span><a v-bind:href="entry.gallerylink" target="_blank">Show Photos</a></span> 
 						       </div>
 						   </div>
 					      </v-expansion-panel-content>
@@ -124,17 +127,7 @@
         </div>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-				
+	
 			</div>
 
 		</div>
@@ -329,18 +322,26 @@
 		    flex-direction: row;
 
 		    span {
-		    	padding: 1em 2em;
-			    margin: 0 2em 2em 0;
-			    background: whitesmoke;
-			    color: #084086;
-			    cursor: pointer;
-			    font-weight: bolder;
-			    border-radius: 7px;
-			    letter-spacing: .15em;
-			    border: 1px solid coral;
+
+		    	margin: 0 2em 2em 0;
+
+		    	a {
+		    		padding: 1em 2em;
+			    	background: whitesmoke;
+				    color: #084086;
+				    cursor: pointer;
+				    font-weight: bolder;
+				    border-radius: 7px;
+				    letter-spacing: .15em;
+				    border: 1px solid coral;
 		
+		    	}
+		    	
 				&:nth-child(2) {
-		    		padding: 1em 0.5em;
+					a {
+						padding: 1em 0.5em;
+
+					}
 		    	}
 
 		    }

@@ -37,13 +37,7 @@
 </script>
 <style lang="scss">
 	#announcements {
-		display: block;
-	    text-align: center;
-	    position: relative;
-		background-color: whitesmoke;
 		border: 1px solid grey;    
-	    margin: auto;
-	    z-index: 9;
 	}
 
 	#announce-content {

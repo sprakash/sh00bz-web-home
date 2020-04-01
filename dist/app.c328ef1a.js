@@ -49929,7 +49929,7 @@ var staticRenderFns = [
         _c("section", { attrs: { id: "bio-action" } }, [
           _c("span", [_vm._v("Download Resume")]),
           _vm._v(" "),
-          _c("span", [_vm._v("Sign up for Newsletter")])
+          _c("span", [_vm._v("Subscribe to Blog")])
         ])
       ])
     ])
@@ -50255,9 +50255,14 @@ exports.default = _default;
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "landing" } }, [
     _c("main", [
-      _c("section", [_c("Panels", { attrs: { panels: _vm.panels } })], 1),
+      _c(
+        "section",
+        { attrs: { id: "rolePanels" } },
+        [_c("Panels", { attrs: { panels: _vm.panels } })],
+        1
+      ),
       _vm._v(" "),
-      _c("section", [
+      _c("section", { attrs: { id: "announceArea" } }, [
         _c("div", { attrs: { id: "announcements" } }, [_c("Announcements")], 1)
       ]),
       _vm._v(" "),
@@ -50703,6 +50708,19 @@ render._withStripped = true
 },{"./Navigation":"components/Navigation.vue","C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\fake\\priyashakti.jpg":[["priyashakti.95c97309.jpg","assets/fake/priyashakti.jpg"],"assets/fake/priyashakti.jpg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\fake\\rajeev-typoface.jpg":[["rajeev-typoface.2a8ef396.jpg","assets/fake/rajeev-typoface.jpg"],"assets/fake/rajeev-typoface.jpg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\fake\\castme.png":[["castme.5f133f99.png","assets/fake/castme.png"],"assets/fake/castme.png"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"assets/json/theatre.json":[function(require,module,exports) {
 module.exports = {
   "Theatre": [{
+    "name": "Ghosts (Hindi)",
+    "type": "Play",
+    "role": "Father Manders",
+    "director": "K S Rajendran",
+    "playwright": "Henrik Ibsen",
+    "company": "Little Theatre Group",
+    "year": "2020",
+    "location": "New Delhi, India",
+    "blurb": "An opportunity to perform Ibsen in Hindi! Moreover to work with a director of immense caliber and sensitivity. Professor Rajendran taught us so much from understanding Ibsen's text to finding meaning based on the larger context of patriarchy, gender and the condition of the world when this drama was written and why it is still applicable 150 years later. You can read about my experience in the blog link.",
+    "bloglink": "https://shubhraprakash.blogspot.com/2020/02/playing-priest-father-manders-in-ibsens.html",
+    "poster": "/assets/fake/ramleela.jpg",
+    "gallerylink": "https://www.instagram.com/p/B-Ogxp_piMh/?utm_source=ig_web_button_share_sheet"
+  }, {
     "name": "Rameleela (Hindi)",
     "type": "Play with Music",
     "role": "Sutradhaar / Tara / Anjana",
@@ -50712,9 +50730,9 @@ module.exports = {
     "year": "2019",
     "location": "New Delhi, India",
     "blurb": "Ramleela is a one of a kind yearly celebration of the great epic of Ramayana performed on stage all over India. This particular production was the biggest one of its kind in New Delhi where the average audience numbers soared to 100,000. On the final day of this ten day performance we had the Prime Minister of India Narendra Modi as our chief guest.",
-    "bloglink": "",
     "poster": "/assets/fake/ramleela.jpg",
-    "gallerylink": ""
+    "bloglink": "",
+    "gallerylink": "https://www.instagram.com/p/B-ZvibMp3oy/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Sundays w/ Chitra & Chaitali - Tour",
     "type": "Play with Music",
@@ -50725,8 +50743,8 @@ module.exports = {
     "year": "2019",
     "location": "Kolkata & Hyderabad, India",
     "blurb": "I enjoyed playing a Manipuri warrior princess with a bow and arrow in this touring production I was a part of in India.I had the privilege of learning the dances from Sohini Roy Chowdhury which brought back memories of learning Bharatnatyam as a child. The play draws from Rabindranath Tagore's Chitrangada, which tells the tale of the warrior princess Chitra's crisis of identity, as she grapples with the expectations that Arjun from the Mahabharata has from her. This production arranged by YPO Kolkata had Shashi Tharoor as the chief guest.",
-    "bloglink": "",
-    "gallerylink": ""
+    "bloglink": "https://shubhraprakash.blogspot.com/2020/03/what-guruteacher-knows.html",
+    "gallerylink": "https://www.instagram.com/p/B5tiVpSp_Rk/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Panniarchy",
     "type": "Experimental Theatre",
@@ -50738,7 +50756,7 @@ module.exports = {
     "location": "New Delhi, India",
     "blurb": "I got to devise this piece with our ensemble Little Theatre Group Repertory. The play पन्नीarchy is directed by Piyush Kumar.  We told the story of plastic using docu-drama, physical theatre and collected all the plastic over a period of month that we used in our devising process and in the show.",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B-QUm9bJsYh/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Sultana Daku - Nautanki",
     "type": "Indian Theatre",
@@ -50750,7 +50768,7 @@ module.exports = {
     "location": "New Delhi, India",
     "blurb": "Got to perform a nautanki, at the National School of Drama's renowed annual theatre festival : 20th Bharat Rang Mahotsava. I had performed this eleven years prior in SF Bay Area. Performing and singing in India with some of the actual nautanki professionals was unforgettable.",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B-B4Bm0J0v6/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Three Women",
     "type": "Play with Music",
@@ -50762,7 +50780,7 @@ module.exports = {
     "location": "Singapore",
     "blurb": "First time performing in Singapore, Isheeta Ganguly's play with live Rabindra sangeet that takes three of Rabindranath Tagore's heroines and questions their fate as depicted in the popular they belong to.",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B-VDmJUJD74/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Babyshka",
     "type": "Experimental Theatre",
@@ -50773,8 +50791,8 @@ module.exports = {
     "year": "2018",
     "location": "Brooklyn, New York",
     "blurb": "Anna Lublina led us in creating non-verbal devised piece where I once again got in touch with physical theatre performance. ",
-    "bloglink": "",
-    "gallerylink": ""
+    "bloglink": "https://shubhraprakash.blogspot.com/2018/11/tech-epiphany-every-breath.html",
+    "gallerylink": "https://www.instagram.com/p/B7VJgG-JalV/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Songs in the key of Yi",
     "type": "Musical Revue / Song Cycle",
@@ -50786,7 +50804,7 @@ module.exports = {
     "location": "New York, New York",
     "blurb": "Sang an original composition 'Unbreakable' by Marcus Yi",
     "bloglink": "",
-    "galleryLink": ""
+    "gallerylink": "https://www.instagram.com/p/B-OfKF5pn5j/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "The Music In My Blood",
     "type": "Play with Music",
@@ -50797,8 +50815,8 @@ module.exports = {
     "year": "2018",
     "location": "New York, New York",
     "blurb": "Most challenging work I've ever done bringing a story revolving Indian classical music to stage in New York. The journey began in 2015 with my curiousity with Indian classical music and me interviewing my guru Sandip Bhattacharjee. The first rendition was directed by Marcus Yi and second by Sonalee Hardikar with whom I co-wrote the second rendition. We staged 14 shows in Manhattan's Off-Broadway stage Amercian Actor's Theatre.",
-    "bloglink": "",
-    "gallerylink": ""
+    "bloglink": "https://scroll.in/magazine/880247/the-jewish-refugee-who-composed-airs-theme-is-at-the-heart-of-a-play-about-identity-and-music",
+    "gallerylink": "https://www.instagram.com/p/B-XEO5PJIRa/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Beyond Sacred",
     "type": "Documentary Theatre",
@@ -50810,7 +50828,7 @@ module.exports = {
     "location": "New York, New York",
     "blurb": "Five Americans were interviewed and performed their stories about being Muslim in America. I got to understudy one of them. This documentary theatre piece was performed in several schools in New York as well along with a larger tour around the country with the main cast.",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B-K5m28p-PR/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Chokher Bali",
     "type": "Play with Music",
@@ -50822,7 +50840,7 @@ module.exports = {
     "location": "New York, New York",
     "blurb": "I got to act and sing bengali songs, which is technically my first language. I also enjoyed contributing to the musical direction of the show by suggesting mashups of Bengali and Western music. We performed 23 shows in Manhattan's Theatre for the New City.",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B9n4_pmJnY1/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Monsoon Wedding - Musical",
     "type": "Staged Reading",
@@ -50834,7 +50852,7 @@ module.exports = {
     "location": "New York, New York",
     "blurb": "I had seen Monsoon Wedding the film so being in a workshop reading playing the lead Aditi under the direction of Mira Nair and musical direction of Vishal Bhardwaj in New York City was a dream come true.",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B-KTfbLplYb/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Romeo & Juliet\n",
     "type": "Play with Music",
@@ -50846,7 +50864,7 @@ module.exports = {
     "location": "New York, New York",
     "blurb": "Our debut show as a new theare company which is co-founded by me. We were bringing a bollywood aesthetic to Shakespeare's classic. We staged 23 shows in the freezing February cold in Manhattan's Access Theatre with a double cast and had many sold out shows.",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B-Jz5ZxJ7q2/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Taming of the Shrew",
     "type": "Ensemble",
@@ -50858,7 +50876,7 @@ module.exports = {
     "location": "New York, New York",
     "blurb": "Fierce ensemble of ladies gave me an opportunity to join them as they re-imagined and experimented with an all female cast for Taming of the Shrew. We shared roles and swapped them mid-show.",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B-FDsSvJ1sZ/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Girl and her Goddess",
     "type": "Staged Reading",
@@ -50870,7 +50888,7 @@ module.exports = {
     "location": "Brooklyn, New York",
     "blurb": "A night of staged readings in Brooklyn of works by South Asian artists.",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B-EmJowppu7/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "The Procedure",
     "type": "Play",
@@ -50882,7 +50900,7 @@ module.exports = {
     "location": "New York, New York",
     "blurb": "Enjoyed learning about Singaporean dialect and slang.  First show ever with Marcus Yi who remains a friend and collaborator, because of whom I have found a lot of confidence in creating my own work.",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B-EjClzpewF/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Once on this Island\n",
     "type": "Musical",
@@ -50894,7 +50912,7 @@ module.exports = {
     "location": "Brooklyn, New York",
     "blurb": "Thankful to Corinne and Chris for creating an opportunity for us to stage Once on this Island. I fell in love with this music.",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B-EcNDopM2s/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "The Vagina Monologues\n",
     "type": "Ensemble",
@@ -50906,7 +50924,7 @@ module.exports = {
     "location": "New York, New York",
     "blurb": "Young ladies from Barnard, led by the fierce Morgaine approached this powerful work with total committment. We all held each other up, and trusted each other to do this work. Morgaine adopted inclusivity across genders, religion, race, in all aspects of this production, casting, staging, bringing personal stories, etc.  ",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B-EVvMqJAXX/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Hairspray",
     "type": "Musical",
@@ -50919,7 +50937,7 @@ module.exports = {
     "location": "Fremont, California",
     "blurb": "As a part of Dynamites I thoroughly enjoyed the music of this show and sang my heart. Who won't sing along to Welcome to the 60s!' ? One of my favorite musicals.",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B-CiuTepKuZ/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Ozma of Oz - Trip Hop Musical",
     "type": "Staged Reading",
@@ -50930,8 +50948,8 @@ module.exports = {
     "year": "2011",
     "location": "San Francisco, California",
     "blurb": "One of a kind experience to work with the innovative Rob Melrose and Zonk! a band I have become a fan of.  How often will I get to be a part of Trip-hop musical?",
-    "bloglink": "",
-    "gallerylink": ""
+    "bloglink": "https://soundcloud.com/harmonymachine/give-me-a-head?in=harmonymachine/sets/ozma-of-oz-cast-recording",
+    "gallerylink": "https://www.instagram.com/p/B-CgFEKJHIH/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Sheherezade XI",
     "type": "Ensemble",
@@ -50943,7 +50961,7 @@ module.exports = {
     "location": "San Francisco, California",
     "blurb": "A collection of short skits where I played many parts, a talented cast who also were friends.",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B-CYWK3JQ5i/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Leading Ladies",
     "type": "Ensemble",
@@ -50955,7 +50973,7 @@ module.exports = {
     "location": "New York, New York",
     "blurb": "First show in New York, stories of women who stood their ground and achieved goals despite of their difficult circumstances. Forever thankful to Larissa Dzegar for creating the opportunity. ",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B-CHHUXJNDp/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Cootie Shots: Theatrical Inoculations Against Bigotry for Kids, Parents & Teachers - Tour",
     "type": "Children's Theatre",
@@ -50967,7 +50985,7 @@ module.exports = {
     "location": "San Francisco, California",
     "blurb": "A show our ensembled loved performing for kids while engaging them in countering bullying.",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B-CFOh6JAeo/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Beautiful Thing",
     "type": "Play",
@@ -50979,7 +50997,7 @@ module.exports = {
     "location": "San Francisco, California",
     "blurb": "Received training in South East London accent to portray a vibrant character Leah in one of my favorite theatres in San Francisco. Can we just take a moment and give props to NCTC, Andrew Nance for casting a South Asian actor in a role that has nothing to do with the ethnicity ? THANK YOU!",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B7VXa2RJb-M/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Ramona Quimby - Tour",
     "type": "Children's Theatre",
@@ -50991,7 +51009,7 @@ module.exports = {
     "location": "East Bay, California",
     "blurb": "Berkeley and SF shows for full houses with audience full of children always got us to do our best. Didn't complain that we got to sign autographs, posters and flyers for the children.",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B-CEBDmJUQl/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Midsummer Night’s Dream",
     "type": "Play",
@@ -51003,7 +51021,7 @@ module.exports = {
     "location": "San Jose, California",
     "blurb": "We explored the play with a Mayan theme. There was traditional dance and music and the fairies became Ushmals.",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B-CBGgCJ385/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Rogue El Gato - Tour",
     "type": "Children's Theatre",
@@ -51015,7 +51033,7 @@ module.exports = {
     "location": "San Francisco, California",
     "blurb": "It was especially fun to play two villians for an audience full of children. Their reactions could not be tamed. I enjoyed played up the characters to make it entertaining for the children.",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B-B9Ve8JwJK/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Macbeth",
     "type": "Play",
@@ -51027,7 +51045,7 @@ module.exports = {
     "location": "San Francisco, California",
     "blurb": "We performed the Scottish play in an old episcopalian church on top of Gough St which would get well covered in SF fog by show time, a haunting atmosphere perfect for this tragic tale.",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B-B6bUrpOox/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Sultana Daku - Nautanki",
     "type": "Indian Theatre",
@@ -51038,8 +51056,8 @@ module.exports = {
     "year": "2008",
     "location": "SF Bay Area, California",
     "blurb": "Performing and learning about Indian theatre style of nautanki was an unforgettable experience. To sing in nautanki style in a show in SF bay area was an incredible experience.  We were covered by several publications including a special segment on NPR's PRI-the world.",
-    "bloglink": "",
-    "gallerylink": ""
+    "bloglink": "https://shubhraprakash.blogspot.com/2010/03/previous-post-sultana-daku.html",
+    "gallerylink": "https://www.instagram.com/p/B-B13NspsN_/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "The Odd Couple",
     "type": "Play",
@@ -51051,7 +51069,7 @@ module.exports = {
     "location": "San Jose, California",
     "blurb": "Got a chance to practice comedy on stage as one of the Pigeon sisters in a classical stage show",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B-Bv_gRppZT/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Our Town",
     "type": "Play",
@@ -51063,7 +51081,7 @@ module.exports = {
     "location": "San Jose, California",
     "blurb": "Learned a lot playing Mrs. Webbs in the direction of David Warren Keith. Knowledge of period costumes by our costume department and specific make up and hair styles was a learning experience.",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B-Bt-13pAWJ/?utm_source=ig_web_button_share_sheet"
   }, {
     "name": "Nickel & Dimed - Premiere",
     "type": "Play",
@@ -51075,7 +51093,7 @@ module.exports = {
     "location": "San Jose, California",
     "blurb": "Debut performance in San Jose State University in a play being adapted from a national bestseller NICKEL AND DIMED, ON (NOT) GETTING BY IN AMERICA by Barbara Ehrenreich.",
     "bloglink": "",
-    "gallerylink": ""
+    "gallerylink": "https://www.instagram.com/p/B-Bq5ZsJylr/?utm_source=ig_web_button_share_sheet"
   }]
 };
 },{}],"components/ShowList.vue":[function(require,module,exports) {
@@ -51090,13 +51108,6 @@ var _theatre = _interopRequireDefault(require("/assets/json/theatre.json"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -51339,9 +51350,33 @@ exports.default = _default;
                             ]),
                             _vm._v(" "),
                             _c("div", { staticClass: "show-links" }, [
-                              _c("span", [_vm._v("Read blog")]),
+                              _c("span", [
+                                entry.bloglink !== ""
+                                  ? _c(
+                                      "a",
+                                      {
+                                        attrs: {
+                                          href: entry.bloglink,
+                                          target: "_blank"
+                                        }
+                                      },
+                                      [_vm._v("More info")]
+                                    )
+                                  : _vm._e()
+                              ]),
                               _vm._v(" "),
-                              _c("span", [_vm._v("Show Gallery")])
+                              _c("span", [
+                                _c(
+                                  "a",
+                                  {
+                                    attrs: {
+                                      href: entry.gallerylink,
+                                      target: "_blank"
+                                    }
+                                  },
+                                  [_vm._v("Show Photos")]
+                                )
+                              ])
                             ])
                           ])
                         ])
@@ -53155,7 +53190,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51038" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51886" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

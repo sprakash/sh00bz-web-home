@@ -5,7 +5,7 @@
 
 		I believe human beings must dream big and challenge themselves to break limitations imposed by themselves or others. I aspire next to create my most ambitious work yet : Fontwala inspired by the story of my uncle’s life as an artist, entreprenuer and visionary of Indian letterforms. Read all about Fontwala <a href="http://sprakash.github.io/portfolio/fontwala.html" target="_blank">here</a>.</span>  
 		<span class="quote">“How we spend our days is how we spend our lives.”  - Annie Dillard </span>
-	    <section id="bio-action"><span>Download Resume</span> <span>Sign up for Newsletter</span></section>
+	    <section id="bio-action"><span>Download Resume</span> <span>Subscribe to Blog</span></section>
 		</div>
 	</div>
 </template>
@@ -23,7 +23,9 @@
 </script>
 <style lang="scss">
 	#bio {
-		margin: 0 2em;
+		 	margin: 0 2em;
+    		display: flex;
+    		flex-direction: column;
 
 		&-action { 
 			display: flex;

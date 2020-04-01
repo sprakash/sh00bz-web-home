@@ -120,6 +120,13 @@ li a:hover {
   display: none;
   position: fixed;
 }
+#panels {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
 .panel-container {
   font-family: "Palatino";
 }
@@ -296,9 +303,6 @@ li a:hover {
 #theatre-area {
   background-image: url("/sultanaNSD.f75e9fb3.jpg");
   background-repeat: no-repeat;
-  display: inline-block;
-  width: 100%;
-  background-size: cover;
 }
 .sm #theatre-area {
   background-size: cover;
@@ -315,10 +319,6 @@ li a:hover {
 #film-area {
   background-image: url("/vanillashot.615772a3.png");
   background-repeat: no-repeat;
-  display: inline-block;
-  width: 100%;
-  background-size: inherit;
-  background-position: -248px center;
 }
 .sm #film-area {
   height: 47%;
@@ -339,9 +339,6 @@ li a:hover {
 #digital-area {
   background-image: url("/digital.c133ef26.jpg");
   background-repeat: no-repeat;
-  display: inline-block;
-  width: 100%;
-  background-size: cover;
 }
 .sm #digital-area {
   height: 47%;
@@ -440,6 +437,8 @@ li a:hover {
 }
 #bio {
   margin: 0 2em;
+  display: flex;
+  flex-direction: column;
 }
 #bio-action {
   display: flex;
@@ -500,13 +499,7 @@ li a:hover {
   margin-top: 0.85em;
 }
 #announcements {
-  display: block;
-  text-align: center;
-  position: relative;
-  background-color: whitesmoke;
   border: 1px solid grey;
-  margin: auto;
-  z-index: 9;
 }
 
 #announce-content {
@@ -574,13 +567,21 @@ main[data-v-c8ca7b] {
   height: 100%;
 }
 main > section[data-v-c8ca7b] {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: auto;
+  border: 1px solid deepskyblue;
 }
-header[data-v-c8ca7b] {
-  bottom: 0;
-  top: auto;
+#header[data-v-c8ca7b] {
+  display: flex;
+  flex-direction: column;
+}
+#rolePanels[data-v-c8ca7b] {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+#announceArea[data-v-c8ca7b] {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 }
 html, body {
   margin: 0 auto;
@@ -641,8 +642,7 @@ header {
   background-size: 100% 100%;
   color: #39053f;
   align-items: center;
-  bottom: 0;
-  top: auto;
+  flex-grow: 1;
   z-index: 999;
 }
 .sm header {
@@ -928,8 +928,10 @@ td[data-v-f03973] {
   flex-direction: row;
 }
 .show-links span[data-v-f03973] {
-  padding: 1em 2em;
   margin: 0 2em 2em 0;
+}
+.show-links span a[data-v-f03973] {
+  padding: 1em 2em;
   background: whitesmoke;
   color: #084086;
   cursor: pointer;
@@ -938,7 +940,7 @@ td[data-v-f03973] {
   letter-spacing: 0.15em;
   border: 1px solid coral;
 }
-.show-links span[data-v-f03973]:nth-child(2) {
+.show-links span:nth-child(2) a[data-v-f03973] {
   padding: 1em 0.5em;
 }
 .show-location[data-v-f03973] {
@@ -1056,13 +1058,6 @@ td[data-v-f03973] {
   text-decoration: underline;
   font-size: 0.85em;
   cursor: pointer;
-}
-
-header {
-  position: fixed;
-  width: 98%;
-  top: 0;
-  bottom: auto;
 }
 
 header h1 {

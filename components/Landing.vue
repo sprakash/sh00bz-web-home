@@ -1,10 +1,10 @@
 <template>
 	<div id="landing">
 		<main>
-			<section>
+			<section id="rolePanels">
              <Panels v-bind:panels="panels"/>
             </section>
-			<section>
+			<section id="announceArea">
                 <div id="announcements">
 					<Announcements/>
 				</div>
@@ -58,14 +58,29 @@ main {
 }
 
 main > section {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: auto;
+  border: 1px solid deepskyblue;
 }
-  header {
- 	bottom: 0;
-	top: auto;
-  }
 
+
+#header {
+    display: flex;
+    flex-direction: column;
+}
+ //  header {
+ // 	bottom: 0;
+	// top: auto;
+ //  }
+
+#rolePanels {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+#announceArea {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
 </style>
 

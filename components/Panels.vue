@@ -130,6 +130,12 @@
 	
 </script>
 <style lang="scss">
+	#panels {
+		display: flex;
+    	flex-direction: column;
+    	flex: 1;
+    	justify-content: space-evenly;
+	}
 	.panel-container {
 		font-family: 'Palatino';
 	}
@@ -342,9 +348,6 @@
 	#theatre-area{
 		background-image: url('/assets/fake/sultanaNSD.jpg');
 	    background-repeat: no-repeat;
-	    display: inline-block;
-	    width: 100%;
-	    background-size: cover;
 
 	    .sm & {
 	    	background-size: cover;
@@ -363,10 +366,6 @@
 	#film-area{
 		background-image: url('/assets/fake/vanillashot.png');
 	    background-repeat: no-repeat;
-	    display: inline-block;
-	    width: 100%;
-	    background-size: inherit;
-    	background-position: -248px center;
 
 	    .sm & {
 	    	height: 47%;
@@ -390,9 +389,6 @@
 	#digital-area {
 		background-image: url('/assets/fake/digital.jpg');
 		background-repeat: no-repeat;
-	    display: inline-block;
-	    width: 100%;
-	    background-size: cover;
 
 	    .sm & {
 	    	height: 47%;
