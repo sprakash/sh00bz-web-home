@@ -7,7 +7,7 @@
 		    <li id="film"><router-link :to="{name: 'Film' }">Film</router-link></li>
 		    <li id="digital"><router-link :to="{name: 'Digital'}">Digital / Intersect</router-link></li>
 		      <li id="fontwala"><a href="http://sprakash.github.io/portfolio/fontwala.html" target="_blank">Fontwala</a></li>
-		    <li id="gallery"><router-link :to="{name: 'Gallery'}">Gallery</router-link></li>
+		   <li id="gallery"><a href="http://www.instagram.com/sh000bz.artist">Gallery</a></li>
 		     <li id="blog"><a href="http://shubhraprakash.blogspot.com" target="_blank">Blog</a></li>
  	  	 		<li id="connect"><router-link :to="{name: 'Connect'}">Connect</router-link></li>
 			</ul>
@@ -20,7 +20,7 @@
 			    <li id="film"><router-link :to="{name: 'Film' }">Film</router-link></li>
 			    <li id="digital"><router-link :to="{name: 'Digital'}">Digital / Intersect</router-link></li>
 			    <li id="fontwala"><a href="http://sprakash.github.io/portfolio/fontwala.html" target="_blank">Fontwala</a></li>
-			    <li id="gallery"><router-link :to="{name: 'Gallery'}">Gallery</router-link></li>
+			    <li id="gallery"><a href="http://www.instagram.com/sh000bz.artist">Gallery</a></li>
 
   				<li id="blog"><a href="http://www.shubhraprakash.blogspot.com" target="_blank"/>Blog</a></li>    
  				<li id="connect"><router-link :to="{name: 'Connect'}">Connect</router-link></li>

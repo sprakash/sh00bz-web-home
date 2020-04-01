@@ -124,7 +124,6 @@ li a:hover {
   display: flex;
   flex-direction: column;
   flex: 1;
-  justify-content: space-evenly;
 }
 
 .panel-container {
@@ -693,7 +692,7 @@ header {
   width: 100%;
 }
 .slicinItup[data-v-84363e] {
-  padding-top: 5em;
+  padding-top: 0em;
 }
 a[data-v-84363e] {
   color: orange !important;
@@ -1170,7 +1169,7 @@ input[type=radio] {
   width: 100%;
 }
 .slicinItup[data-v-4a13f1] {
-  padding-top: 5em;
+  padding-top: 0em;
 }
 a[data-v-4a13f1] {
   color: orange !important;
@@ -1279,19 +1278,26 @@ h1[data-v-44bc14] {
   width: 100%;
 }
 
-.slicinItup {
-  padding-top: 5em;
+#topest {
+  width: 100%;
 }
 
 #connect-content {
   font-weight: 100;
 }
 #connect-sections-imgs {
-  background-image: url(/shakespeare.a844b4e5.jpg);
+  background-image: url(/mandolin.254498a3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   padding: 3em 5em;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+.sm #connect-sections-imgs, .md #connect-sections-imgs {
+  background-size: cover;
+  font-size: 1em;
+  background-position: 80% 0px;
 }
 #connect-sections-imgs a {
   color: deepskyblue !important;
@@ -1301,15 +1307,24 @@ h1[data-v-44bc14] {
 }
 
 .connect-lists li {
-  padding: 0.5em 0;
+  padding: 0.5em;
+  background-color: #ff3bcc40;
+  margin: 0.5em 0;
 }
 .connect-lower {
   padding-top: 10em;
   bottom: 0;
 }
+.connect-lower div {
+  padding: 0.5em;
+  background-color: #8f3bff63;
+  margin: 0.5em 0;
+}
 .connect-lower article {
   font-weight: normal;
-  padding-top: 1em;
+  padding: 0.5em;
+  background-color: #8f3bff63;
+  margin: 0.5em 0;
 }
 
 .horiz {
@@ -1318,6 +1333,8 @@ h1[data-v-44bc14] {
 .horiz li {
   margin: 0 2em;
   padding: 0;
+  background: none;
+  line-height: 1.5em;
 }
 
 .svgStylin {

@@ -134,7 +134,6 @@
 		display: flex;
     	flex-direction: column;
     	flex: 1;
-    	justify-content: space-evenly;
 	}
 	.panel-container {
 		font-family: 'Palatino';

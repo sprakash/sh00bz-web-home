@@ -111,7 +111,7 @@ Stella is a baker who has been running her business with a recipe for a deliciou
 }
 
 .slicinItup {
-	padding-top: 5em;
+	padding-top: 0em;
 }
 	
 a {

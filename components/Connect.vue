@@ -58,10 +58,9 @@
 					</div>
 
 					<div class="connect-lower">
-						
-						<div>references for development<a href="https://dev.to/alexmourer/click-event-filtering-on-a-json-rendered-list-in-vuejs-3kpn" target="_blank"><sup>(1)</sup></a></div>
-							
-							<article>The site has been created by yours truly using Vue framework. The code can be checked out at : <a href="https://github.com/sprakash/sh00bz-web-home" target="_blank">github link</a>.</article>						
+							<article>The site has been created by yours truly using Vue framework. The code can be checked out at : <a href="https://github.com/sprakash/sh00bz-web-home" target="_blank">github link</a>.</article>	
+
+							<div>references for development<a href="https://dev.to/alexmourer/click-event-filtering-on-a-json-rendered-list-in-vuejs-3kpn" target="_blank"><sup>(1)</sup></a></div>					
 					</div>
 				</div>
 			</section>
@@ -92,21 +91,30 @@
 	width: 100%;
 }
 
-.slicinItup {
-	padding-top: 5em;
+#topest {
+	width: 100%;
 }
-	
+
 #connect {
 	&-content {
 		font-weight: 100;
 	}
 	&-sections {
 		&-imgs {
-			background-image: url(/assets/fake/shakespeare.jpg);
+			background-image: url(/assets/fake/mandolin.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;
 			color: white;
 			padding: 3em 5em;
+			font-size: 1.5em;
+			line-height: 1.5em;
+
+				.sm &,
+	    		.md & {
+	    			background-size: cover;
+	    			font-size: 1em;
+	    			background-position: 80% 0px;
+	    		}
 
 			a {
 				color: deepskyblue !important;
@@ -122,17 +130,26 @@
 
 	&-lists {
 		li {
-			padding: .5em 0;
+			padding: 0.5em;
+	        background-color: #ff3bcc40;
+	        margin: .5em 0;
 		}
 	}
 
 	&-lower {
 		padding-top: 10em;
 		bottom: 0;
-
+		
+		div {
+			padding: 0.5em;
+    		background-color: #8f3bff63;
+    		margin: .5em 0;
+		}
 		article {
 			font-weight: normal;
-			padding-top: 1em;
+			padding: 0.5em;
+	    	background-color: #8f3bff63;
+	    	margin: .5em 0;
 		}
 	}
 }
@@ -142,7 +159,9 @@
 
 	li {
 		margin: 0 2em;
-		padding: 0;
+	    padding: 0;
+	    background: none;
+	    line-height: 1.5em;
 	}
 }
 

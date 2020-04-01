@@ -49371,18 +49371,9 @@ exports.default = _default;
         _vm._v(" "),
         _vm._m(0),
         _vm._v(" "),
-        _c(
-          "li",
-          { attrs: { id: "gallery" } },
-          [
-            _c("router-link", { attrs: { to: { name: "Gallery" } } }, [
-              _vm._v("Gallery")
-            ])
-          ],
-          1
-        ),
-        _vm._v(" "),
         _vm._m(1),
+        _vm._v(" "),
+        _vm._m(2),
         _vm._v(" "),
         _c(
           "li",
@@ -49471,20 +49462,11 @@ exports.default = _default;
           1
         ),
         _vm._v(" "),
-        _vm._m(2),
-        _vm._v(" "),
-        _c(
-          "li",
-          { attrs: { id: "gallery" } },
-          [
-            _c("router-link", { attrs: { to: { name: "Gallery" } } }, [
-              _vm._v("Gallery")
-            ])
-          ],
-          1
-        ),
-        _vm._v(" "),
         _vm._m(3),
+        _vm._v(" "),
+        _vm._m(4),
+        _vm._v(" "),
+        _vm._m(5),
         _vm._v(" "),
         _c(
           "li",
@@ -49522,6 +49504,16 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("li", { attrs: { id: "gallery" } }, [
+      _c("a", { attrs: { href: "http://www.instagram.com/sh000bz.artist" } }, [
+        _vm._v("Gallery")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("li", { attrs: { id: "blog" } }, [
       _c(
         "a",
@@ -49550,6 +49542,16 @@ var staticRenderFns = [
         },
         [_vm._v("Fontwala")]
       )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { attrs: { id: "gallery" } }, [
+      _c("a", { attrs: { href: "http://www.instagram.com/sh000bz.artist" } }, [
+        _vm._v("Gallery")
+      ])
     ])
   },
   function() {
@@ -52747,7 +52749,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
-//
 var _default = {
   name: 'Connect',
   components: {
@@ -52984,21 +52985,6 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "connect-lower" }, [
-                _c("div", [
-                  _vm._v("references for development"),
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "https://dev.to/alexmourer/click-event-filtering-on-a-json-rendered-list-in-vuejs-3kpn",
-                        target: "_blank"
-                      }
-                    },
-                    [_c("sup", [_vm._v("(1)")])]
-                  )
-                ]),
-                _vm._v(" "),
                 _c("article", [
                   _vm._v(
                     "The site has been created by yours truly using Vue framework. The code can be checked out at : "
@@ -53014,6 +53000,21 @@ var staticRenderFns = [
                     [_vm._v("github link")]
                   ),
                   _vm._v(".")
+                ]),
+                _vm._v(" "),
+                _c("div", [
+                  _vm._v("references for development"),
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href:
+                          "https://dev.to/alexmourer/click-event-filtering-on-a-json-rendered-list-in-vuejs-3kpn",
+                        target: "_blank"
+                      }
+                    },
+                    [_c("sup", [_vm._v("(1)")])]
+                  )
                 ])
               ])
             ])
@@ -53055,7 +53056,7 @@ render._withStripped = true
       
       }
     })();
-},{"./Navigation":"components/Navigation.vue","C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\icons\\twitter.svg":[["twitter.f2da1eec.svg","assets/icons/twitter.svg"],"assets/icons/twitter.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\icons\\fb.svg":[["fb.efb36eed.svg","assets/icons/fb.svg"],"assets/icons/fb.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\icons\\linkedin.svg":[["linkedin.15978cba.svg","assets/icons/linkedin.svg"],"assets/icons/linkedin.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\icons\\insta.svg":[["insta.f364b010.svg","assets/icons/insta.svg"],"assets/icons/insta.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\icons\\github.svg":[["github.373d19b5.svg","assets/icons/github.svg"],"assets/icons/github.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\fake\\shakespeare.jpg":[["shakespeare.a844b4e5.jpg","assets/fake/shakespeare.jpg"],"assets/fake/shakespeare.jpg"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"app.js":[function(require,module,exports) {
+},{"./Navigation":"components/Navigation.vue","C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\icons\\twitter.svg":[["twitter.f2da1eec.svg","assets/icons/twitter.svg"],"assets/icons/twitter.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\icons\\fb.svg":[["fb.efb36eed.svg","assets/icons/fb.svg"],"assets/icons/fb.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\icons\\linkedin.svg":[["linkedin.15978cba.svg","assets/icons/linkedin.svg"],"assets/icons/linkedin.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\icons\\insta.svg":[["insta.f364b010.svg","assets/icons/insta.svg"],"assets/icons/insta.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\icons\\github.svg":[["github.373d19b5.svg","assets/icons/github.svg"],"assets/icons/github.svg"],"C:\\Users\\Shubhra Prakash\\Documents\\sh00bz-web-home\\assets\\fake\\mandolin.jpg":[["mandolin.254498a3.jpg","assets/fake/mandolin.jpg"],"assets/fake/mandolin.jpg"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"app.js":[function(require,module,exports) {
 "use strict";
 
 var _vue = _interopRequireDefault(require("vue"));

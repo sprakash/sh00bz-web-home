@@ -68,7 +68,7 @@ here are projects I've worked on that lie at intersection of filmmaking, digital
 }
 
 .slicinItup {
-	padding-top: 5em;
+	padding-top: 0em;
 }
 	
 a {
